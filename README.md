@@ -12,7 +12,7 @@ Live idea borrowed with admiration from dineout-lauderdale.
 ```
 index.html              The whole app (vanilla HTML/CSS/JS, no build step)
 data/spice-data.json    All the data: decoded menus, verified tiers, full roster
-scraper/fetch_spice.py  Collector that pulls verified tier/day/menu data
+scraper/fetch_spice.py  Collector for official tier/day/menu data
 ```
 
 Three data levels, all in `spice-data.json`:
@@ -20,7 +20,7 @@ Three data levels, all in `spice-data.json`:
 | Level      | What it has                              | How it renders                |
 |------------|------------------------------------------|-------------------------------|
 | `decoded`  | tiers, days, menu, a la carte worth      | Full card with value score    |
-| `tiersOnly`| verified tier price + days, no worth     | Card tagged "menu pending"    |
+| `tiersOnly`| verified tier, days and captured menu    | Card tagged "value pending"   |
 | `roster`   | name, neighborhood, official listing URL | Compact "limited data" card   |
 
 ## Run it locally (Windows)
@@ -57,21 +57,35 @@ Updating data later is just: edit or scrape, commit, push. Pages redeploys autom
 ```powershell
 py -m pip install requests beautifulsoup4
 
-# See which restaurant pages the source publishes
+# See records and slugs already known from the official roster
 py scraper\fetch_spice.py --list
+
+# Preview one official listing without changing the data file
+py scraper\fetch_spice.py claudie-restaurant --dry-run
 
 # Scrape specific restaurants (slug names from --list)
 py scraper\fetch_spice.py delilah-miami hutong sugar
 
-# Or everything it can find (sleeps 2s between requests, takes a while)
+# Or enrich every tier-only and roster-only record (1s between downloads)
 py scraper\fetch_spice.py --all
 ```
 
-Scraped entries land in `tiersOnly` with verified tier prices and days plus the
-raw Spice menu text saved in `menuText` for review. Promoting a restaurant to
-`decoded` is a manual step: look up its regular a la carte prices, add a
-`menu` array with per-dish worth (copy the shape of any decoded entry), and
-set `verified: true` once every price came off the restaurant's own menu.
+The collector reads the structured schedule and menu on each official GMCVB
+listing. Roster entries with published tiers move into `tiersOnly`, including
+their course choices, restaurant website, source URL and capture date. Downloads
+are cached in `scraper/.cache/` to make retries fast; that directory is ignored
+by Git and may contain HTML or PDFs.
+
+Promoting a restaurant to `decoded` remains an editorial step: use the captured
+restaurant website to find its current regular menu, add per-dish à la carte
+prices in the existing decoded `menu` shape, and set `verified: true` only when
+every price came from that restaurant's own current menu.
+
+Run the focused parser tests with:
+
+```powershell
+py -m unittest discover -s scraper -p "test_*.py" -v
+```
 
 ## Data honesty rules
 

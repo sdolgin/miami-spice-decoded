@@ -1,2 +1,3 @@
 debug-*.txt
 __pycache__/
+scraper/.cache/

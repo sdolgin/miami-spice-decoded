@@ -207,6 +207,10 @@ TIERS_ONLY.forEach(x=>{
   const e={name:x.name,area:x.area,slug:x.slug};
   x.tiers.forEach(t=>tierRows.push({e,t}));
 });
+DATA.forEach(x=>{
+  const e={name:x.name,area:x.area,slug:x.slug};
+  (x.pendingTiers||[]).forEach(t=>tierRows.push({e,t}));
+});
 
 // decoded rows: one per restaurant-tier
 const rows=[];

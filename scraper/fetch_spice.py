@@ -51,8 +51,7 @@ def all_entries(data):
 def find_entries(data, requested, scrape_all=False):
     entries = all_entries(data)
     if scrape_all:
-        decoded = {normalized_name(entry["name"]) for entry in data["decoded"]}
-        return [entry for entry in entries if normalized_name(entry["name"]) not in decoded]
+        return entries
 
     selected = []
     missing = []
@@ -197,16 +196,43 @@ def parse_listing(entry, html):
 
 
 def merge(data, results, dry_run=False):
-    decoded_names = {normalized_name(entry["name"]) for entry in data["decoded"]}
+    decoded_indexes = {normalized_name(entry["name"]): index for index, entry in enumerate(data["decoded"])}
     tier_indexes = {normalized_name(entry["name"]): index for index, entry in enumerate(data["tiersOnly"])}
     promoted_names = set()
-    added = updated = skipped = 0
+    demoted = []
+    added = updated = decoded_updated = 0
 
     for result in results:
         key = normalized_name(result["name"])
-        if key in decoded_names:
-            print(f"  = {result['name']}: already decoded, left unchanged")
-            skipped += 1
+        if key in decoded_indexes:
+            decoded = data["decoded"][decoded_indexes[key]]
+            valued_tiers = {(tier["meal"], tier["price"]): tier for tier in decoded["tiers"]}
+            refreshed_tiers = []
+            pending_tiers = []
+            for official_tier in result["tiers"]:
+                valued = valued_tiers.get((official_tier["meal"], official_tier["price"]))
+                if valued:
+                    valued.update({"days": official_tier["days"]})
+                    if official_tier.get("spiceMenu"):
+                        valued["spiceMenu"] = official_tier["spiceMenu"]
+                    refreshed_tiers.append(valued)
+                else:
+                    pending_tiers.append(official_tier)
+                    print(f"  + {result['name']}: official {official_tier['meal']} ${official_tier['price']} added as value pending")
+            stale = set(valued_tiers) - {(tier["meal"], tier["price"]) for tier in result["tiers"]}
+            for meal, price in sorted(stale):
+                print(f"  - {result['name']}: removed stale decoded {meal} ${price}")
+            if refreshed_tiers:
+                decoded["tiers"] = refreshed_tiers
+                decoded["pendingTiers"] = pending_tiers
+                decoded["srcUrl"] = result["srcUrl"]
+                decoded["capturedAt"] = result["capturedAt"]
+                if result.get("restaurantUrl"):
+                    decoded["restaurantUrl"] = result["restaurantUrl"]
+                decoded_updated += 1
+            else:
+                demoted.append((key, result))
+                print(f"  ↓ {result['name']}: no current valued tiers; demoted to value pending")
         elif key in tier_indexes:
             data["tiersOnly"][tier_indexes[key]].update(result)
             updated += 1
@@ -215,6 +241,18 @@ def merge(data, results, dry_run=False):
             tier_indexes[key] = len(data["tiersOnly"]) - 1
             promoted_names.add(key)
             added += 1
+
+    if demoted:
+        demoted_keys = {key for key, _ in demoted}
+        data["decoded"] = [entry for entry in data["decoded"] if normalized_name(entry["name"]) not in demoted_keys]
+        for key, result in demoted:
+            if key in tier_indexes:
+                data["tiersOnly"][tier_indexes[key]].update(result)
+                updated += 1
+            else:
+                data["tiersOnly"].append(result)
+                tier_indexes[key] = len(data["tiersOnly"]) - 1
+                added += 1
 
     if promoted_names:
         data["roster"] = [entry for entry in data["roster"] if normalized_name(entry["name"]) not in promoted_names]
@@ -225,14 +263,14 @@ def merge(data, results, dry_run=False):
         temporary.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         temporary.replace(DATA)
     action = "would merge" if dry_run else "merged"
-    print(f"{action}: {added} promoted, {updated} updated, {skipped} decoded unchanged")
+    print(f"{action}: {added} promoted, {updated} tier-only updated, {decoded_updated} decoded refreshed")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("slugs", nargs="*", help="stored slug or restaurant name")
     parser.add_argument("--list", action="store_true", help="list records available in the data file")
-    parser.add_argument("--all", action="store_true", help="scrape every tier-only and roster-only record")
+    parser.add_argument("--all", action="store_true", help="scrape every decoded, tier-only and roster-only record")
     parser.add_argument("--dry-run", action="store_true", help="parse and report without changing the data file")
     parser.add_argument("--refresh", action="store_true", help="ignore cached HTML and download pages again")
     parser.add_argument("--limit", type=int, help="process at most this many records")

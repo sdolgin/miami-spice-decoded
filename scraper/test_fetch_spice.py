@@ -2,7 +2,8 @@ import unittest
 
 from bs4 import BeautifulSoup
 
-from fetch_spice import parse_menu_pane, parse_schedule
+from fetch_spice import merge, parse_menu_pane, parse_schedule
+from fetch_regular_menus import normalized, parse_price, score_match
 
 
 class OfficialListingParserTests(unittest.TestCase):
@@ -57,6 +58,29 @@ class OfficialListingParserTests(unittest.TestCase):
                 }
             ],
         )
+
+    def test_merge_demotes_decoded_restaurant_when_official_tier_changed(self):
+        data = {
+            "meta": {},
+            "decoded": [{"name": "Example", "area": "Miami", "slug": "example/1", "tiers": [
+                {"meal": "dinner", "price": 50, "days": [1], "menu": [{"c": "Entree", "d": [["Dish", 40]]}]}
+            ]}],
+            "tiersOnly": [],
+            "roster": [],
+        }
+        result = {"name": "Example", "area": "Miami", "slug": "example/1", "srcUrl": "https://example.test", "capturedAt": "2026-08-03", "tiers": [
+            {"meal": "dinner", "price": 65, "days": [0, 1, 2, 3, 4, 5, 6], "spiceMenu": []}
+        ]}
+
+        merge(data, [result], dry_run=True)
+
+        self.assertEqual(data["decoded"], [])
+        self.assertEqual(data["tiersOnly"], [result])
+
+    def test_regular_menu_matching_handles_pdf_price_spacing(self):
+        self.assertEqual(parse_price("17 .5"), 17.5)
+        self.assertEqual(normalized("SALMÓN"), "salmon")
+        self.assertGreater(score_match("HERILOOM TOMATO & BURRATA", "Heirloom Tomato & Burrata"), 0.8)
 
 
 if __name__ == "__main__":

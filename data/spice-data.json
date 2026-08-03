@@ -71,6 +71,87 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "steamed baby spinach",
+         "description": "sesame dressing (vv)"
+        },
+        {
+         "name": "steamed edamame",
+         "description": "sea salt (v)"
+        },
+        {
+         "name": "spicy fried tofu"
+        },
+        {
+         "name": "miso soup",
+         "description": "tofu, wakame and scallion"
+        },
+        {
+         "name": "avocado and asparagus salad",
+         "description": "honey lemon dressing (v)"
+        },
+        {
+         "name": "sliced seabass sashimi*",
+         "description": "yuzu, truffle and salmon roe"
+        },
+        {
+         "name": "tuna tataki*",
+         "description": "chili daikon and ponzu sauce"
+        },
+        {
+         "name": "spicy tuna roll*",
+         "description": "green chili, spicy mayo and tobiko"
+        },
+        {
+         "name": "yellowtail sashimi*",
+         "description": "green chili relish, ponzu and pickled garlic"
+        },
+        {
+         "name": "chicken karaage",
+         "description": "chili lemon dressing"
+        }
+       ],
+       "instruction": "choose 3 different items"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "assorted vegetable tempura (v)"
+        },
+        {
+         "name": "barley miso marinated baby chicken, oven roasted on cedar wood*"
+        },
+        {
+         "name": "salmon*",
+         "description": "teriyaki sauce and pickled cucumber"
+        },
+        {
+         "name": "4 oz spicy beef tenderloin*",
+         "description": "sesame, red chili and sweet soy (+$15)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "scoop of sorbet",
+         "description": "raspberry or mango"
+        },
+        {
+         "name": "scoop of ice cream",
+         "description": "vanilla or green tea"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     },
     {
@@ -132,9 +213,94 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "steamed baby spinach",
+         "description": "sesame dressing (vv)"
+        },
+        {
+         "name": "spicy fried tofu",
+         "description": "avocado and japanese herbs (vv)"
+        },
+        {
+         "name": "avocado and asparagus salad",
+         "description": "honey lemon dressing (v)"
+        },
+        {
+         "name": "sliced seabass sashimi*",
+         "description": "yuzu, truffle and salmon roe"
+        },
+        {
+         "name": "tuna tataki*",
+         "description": "chili daikon and ponzu sauce"
+        },
+        {
+         "name": "yellowtail sashimi*",
+         "description": "green chili relish, ponzu and pickled garlic"
+        },
+        {
+         "name": "chicken karaage",
+         "description": "chili lemon dressing"
+        },
+        {
+         "name": "prawn and black cod gyoza"
+        },
+        {
+         "name": "salmon nigiri*",
+         "description": "torched"
+        },
+        {
+         "name": "spicy yellowtail roll*",
+         "description": "serrano pepper, avocado and wasabi mayo"
+        }
+       ],
+       "instruction": "Choose two of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "assorted vegetable tempura (v)"
+        },
+        {
+         "name": "barley miso marinated baby chicken, oven roasted on cedar wood*"
+        },
+        {
+         "name": "salmon*",
+         "description": "teriyaki sauce and pickled cucumber"
+        },
+        {
+         "name": "4 oz spicy beef tenderloin*",
+         "description": "sesame, red chili and sweet soy (+$15)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "maple cheesecake",
+         "description": "blueberry compote and whisky foam"
+        },
+        {
+         "name": "pecan pie sundae",
+         "description": "roasted sweet potato and banana milk ice cream, kokuto, caramel, crunchy pecans and wafer"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/zuma-miami/3955",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.zumarestaurant.com/en/miami",
+   "pendingTiers": []
   },
   {
    "name": "Amazónico",
@@ -147,10 +313,10 @@
      "price": 65,
      "days": [
       0,
+      1,
+      2,
       3,
-      4,
-      5,
-      6
+      4
      ],
      "verified": false,
      "menu": [
@@ -197,9 +363,69 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Ensalada Amazonica",
+         "description": "Mango, avocado, confit tomato, kalamansi citrus"
+        },
+        {
+         "name": "Tiradito de Salmon",
+         "description": "Scottish salmon, yuzu & miso cream, \nmango salad"
+        },
+        {
+         "name": "**All Meals include one Bocadito: Hamachi Crocante**",
+         "description": "Yellowtail tartare, pickled serrano, \ncrispy sushi rice, aji amarillo, smoked trout caviar"
+        },
+        {
+         "name": "** SUPPLEMENTAL ADD ON $10++ **\nBrocheta de Chorizo",
+         "description": "Grilled pork sausage, roasted peppers,\nchimichurri, grilled sourdough bread"
+        }
+       ],
+       "instruction": "Choose One of the Following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Bacalao",
+         "description": "Black cod, tamarind glaze, cassava puree, yuzu butter, fennel"
+        },
+        {
+         "name": "Arroz Chaufa",
+         "description": "Red, black and white whole grain rice fried egg\n$12++ ADD PEKING DUCK"
+        },
+        {
+         "name": "Asado de Costilla",
+         "description": "48-hour slow braised beef short rib, chorizo sofrito, mushroom fried rice, Nikkei demi"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Crema de Choclo",
+         "description": "Corn creme brulee, coconut sponge, corn meringue"
+        },
+        {
+         "name": "Rio Caribe",
+         "description": "Chocolate cake, vanilla ice cream,\nCaramélia ganache, espresso sauce"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/amazonico/61828",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.amazonicorestaurant.com/miami/",
+   "pendingTiers": []
   },
   {
    "name": "The Mexican",
@@ -257,6 +483,65 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Ancho Caesar Salad",
+         "description": "Gem lettuce, toasted garlic croutons, manchego, chile pepitas, ancho caesar dressing"
+        },
+        {
+         "name": "Aguachile Verde",
+         "description": "Lime marinated shrimp, cucumber ribbons, red onion, green aguachile sauce"
+        },
+        {
+         "name": "Tortilla Soup"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Morita Marlin Tacos",
+         "description": "Crispy marlin, tangy slaw, pickled red onion, cilantro, morita dressing"
+        },
+        {
+         "name": "Suizas de Pollo",
+         "description": "Roasted free range chicken, queso cotija, salsa verde cremosa"
+        },
+        {
+         "name": "Salmon Piquin",
+         "description": "Ora king salmon, lime rice, grilled asparagus, mostaza piquín sauce"
+        },
+        {
+         "name": "Petit Filet",
+         "description": "6 oz, American wagyu, whipped potato, kale, carnivora sauce. (+15)"
+        },
+        {
+         "name": "Black Angus Tacos",
+         "description": "Black tortillas made with corn masa and squid ink set the stage for melted cheese, tenderloin, creamy avocado sauce, and crispy cilantro"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Cuatro Leches",
+         "description": "Elderflower-soaked berries, rompope, licor 43 cream"
+        },
+        {
+         "name": "Chocolate y Pepitas",
+         "description": "Dark chocolate cake, chocolate fudge frosting, candied pepitas"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      }
      ]
     },
     {
@@ -309,9 +594,73 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Ancho Caesar Salad",
+         "description": "Gem lettuce, toasted garlic croutons, manchego, chile pepitas, ancho caesar dressing"
+        },
+        {
+         "name": "Aguachile Verde de Camaron",
+         "description": "Lime marinated shrimp, cucumber ribbons, red onion, green aguachile sauce"
+        },
+        {
+         "name": "Tortilla Soup",
+         "description": "Roasted pulled chicken, avocado, cilantro, limón, tortilla strips"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Morita Marlin Tacos",
+         "description": "Crispy marlin, tangy slaw, pickled red onion, cilantro, morita dressing"
+        },
+        {
+         "name": "Suizas De Pollo",
+         "description": "Roasted free range chicken, queso cotija, salsa verde cremosa"
+        },
+        {
+         "name": "Salmon Piquin",
+         "description": "Ora king salmon, lime rice, grilled asparagus, mostaza piquín sauce"
+        },
+        {
+         "name": "Petit Filet",
+         "description": "6 oz, american wagyu, whipped potato, kale, carnivora sauce"
+        },
+        {
+         "name": "Black Angus Tacos",
+         "description": "Black tortillas made with corn masa and squid ink set the stage for melted cheese, tenderloin, creamy avocado sauce, and crispy cilantro"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Cuatro Leches",
+         "description": "Elderflower-soaked berries, rompope, licor 43 cream"
+        },
+        {
+         "name": "Chocolate y Pepitas",
+         "description": "Dark chocolate cake, chocolate fudge frosting, candied pepitas"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/the-mexican-brickell-key/60758",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://themexican.com/locations/miami/",
+   "pendingTiers": []
   },
   {
    "name": "Bagatelle Miami River",
@@ -377,74 +726,69 @@
         ]
        ]
       }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "Mayami",
-   "area": "Wynwood",
-   "cuisine": "Mexican-Asian · show dining",
-   "slug": "mayami/24540",
-   "tiers": [
-    {
-     "meal": "dinner",
-     "price": 62,
-     "days": [
-      0,
-      1,
-      2,
-      3,
-      4
      ],
-     "verified": false,
-     "menu": [
+     "spiceMenu": [
       {
-       "c": "Appetizer",
-       "d": [
-        [
-         "Tuna tostada, chipotle aioli",
-         24
-        ],
-        [
-         "Wagyu gyoza",
-         26
-        ],
-        [
-         "Guacamole Mayami",
-         18
-        ]
-       ]
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Carottes de couleurs cuites dans la braise, coulis au cresson de fontaine",
+         "description": "Braised coloured carrots with watercress sauce"
+        },
+        {
+         "name": "Vivaneau local en goujonnettes,  sauce arrabbiata au piment d'Espelette",
+         "description": "Local red snapper goujonettes, arrabbiata sauce with Espelette pepper"
+        },
+        {
+         "name": "Tartare de bœuf Black Angus, poutargue d’œuf",
+         "description": "Black Angus beef tartare, organic egg bottarga\n(30gr Kristal caviar + $149)"
+        }
+       ],
+       "instruction": "Choose one of the following"
       },
       {
-       "c": "Entrée",
-       "d": [
-        [
-         "Short rib barbacoa",
-         42
-        ],
-        [
-         "Miso salmon, salsa macha",
-         38
-        ],
-        [
-         "Pollo al pastor",
-         30
-        ]
-       ]
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Ravioles maison « Del Plin » au Castelmagno mijotées à la truffe de saison",
+         "description": "Homemade ravioli « Del Plin », Castelmagno cheese\n(Black truffle + $28)"
+        },
+        {
+         "name": "Gambas black tiger et tomatillo grillé, citron jaune et jalapeño",
+         "description": "Black tiger prawns, marinated in salsa verde and tomatillo"
+        },
+        {
+         "name": "Calamarata de blé dur torréfié, plat de cote de bison confite au vin rouge",
+         "description": "Whole wheat calamarata pasta, slow roasted bison short rib in red wine"
+        }
+       ],
+       "instruction": "Choose one of the following"
       },
       {
-       "c": "Dessert",
-       "d": [
-        [
-         "Churros, cajeta & chocolate",
-         14
-        ]
-       ]
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Tropézienne à la vanille de Madagascar",
+         "description": "«Tropézienne» brioche cake, filled with a delicate Madagascar vanilla cream"
+        },
+        {
+         "name": "Tarte citron jaune meringuée et sorbet citron vert",
+         "description": "Lemon tart, custard cream, meringue and lime sorbet"
+        },
+        {
+         "name": "The Bagatelle World\nMousse légère à la vanille, crémeux au caramel, croustillant noix de cajou",
+         "description": "Light vanilla mousse, creamy caramel, cashew nut crunch\n(+$22)"
+        }
+       ],
+       "instruction": "Choose one of the following"
       }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bagatelle-miami-river/60141",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://bagatelle.com/venues/bagatelle-miami-river",
+   "pendingTiers": []
   },
   {
    "name": "Seia",
@@ -503,6 +847,63 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Carciofo alla Brace",
+         "description": "Charcoal-grilled artichokes, fresh herb oil, lemon"
+        },
+        {
+         "name": "Carpaccio di Manzo (+$15)",
+         "description": "Marinated Wagyu beef, red wine Pecorino, croutons, truffle",
+         "supplement": 15
+        },
+        {
+         "name": "Parmigiana di Melanzane"
+        }
+       ],
+       "instruction": "Optional Wine Pairing: (+$40) | (+$65) with meal.\nChoose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Ravioli Scarpariello",
+         "description": "Tomato sauce, smoked scamorza cheese, ricotta"
+        },
+        {
+         "name": "Tagliolini al Limone",
+         "description": "Preserved lemon, cultured cream"
+        },
+        {
+         "name": "Carne a la Brace (+$20)",
+         "description": "Flat iron steak, fries",
+         "supplement": 20
+        },
+        {
+         "name": "Salmone",
+         "description": "Pan-seared salmon, radish cream, pine nuts"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Tiramisù",
+         "description": "Mascarpone mousse, ladyfingers, espresso"
+        },
+        {
+         "name": "Sfogliatelle",
+         "description": "Served with cream berries"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     },
     {
@@ -560,9 +961,79 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Carciofo alla Brace",
+         "description": "Charcoal-grilled artichokes, fresh herb oil, lemon"
+        },
+        {
+         "name": "Fritto Misto",
+         "description": "Lightly fried red shrimp, calamari, citrus aioli"
+        },
+        {
+         "name": "Bruschetta Pomodoro & Burrata",
+         "description": "Sourdough, heirloom cherry tomatoes, balsamic"
+        },
+        {
+         "name": "Vitello Tonnato (+$18)",
+         "description": "Veal with tuna sauce, pickled red onions, capers, croutons",
+         "supplement": 18
+        }
+       ],
+       "instruction": "Optional Wine Pairing: (+$65) | (+$95) with meal.\nChoose 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Tortelloni alla Napoletana",
+         "description": "Red wine braised short rib, sage, butter"
+        },
+        {
+         "name": "Paccheri Scarpariello",
+         "description": "Tomato sauce, parmigiano foam, ricotta"
+        },
+        {
+         "name": "Gnocchi with Smoked Cream",
+         "description": "Salmon and asparagus"
+        },
+        {
+         "name": "Polipo alla Griglia",
+         "description": "Grilled octopus, yellow Vesuvian tomatoes, olive tapenade, basil oil"
+        },
+        {
+         "name": "Carne a la Brace (+$20)",
+         "description": "prime flat iron steak, roasted potatoes",
+         "supplement": 20
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Tiramisù",
+         "description": "Mascarpone mousse, ladyfingers, espresso"
+        },
+        {
+         "name": "Zuccotto Toscano",
+         "description": "Chocolate and ricotta mousse, chocolate chips, soft meringue"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/seia-miami/62198",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.seiamiami.com/",
+   "pendingTiers": []
   },
   {
    "name": "CATCH Miami Beach",
@@ -573,7 +1044,14 @@
     {
      "meal": "dinner",
      "price": 65,
-     "days": null,
+     "days": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6
+     ],
      "verified": false,
      "menu": [
       {
@@ -619,9 +1097,74 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Crispy Chicken Bao Buns",
+         "description": "Kaluga Caviar, Cornflake-Crusted Chicken, Wasabi-Avocado Ranch, House Pickles. (Add Kaluga caviar +$20)"
+        },
+        {
+         "name": "CRISPY SHRIMP",
+         "description": "Spicy Mayo, Tobiko"
+        },
+        {
+         "name": "Salmon Poke Roll",
+         "description": "Wakame, avocado, poke sauce, macadamia"
+        },
+        {
+         "name": "Wagyu Gyoza (+$12)",
+         "description": "Japanese Miyazaki wagyu, serrano chili, amazu ponzu",
+         "supplement": 12
+        }
+       ],
+       "instruction": "Choose 2 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "HERB ROASTED BRANZINO",
+         "description": "Creamy Vegetable Basmati Rice"
+        },
+        {
+         "name": "SUSHI & MAKI SELECTION (GF)",
+         "description": "Chef Selection. (gluten-free, vegetarian upon request)"
+        },
+        {
+         "name": "ANGRY LOBSTER MAFALDINE",
+         "description": "Citrus-Garlic Butter, Braised Leeks, Thai Chili"
+        },
+        {
+         "name": "Chili Rubbed New York Strip",
+         "description": "Calabrian Chili Butter, Vintage Grass Fed (GF)"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "COCONUT MOUSSE CAKE",
+         "description": "Roasted Pineapple Sorbet, Lemon Cream"
+        },
+        {
+         "name": "S'MORES",
+         "description": "Chocolate Budino, Toasted Marshmallow, Graham Cracker Tuile, White Chocolate Ice Cream"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/catch-miami-beach/54374",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.catchrestaurants.com/location/catch-miami-beach/",
+   "pendingTiers": []
   },
   {
    "name": "Daniel's Miami",
@@ -632,7 +1175,12 @@
     {
      "meal": "lunch",
      "price": 40,
-     "days": null,
+     "days": [
+      2,
+      3,
+      4,
+      5
+     ],
      "verified": false,
      "menu": [
       {
@@ -670,12 +1218,82 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "BABY KALE SALAD",
+         "description": "Lemon, Extra Virgin Olive Oil, Grated Egg Parmigiano Reggiano"
+        },
+        {
+         "name": "STRAWBERRY GAZPACHO",
+         "description": "Pico de Gallo, Basil Oil, Balsamico di Modena"
+        },
+        {
+         "name": "MAHI CEVICHE"
+        },
+        {
+         "name": "BURRATA",
+         "description": "Swank Farm Tomatoes, Basil, GIOIA Hospitality Extra Virgin Olive Oil"
+        },
+        {
+         "name": "WAGYU BEEF EMPANADAS",
+         "description": "Chili Aioli"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "FARMER MIKE’S ZUCCHINI TATAKI",
+         "description": "Zucchini Crema, Heirloom Tomato Bell Pepper Sauce, Balsamico di Modena"
+        },
+        {
+         "name": "MEZZA RIGATONI POMODORO",
+         "description": "Basil, Parmigiano Reggiano"
+        },
+        {
+         "name": "GRILLED CANARY ISLAND BRANZINO",
+         "description": "Olives, Preserved Lemon, Capers, Heirloom Tomatoes"
+        },
+        {
+         "name": "HERITAGE BURGER",
+         "description": "6 oz Prime Beef “Frita Style”, Hawthorne Tomme Cheese, Au Poivre Aioli, Jimmy Nardello Peppers Chimichurri, Crispy Potatoes, Brioche Bun"
+        },
+        {
+         "name": "DEMKOTA ELITE FILET MIGNON AU POIVRE 6oz",
+         "description": "Exotic Peppercorn Sauce, House-made French Fries"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "SOFT SERVE ICE CREAM",
+         "description": "Vanilla, Chocolate, Swirl"
+        },
+        {
+         "name": "SORBET",
+         "description": "Lemon, Mango"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      }
      ]
     },
     {
      "meal": "dinner",
      "price": 65,
-     "days": null,
+     "days": [
+      5,
+      6
+     ],
      "verified": false,
      "menu": [
       {
@@ -716,6 +1334,143 @@
          16
         ]
        ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "BASIL CAESAR",
+         "description": "Lemon, Anchovy, Croutons, Pieve Vecchio Cheese"
+        },
+        {
+         "name": "CRISPY CAULIFLOWER",
+         "description": "Sweet Acacia Honey Chili Sauce, Parsley, Sesame Seeds"
+        },
+        {
+         "name": "WAGYU BEEF EMPANADAS",
+         "description": "Chili Oii"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "FRENCH DIP",
+         "description": "Australian Wagyu Prime Rib, Ciabbata, Hawthorne Havarti Cheese Caramelized Onion Au Jus, Horseradish Cream"
+        },
+        {
+         "name": "DANIEL'S HERITAGE BURGER",
+         "description": "8 oz Prime Beef “Frita Style”, Hawthorne Tomme Cheese, Au Poivre Aioli, Jimmy Nardello Peppers Chimichurri, Chips, Brioche Bun"
+        },
+        {
+         "name": "GRILLED CANARY ISLAND BRANZINO",
+         "description": "Grilled Asparagus"
+        },
+        {
+         "name": "DEMKOTA ELITE FILET MIGNON AU POIVRE 6oz",
+         "description": "Potato Fonduta"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "SOFT SERVE ICE CREAM OR SORBET",
+         "description": "Vanilla, Chocolate, Swirl Soft Serve or Lemon or Mango Sorbet"
+        },
+        {
+         "name": "COCONUT FLAN",
+         "description": "Coconut Caramel, Tiny Farms Eggs, Toasted Coconut"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      }
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/daniels-miami/16773",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.danielssteak.com/miami/",
+   "pendingTiers": [
+    {
+     "meal": "brunch",
+     "price": 40,
+     "days": [
+      0
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Strawberry Gazpacho",
+         "description": "Pico de Gallo, Basil Oil, Balsamico di Modena"
+        },
+        {
+         "name": "Crispy Cauliflower",
+         "description": "Sweet Acacia Honey Chili Sauce, Parsley, Sesame Seeds"
+        },
+        {
+         "name": "Kale Salad",
+         "description": "Lemon, Extra Virgin Olive Oil, Grated Egg Parmigiano Reggiano"
+        },
+        {
+         "name": "MAHI-MAHI CEVICHE",
+         "description": "Leche de Tigre, Habanero, Crispy Chickpeas"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Belgian Waffles",
+         "description": "Valrhona Chocolate Cremoso, Mascarpone Chantilly Cream, Maple Syrup"
+        },
+        {
+         "name": "HERITAGE BURGER",
+         "description": "8 oz Prime Beef \"Frita Style\", Hawthorne Tomme Cheese, \nAu Poivre Aioli,Jimmy Nardella Peppers Chimichurri, \nCrispy Potatoes, Brioche Bun"
+        },
+        {
+         "name": "ORECCHIETTE PASTA",
+         "description": "Sunshine Provisions Fennel Sausage, Jubilee Tomatoes, Chili Flakes, Parmigiana"
+        },
+        {
+         "name": "FLORIDA KEYS RED SNAPPER",
+         "description": "Cous Cous, Fennel, Zucchini, Sun Gold Tomato, Pepper Sauce"
+        },
+        {
+         "name": "LIGHTLY SMOKED BELLE & EVANS SPATCHCOCK CORNISH HEN",
+         "description": "Angel's Envy Peach Glaze, Arugula"
+        },
+        {
+         "name": "Steak & Huevos Rancheros  (+$25)",
+         "description": "Wagyu Westholme Hanger Steak, Sunny Side Up Eggs, Black Beans, Cilantro Jalapeno Salsa, Queso Fresco",
+         "supplement": 25
+        }
+       ],
+       "instruction": "Choose 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Soft Serve Ice Cream",
+         "description": "Vanilla, Chocolate, Swirl"
+        },
+        {
+         "name": "Sorbet",
+         "description": "Strawberry, Lemon, Mango-Passion Fruit"
+        }
+       ],
+       "instruction": "Choose 1 of the following"
       }
      ]
     }
@@ -770,52 +1525,65 @@
         ]
        ]
       }
-     ]
-    },
-    {
-     "meal": "reserve",
-     "price": 95,
-     "days": null,
-     "verified": false,
-     "menu": [
+     ],
+     "spiceMenu": [
       {
-       "c": "Appetizer",
-       "d": [
-        [
-         "Toro tartare, caviar",
-         42
-        ],
-        [
-         "Yellowtail jalapeño",
-         29
-        ]
-       ]
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Tamago Sando",
+         "description": "Egg Salad, Shokupan"
+        },
+        {
+         "name": "Cucumber Tataki",
+         "description": "Togarashi Amazu, Togarashi, Micro Greens"
+        }
+       ],
+       "instruction": "Choose one of the following"
       },
       {
-       "c": "Entrée",
-       "d": [
-        [
-         "Signature miso black cod",
-         58
-        ],
-        [
-         "A5 striploin (portion)",
-         68
-        ]
-       ]
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Yamashiro Burger",
+         "description": "8oz Wagyu Beef Patty, Cheese, Nori Onion Ring, Fried Egg, Tonkatsu Aioli"
+        },
+        {
+         "name": "Tamago Hot Pot",
+         "description": "Seasonal Wild Mushrooms, Poached Egg, Bacon"
+        },
+        {
+         "name": "Black Cod",
+         "description": "Yuzu-Saikyo Miso Marinated, Hijikami"
+        },
+        {
+         "name": "Steak & Eggs (+15)",
+         "description": "10oz Wagyu Bavette, 2 Eggs, Shiso Bernaise"
+        }
+       ],
+       "instruction": "Choose one of the following"
       },
       {
-       "c": "Dessert",
-       "d": [
-        [
-         "Yuzu chocolate dome",
-         18
-        ]
-       ]
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "French Toast",
+         "description": "Maple Syrup, Creme Anglaise, Isabella Matcha"
+        },
+        {
+         "name": "Miso Lava Cake",
+         "description": "Dark Chocolate, Yuzu Caramel, Vanilla Ice Cream"
+        }
+       ],
+       "instruction": "Choose one of the following"
       }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/yamashiro-miami/62559",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://yamashiromiami.com/",
+   "pendingTiers": []
   },
   {
    "name": "Estiatorio Milos",
@@ -824,65 +1592,17 @@
    "slug": "estiatorio-milos/4816",
    "tiers": [
     {
-     "meal": "lunch",
-     "price": 40,
-     "days": null,
-     "verified": false,
-     "tierEst": true,
-     "menu": [
-      {
-       "c": "Appetizer",
-       "d": [
-        [
-         "Milos special (zucchini, eggplant, tzatziki)",
-         29
-        ],
-        [
-         "Greek salad, barrel feta",
-         24
-        ],
-        [
-         "Grilled octopus (half)",
-         26
-        ]
-       ]
-      },
-      {
-       "c": "Entrée",
-       "d": [
-        [
-         "Fresh market fish, ladolemono",
-         42
-        ],
-        [
-         "Lavraki fillet",
-         38
-        ],
-        [
-         "Bifteki",
-         30
-        ]
-       ]
-      },
-      {
-       "c": "Dessert",
-       "d": [
-        [
-         "Greek yogurt, thyme honey & walnuts",
-         14
-        ],
-        [
-         "Karidopita",
-         13
-        ]
-       ]
-      }
-     ]
-    },
-    {
      "meal": "dinner",
      "price": 65,
-     "days": null,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
      "verified": false,
      "tierEst": true,
      "menu": [
@@ -929,9 +1649,88 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Meze Platter",
+         "description": "Tarma, Htipiti, Dolmadakia, Keflograviera, Olives & Pita"
+        },
+        {
+         "name": "Greek Salad",
+         "description": "The Authentic Salad prepared with Vine-Ripened Heirloom Tomatoes"
+        },
+        {
+         "name": "Octopus",
+         "description": "Sashimi Quality Mediterranean Octopus Grilled with Fava, Onion, and Capers"
+        },
+        {
+         "name": "Grilled Vegetables",
+         "description": "Holland Peppers & Wild Mushrooms"
+        },
+        {
+         "name": "Raw Fish Platter",
+         "description": "Tispoura Sashimi, Lavraki Ceviche, Salmon Tartare, and Oyster (+10)"
+        }
+       ],
+       "instruction": "Choose One of the Following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Dorade Royale",
+         "description": "Santorini Capers, Olive Oil, and Lemon"
+        },
+        {
+         "name": "Hiddenfjord Salmon",
+         "description": "Simply Grilled with Santorini Piazzi-Style Beans"
+        },
+        {
+         "name": "Halibut Spetsiota",
+         "description": "Grilled with Onions and Tomatoes"
+        },
+        {
+         "name": "Filet Brochette",
+         "description": "Filet Mignon, Mushroom, Onion, Tomato, Tzatziki, & Pita"
+        },
+        {
+         "name": "Shrimp Saganaki",
+         "description": "Grilled Shrimp tossed in a Tomato Sauce over Pasta with Feta"
+        }
+       ],
+       "instruction": "Choose One of the Following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Greek Yogurt",
+         "description": "Topped with Walnuts and Choice of Thyme Honey or Spoon Sweets"
+        },
+        {
+         "name": "Portokalopita",
+         "description": "Orange Cake, Citrus Scented Syrup"
+        },
+        {
+         "name": "Karydopita",
+         "description": "Spiced Walnut Cake, Brandied Syrup"
+        },
+        {
+         "name": "Lemon Sorbet"
+        }
+       ],
+       "instruction": "Choose One of the Following"
+      }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/estiatorio-milos/4816",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.estiatoriomilos.com/",
+   "pendingTiers": []
   },
   {
    "name": "Le Jardinier",
@@ -942,7 +1741,14 @@
     {
      "meal": "lunch",
      "price": 40,
-     "days": null,
+     "days": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
      "verified": false,
      "tierEst": true,
      "menu": [
@@ -981,12 +1787,74 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Watermelon Gazpacho",
+         "description": "Greek yogurt & sourdough toast, cucumber, basil oil"
+        },
+        {
+         "name": "Boston Salad",
+         "description": "Pea green apple coulis, curry tapioca crackers"
+        },
+        {
+         "name": "Burrata"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Steelhead Trout",
+         "description": "Pil pil sauce, wilted greens, crispy baby potatoes"
+        },
+        {
+         "name": "Pappardelle Pasta",
+         "description": "Parmesan, crème fraîche, preserved lemon aioli, roasted artichokes"
+        },
+        {
+         "name": "Pork Loin",
+         "description": "Roasted cabbage, pineapple gastrique, mustard condiment (+15)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Strawberry Éclair",
+         "description": "Crema alla fragola, white chocolate & strawberry chantilly"
+        },
+        {
+         "name": "Plant-Based Ice Cream & Sorbet Trio",
+         "description": "(Vegan, DF, GF)"
+        },
+        {
+         "name": "Caramel Sabayon",
+         "description": "Chocolate pudding, white chocolate ice cream, cocoa tuile (+10)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     },
     {
      "meal": "dinner",
      "price": 65,
-     "days": null,
+     "days": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
      "verified": false,
      "tierEst": true,
      "menu": [
@@ -1029,9 +1897,69 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Burrata",
+         "description": "Tomato carpaccio, jasmine tea infusion, pine nuts & sourdough crumble"
+        },
+        {
+         "name": "Little Gem Salad",
+         "description": "Goat cheese, stone fruit, arugula pesto"
+        },
+        {
+         "name": "Sea Bass Crudo",
+         "description": "Coconut water & mango coulis, togarashi, teardrop peppers (+15)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Steelhead Trout",
+         "description": "Pil pil sauce, wilted greens, crispy baby potatoes"
+        },
+        {
+         "name": "Roasted Chicken Breast",
+         "description": "Lemon & herb sauce, fennel confit, chanterelle mushroom fricassee"
+        },
+        {
+         "name": "Wagyu Picanha",
+         "description": "Chimichurri, grilled patty pan squash, green onions (+25)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Strawberry Éclair",
+         "description": "Crema alla fragola, white chocolate & strawberry chantilly"
+        },
+        {
+         "name": "Plant-Based Ice Cream & Sorbet Trio",
+         "description": "(Vegan, DF, GF)"
+        },
+        {
+         "name": "Caramel Sabayon",
+         "description": "Chocolate pudding, white chocolate ice cream, cocoa tuile (+10)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     }
-   ]
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/le-jardinier-miami/24977",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://lejardinier-miami.com/",
+   "pendingTiers": []
   },
   {
    "name": "Cecconi's",
@@ -1042,7 +1970,15 @@
     {
      "meal": "dinner",
      "price": 65,
-     "days": null,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
      "verified": false,
      "tierEst": true,
      "menu": [
@@ -1093,6 +2029,144 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Wood oven meat balls",
+         "description": "San Marzano sauce"
+        },
+        {
+         "name": "Baked gnocchi Romana",
+         "description": "gorgonzola"
+        },
+        {
+         "name": "Avocado dip, crudité"
+        },
+        {
+         "name": "Beef carpaccio",
+         "description": "venetian dressing"
+        },
+        {
+         "name": "Tuna tartare",
+         "description": "avocado, capers, chili"
+        },
+        {
+         "name": "Artichoke",
+         "description": "Cacio & Pepe"
+        },
+        {
+         "name": "Caesar salad",
+         "description": "parmesan & crouton"
+        }
+       ],
+       "instruction": "Please choose one item from Cicchetti Course and one item from Appetizer Course"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Cavatelli",
+         "description": "pomodoro basil & burrata"
+        },
+        {
+         "name": "Fusilli kale pesto",
+         "description": "zucchini, plant base Parmigiano"
+        },
+        {
+         "name": "Branzino ,",
+         "description": "spinach, olives & capers"
+        },
+        {
+         "name": "Lamb chops ,",
+         "description": "sunchokes pure"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Tiramisu"
+        },
+        {
+         "name": "Flour-less Chocolate cake"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/cecconis-miami-beach-at-soho-beach-house/4319",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.cecconisrestaurants.com/miami-beach/",
+   "pendingTiers": [
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Beef carpaccio",
+         "description": "venetian dressing"
+        },
+        {
+         "name": "Gnocchi Romana",
+         "description": "Gorgonzola sauce"
+        },
+        {
+         "name": "Tuna tartare"
+        },
+        {
+         "name": "Soup of the day"
+        }
+       ]
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Rigatoni Bolognese"
+        },
+        {
+         "name": "Beef tagliata",
+         "description": "rucola & Parmigiano"
+        },
+        {
+         "name": "Snapper",
+         "description": "spinach, citrus, chili"
+        },
+        {
+         "name": "Pizzetta",
+         "description": "nduja, caramelized onion & broccolini"
+        }
+       ]
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Tiramisu"
+        },
+        {
+         "name": "Flour-less Chocolate Cake"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     }
    ]
@@ -1106,7 +2180,13 @@
     {
      "meal": "dinner",
      "price": 65,
-     "days": null,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
      "verified": false,
      "tierEst": true,
      "menu": [
@@ -1153,61 +2233,188 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Avocado Salad",
+         "description": "feta cheese, lemon ginger dressing"
+        },
+        {
+         "name": "Scallop Toast",
+         "description": "tartare, brioche"
+        },
+        {
+         "name": "Short Rib Bao Buns",
+         "description": "yakiniku sauce, pickles"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Thai Rice Pot",
+         "description": "fresh herbs, thai chili broth"
+        },
+        {
+         "name": "Korean Fried Chicken",
+         "description": "chili butter, braised spinach"
+        },
+        {
+         "name": "Miso Seabass",
+         "description": "daikon herb salad"
+        },
+        {
+         "name": "Szechuan Ribeye",
+         "description": "miso au poivre, shishito peppers"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Coconut Cake"
+        },
+        {
+         "name": "Dark Chocolate S'mores"
+        },
+        {
+         "name": "Sorbet"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     }
-   ]
-  },
-  {
-   "name": "Eating House",
-   "area": "Coral Gables",
-   "cuisine": "Miami-eclectic · Rapicavoli",
-   "slug": "eating-house/19235",
-   "tiers": [
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/kyu/6457",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://kyurestaurants.com/",
+   "pendingTiers": [
     {
-     "meal": "dinner",
-     "price": 50,
-     "days": null,
-     "verified": false,
-     "tierEst": true,
-     "menu": [
+     "meal": "brunch",
+     "price": 40,
+     "days": [
+      0,
+      6
+     ],
+     "spiceMenu": [
       {
-       "c": "Appetizer",
-       "d": [
-        [
-         "Carbonara croquetas",
-         16
-        ],
-        [
-         "Local tomato, coconut & lime",
-         15
-        ]
-       ]
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Yogurt Parfait",
+         "description": "vanilla yogurt, berry compote, granola"
+        },
+        {
+         "name": "Scallion Biscuits",
+         "description": "Miso butter, Honey"
+        }
+       ],
+       "instruction": "Choose one of the following"
       },
       {
-       "c": "Entrée",
-       "d": [
-        [
-         "Pasta with 'a lot of' parmesan",
-         28
-        ],
-        [
-         "Crispy chicken, guava BBQ",
-         30
-        ],
-        [
-         "Snapper, mojo beurre blanc",
-         34
-        ]
-       ]
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "King Crab Benedict",
+         "description": "poached egg, hollandaise sauce"
+        },
+        {
+         "name": "Korean Fried Chicken",
+         "description": "chili butter, braised spinach"
+        },
+        {
+         "name": "Steak & Eggs",
+         "description": "filet mignon, fried eggs, kimchi"
+        }
+       ],
+       "instruction": "Choose one of the following"
       },
       {
-       "c": "Dessert",
-       "d": [
-        [
-         "Cap'n Crunch panna cotta",
-         12
-        ]
-       ]
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Cinnamon Roll",
+         "description": "black sugar, chai frosting"
+        },
+        {
+         "name": "Pancakes",
+         "description": "cast iron pancakes, honey maple"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    },
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      3,
+      4,
+      5
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Avocado Salad",
+         "description": "feta cheese, lemon ginger dressing"
+        },
+        {
+         "name": "Crispy Tuna Rice",
+         "description": "smoked chili aioli, tuna"
+        },
+        {
+         "name": "Burrata"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Roasted Cauliflower",
+         "description": "goat cheese, shishito herb vinagrette"
+        },
+        {
+         "name": "Korean Fried Chicken",
+         "description": "chili butter, braised spinach"
+        },
+        {
+         "name": "Miso Seabass",
+         "description": "daikon herb salad"
+        },
+        {
+         "name": "Smoked Brisket",
+         "description": "sauce trio, lettuce cups"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Coconut Cake"
+        },
+        {
+         "name": "Dark Chocolate S'mores"
+        },
+        {
+         "name": "Sorbet"
+        }
+       ],
+       "instruction": "Choose one of the following"
       }
      ]
     }
@@ -1222,7 +2429,13 @@
     {
      "meal": "dinner",
      "price": 65,
-     "days": null,
+     "days": [
+      0,
+      3,
+      4,
+      5,
+      6
+     ],
      "verified": false,
      "tierEst": true,
      "menu": [
@@ -1273,6 +2486,131 @@
         ]
        ]
       }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Soupe du Jour",
+         "description": "seasonal soup of the day"
+        },
+        {
+         "name": "Salade Maraîchère au Chèvre Chaud",
+         "description": "mixed greens, warm goat cheese, baguette croûton & herbes de Provence with red wine vinaigrette"
+        },
+        {
+         "name": "Escargots de Bourgogne",
+         "description": "Burgundy snails, parsley-garlic butter & Bouchon Bakery puff pastry"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Gnocchi à la Parisienne",
+         "description": "sautéed gnocchi with a fricassée of summer vegetables"
+        },
+        {
+         "name": "Truite Amandine",
+         "description": "sautéed Idaho rainbow trout with haricots verts, toasted almonds & beurre noisette"
+        },
+        {
+         "name": "Steak Frites",
+         "description": "pan-seared filet steak, caramelized shallots & maître d’hôtel butter, served with French fries"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Bouchons au Chocolat",
+         "description": "dark chocolate sauce, cocoa nibs, vanilla ice cream"
+        },
+        {
+         "name": "Crème Caramel",
+         "description": "vanilla bean custard"
+        },
+        {
+         "name": "Crème Glacée ou Sorbet aux Fruits",
+         "description": "house ice cream or sorbet"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bouchon-bistro/53750",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.thomaskeller.com/coral-gables-florida/bouchon-bistro",
+   "pendingTiers": [
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      0,
+      5,
+      6
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Soupe du Jour",
+         "description": "seasonal soup of the day"
+        },
+        {
+         "name": "Salade Maraîchère au Chèvre Chaud",
+         "description": "mixed greens, warm goat cheese, baguette croûton & herbes de Provence with red wine vinaigrette"
+        },
+        {
+         "name": "Soupe à l’Oignon"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Quiche du Jour",
+         "description": "Bouchon Bakery quiche served with mixed greens"
+        },
+        {
+         "name": "Croque Madame",
+         "description": "grilled ham & cheese sandwich on brioche with a fried egg & sauce Mornay, served with French fries"
+        },
+        {
+         "name": "Salade de Saumon",
+         "description": "pan-seared Scottish salmon with mixed greens, marinated summer vegetables & red wine vinaigrette"
+        },
+        {
+         "name": "Steak Frites",
+         "description": "pan-seared filet steak, caramelized shallots & maître d’hôtel butter served with French fries (+20)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Crème Caramel",
+         "description": "vanilla bean custard"
+        },
+        {
+         "name": "Crème Glacée ou Sorbet aux Fruits",
+         "description": "house ice cream / sorbet"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
      ]
     }
    ]
@@ -1283,60 +2621,6 @@
    "cuisine": "Lebanese",
    "slug": "amal-miami/46905",
    "tiers": [
-    {
-     "meal": "brunch",
-     "price": 40,
-     "days": [
-      0,
-      6
-     ],
-     "verified": false,
-     "menu": [
-      {
-       "c": "Appetizer",
-       "d": [
-        [
-         "Hummus & warm pita",
-         14
-        ],
-        [
-         "Fattoush",
-         16
-        ],
-        [
-         "Halloumi, dates & honey",
-         18
-        ]
-       ]
-      },
-      {
-       "c": "Entrée",
-       "d": [
-        [
-         "Lamb shoulder shawarma plate",
-         32
-        ],
-        [
-         "Chicken tawook",
-         26
-        ],
-        [
-         "Eggs & sujuk",
-         22
-        ]
-       ]
-      },
-      {
-       "c": "Dessert",
-       "d": [
-        [
-         "Knafeh",
-         14
-        ]
-       ]
-      }
-     ]
-    },
     {
      "meal": "lunch",
      "price": 40,
@@ -1390,6 +2674,2430 @@
          "Baklava trio",
          12
         ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "HUMMUS",
+         "description": "chickpea purée, tahini, lemon, pita bread"
+        },
+        {
+         "name": "FATTOUSH",
+         "description": "baby gem, arugula, cucumber, cherry tomato, radish, bell pepper, onion, sumac lemon emulsion"
+        },
+        {
+         "name": "TRUFFLE RAKAKAT"
+        },
+        {
+         "name": "KIBBEH",
+         "description": "beef, bulgur, pine nut, cucumber yogurt"
+        }
+       ],
+       "instruction": "Select 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "BEEF TENDERLOIN",
+         "description": "marinated beef, sumac, biwaz, pita, grilled tomato, serrano pepper, grilled onion"
+        },
+        {
+         "name": "CHICKEN TAWOK",
+         "description": "charbroiled chicken breast, toum, biwaz, pita, grilled tomato, serrano pepper, grilled onion"
+        },
+        {
+         "name": "PISTACHIO KABAB",
+         "description": "minced beef & lamb, house spice blend, biwaz, pita, grilled tomato, serrano pepper, grilled onion"
+        },
+        {
+         "name": "BRANZINO",
+         "description": "pickled red onions, green schug, baby zucchini"
+        }
+       ],
+       "instruction": "Select 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "BAKLAVA",
+         "description": "pistachio, walnut, cinnamon, vanilla ice cream"
+        },
+        {
+         "name": "MASTIKA ICE CREAM",
+         "description": "cotton candy, pistachio"
+        },
+        {
+         "name": "DATE CAKE (+$5)",
+         "description": "butterscotch sauce, vanilla ice cream, honey tuile",
+         "supplement": 5
+        }
+       ],
+       "instruction": "Select 1 of the following"
+      }
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/amal-miami/46905",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://amalmiami.com/",
+   "pendingTiers": [
+    {
+     "meal": "dinner",
+     "price": 50,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "HUMMUS",
+         "description": "chickpea purée, tahini, lemon, pita bread"
+        },
+        {
+         "name": "FATTOUSH",
+         "description": "baby gem, arugula, cucumber, cherry tomato, radish, bell pepper, onion, sumac lemon emulsion"
+        },
+        {
+         "name": "KIBBEH",
+         "description": "beef, bulgur, pine nut, cucumber yogurt"
+        },
+        {
+         "name": "ROASTED CAULIFLOWER",
+         "description": "green tahini, hawaij spice, feta cream"
+        }
+       ],
+       "instruction": "Select 1 of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "BEEF TENDERLOIN",
+         "description": "marinated beef, sumac, biwaz, pita, grilled tomato | serrano pepper | grilled onion"
+        },
+        {
+         "name": "CHICKEN TAWOK",
+         "description": "charbroiled chicken breast | toum | biwaz, pita, grilled tomato, serrano pepper, grilled onion"
+        },
+        {
+         "name": "PISTACHIO KABAB",
+         "description": "inced beef & lamb, house spice blend, biwaz, pita, grilled tomato, serrano pepper, grilled onion"
+        },
+        {
+         "name": "BRANZINO",
+         "description": "pickled red onions, green schug, baby zucchini"
+        }
+       ],
+       "instruction": "Select 1 of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "BAKLAVA",
+         "description": "pistachio, walnut, cinnamon, vanilla ice cream"
+        },
+        {
+         "name": "MASTIKA ICECREAM",
+         "description": "cotton candy, pistachio"
+        }
+       ],
+       "instruction": "Select 1 of the following"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bulla Gastrobar Coral Gables",
+   "area": "Coral Gables",
+   "cuisine": "Spanish tapas",
+   "slug": "bulla-gastrobar-coral-gables/5263",
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-coral-gables/5263",
+   "restaurantUrl": "https://bullagastrobar.com/locations/coral-gables/",
+   "capturedAt": "2026-08-03",
+   "tiers": [
+    {
+     "meal": "brunch",
+     "price": 40,
+     "days": [
+      0,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ],
+        [
+         "TOSTADA DE AGUACATE",
+         11.5
+        ],
+        [
+         "GRILLED FLATBREAD",
+         14.5
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "MELÓN CON JAMÓN",
+         13.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "MONTADITOS DE SALMÓN AHUMADO",
+         14
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ],
+        [
+         "COCHINILLO HASH",
+         17.5
+        ],
+        [
+         "HUEVOS BRAVOS",
+         14.0
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "HUEVOS BENEDICTINOS",
+         16
+        ],
+        [
+         "STEAK & EGGS",
+         28.5
+        ],
+        [
+         "CHICKEN & WAFFLES",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "TORRIJA",
+         11.5
+        ],
+        [
+         "BLUEBERRY & RICOTTA PANCAKES",
+         12
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ],
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "HAZELNUT WAFFLES",
+         11.5
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        },
+        {
+         "name": "TOSTADA DE AGUACATE",
+         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
+        },
+        {
+         "name": "GRILLED FLATBREAD",
+         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "MELÓN CON JAMÓN",
+         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo, poached egg"
+        },
+        {
+         "name": "MONTADITOS DE SALMÓN AHUMADO",
+         "description": "Cream cheese, truffle honey"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes: Mimosa - Traditional or passion fruit"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
+        },
+        {
+         "name": "COCHINILLO HASH",
+         "description": "Braised shredded pork, poached egg, breakfast potatoes"
+        },
+        {
+         "name": "HUEVOS BRAVOS",
+         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        },
+        {
+         "name": "HUEVOS BENEDICTINOS",
+         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
+        },
+        {
+         "name": "STEAK & EGGS",
+         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
+        },
+        {
+         "name": "CHICKEN & WAFFLES",
+         "description": "Rosemary maple syrup, buttermilk waffles"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "TORRIJA",
+         "description": "Brioche, mascarpone ice cream, honey"
+        },
+        {
+         "name": "BLUEBERRY & RICOTTA PANCAKES",
+         "description": "Blueberry compote, lemon gel"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Chocolate sauce, dulce de leche"
+        },
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "HAZELNUT WAFFLES",
+         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    },
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "CARPACCIO DE SALMÓN",
+         13.0
+        ],
+        [
+         "TOMATILLO HUMMUS",
+         10.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "CHICKEN BREAST CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "PAELLA MIXTA BOWL",
+         19.5
+        ],
+        [
+         "IBERIAN PORK BOWL",
+         17.0
+        ],
+        [
+         "SPICY TUNA BOWL",
+         18.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "KALE CAESAR",
+         13.5
+        ],
+        [
+         "SALMÓN",
+         27
+        ],
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "CARPACCIO DE SALMÓN",
+         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
+        },
+        {
+         "name": "TOMATILLO HUMMUS"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo"
+        },
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "CHICKEN BREAST CON QUESO AZUL",
+         "description": "Blue cheese sauce, shishito peppers, piquillo confit, French fries"
+        },
+        {
+         "name": "PAELLA MIXTA BOWL",
+         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
+        },
+        {
+         "name": "IBERIAN PORK BOWL",
+         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
+        },
+        {
+         "name": "SPICY TUNA BOWL",
+         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
+        },
+        {
+         "name": "KALE CAESAR",
+         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7."
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        },
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk"
+      }
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 50,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CHISTORRA CON PATATAS",
+         13.0
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "ENSALADA MEDITERRÁNEA",
+         13
+        ],
+        [
+         "TARTAR DE ATÚN",
+         17.0
+        ],
+        [
+         "GAMBAS AL AJILLO",
+         15.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "SOLOMILLO CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "BISTEC A LA PARRILLA",
+         17.5
+        ],
+        [
+         "POLLO AL CHILINDRÓN",
+         18.5
+        ],
+        [
+         "TRUFFLE CARBONARA",
+         23.0
+        ],
+        [
+         "SALMÓN",
+         27
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CHISTORRA CON PATATAS",
+         "description": "Basque style sausage, brava sauce, aioli"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "ENSALADA MEDITERRÁNEA",
+         "description": "Tomatoes, cucumber, chickpeas, olives, croutons, lemon, EVOO"
+        },
+        {
+         "name": "TARTAR DE ATÚN",
+         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "GAMBAS AL AJILLO",
+         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Bulla Mule, Lavender Margarita, or Mango Mule (non alcoholic)"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "SOLOMILLO CON QUESO AZUL",
+         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
+        },
+        {
+         "name": "BISTEC A LA PARRILLA",
+         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
+        },
+        {
+         "name": "POLLO AL CHILINDRÓN",
+         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
+        },
+        {
+         "name": "TRUFFLE CARBONARA",
+         "description": "Linguini, wild mushrooms, bacon, garlic cream, green peas, poached egg"
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bulla Gastrobar Doral",
+   "area": "Doral",
+   "cuisine": "Spanish tapas",
+   "slug": "bulla-gastrobar-doral/6482",
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-doral/6482",
+   "restaurantUrl": "https://bullagastrobar.com/locations/doral/",
+   "capturedAt": "2026-08-03",
+   "tiers": [
+    {
+     "meal": "brunch",
+     "price": 40,
+     "days": [
+      0,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ],
+        [
+         "TOSTADA DE AGUACATE",
+         11.5
+        ],
+        [
+         "GRILLED FLATBREAD",
+         14.5
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "MELÓN CON JAMÓN",
+         13.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "MONTADITOS DE SALMÓN AHUMADO",
+         14
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ],
+        [
+         "COCHINILLO HASH",
+         17.5
+        ],
+        [
+         "HUEVOS BRAVOS",
+         14.0
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "HUEVOS BENEDICTINOS",
+         16
+        ],
+        [
+         "STEAK & EGGS",
+         28.5
+        ],
+        [
+         "CHICKEN & WAFFLES",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "TORRIJA",
+         11.5
+        ],
+        [
+         "BLUEBERRY & RICOTTA PANCAKES",
+         12
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ],
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "HAZELNUT WAFFLES",
+         11.5
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        },
+        {
+         "name": "TOSTADA DE AGUACATE",
+         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
+        },
+        {
+         "name": "GRILLED FLATBREAD",
+         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "MELÓN CON JAMÓN",
+         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo, poached egg"
+        },
+        {
+         "name": "MONTADITOS DE SALMÓN AHUMADO",
+         "description": "Cream cheese, truffle honey"
+        }
+       ],
+       "instruction": "Choose one of the following; Includes: Mimosa - Traditional or passion fruit"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
+        },
+        {
+         "name": "COCHINILLO HASH",
+         "description": "Braised shredded pork, poached egg, breakfast potatoes"
+        },
+        {
+         "name": "HUEVOS BRAVOS",
+         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        },
+        {
+         "name": "HUEVOS BENEDICTINOS",
+         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
+        },
+        {
+         "name": "STEAK & EGGS",
+         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
+        },
+        {
+         "name": "CHICKEN & WAFFLES",
+         "description": "Rosemary maple syrup, buttermilk waffles"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "TORRIJA",
+         "description": "Brioche, mascarpone ice cream, honey"
+        },
+        {
+         "name": "BLUEBERRY & RICOTTA PANCAKES",
+         "description": "Blueberry compote, lemon gel"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Chocolate sauce, dulce de leche"
+        },
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "HAZELNUT WAFFLES",
+         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    },
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "CARPACCIO DE SALMÓN*",
+         13.0
+        ],
+        [
+         "TOMATILLO HUMMUS",
+         10.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "CHICKEN BREAST CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "PAELLA MIXTA BOWL",
+         19.5
+        ],
+        [
+         "IBERIAN PORK BOWL",
+         17.0
+        ],
+        [
+         "SPICY TUNA BOWL",
+         18.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "KALE CAESAR",
+         13.5
+        ],
+        [
+         "SALMÓN",
+         27
+        ],
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "CARPACCIO DE SALMÓN*",
+         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
+        },
+        {
+         "name": "TOMATILLO HUMMUS"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo"
+        },
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "CHICKEN BREAST CON QUESO AZUL",
+         "description": "Blue cheese sauce, shishito peppers, piquillo confit, French fries"
+        },
+        {
+         "name": "PAELLA MIXTA BOWL",
+         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
+        },
+        {
+         "name": "IBERIAN PORK BOWL",
+         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
+        },
+        {
+         "name": "SPICY TUNA BOWL",
+         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
+        },
+        {
+         "name": "KALE CAESAR",
+         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7."
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        },
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk\""
+      }
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 50,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CHISTORRA CON PATATAS",
+         13.0
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "ENSALADA MEDITERRÁNEA",
+         13
+        ],
+        [
+         "TARTAR DE ATÚN",
+         17.0
+        ],
+        [
+         "GAMBAS AL AJILLO",
+         15.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "SOLOMILLO CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "BISTEC A LA PARRILLA",
+         17.5
+        ],
+        [
+         "POLLO AL CHILINDRÓN",
+         18.5
+        ],
+        [
+         "TRUFFLE CARBONARA",
+         23.0
+        ],
+        [
+         "SALMÓN",
+         27
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CHISTORRA CON PATATAS",
+         "description": "Basque style sausage, brava sauce, aioli"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "ENSALADA MEDITERRÁNEA",
+         "description": "Tomatoes, cucumber, chickpeas, olives, croutons, lemon, EVOO"
+        },
+        {
+         "name": "TARTAR DE ATÚN",
+         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "GAMBAS AL AJILLO",
+         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Bulla Mule, Lavender Margarita, or Mango Mule (non alcoholic)"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "SOLOMILLO CON QUESO AZUL",
+         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
+        },
+        {
+         "name": "BISTEC A LA PARRILLA",
+         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
+        },
+        {
+         "name": "POLLO AL CHILINDRÓN",
+         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
+        },
+        {
+         "name": "TRUFFLE CARBONARA",
+         "description": "Linguini, wild mushrooms, bacon, garlic cream, green peas, poached egg"
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bulla Gastrobar Aventura",
+   "area": "Aventura",
+   "cuisine": "Spanish tapas",
+   "slug": "bulla-gastrobar-aventura/62417",
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-aventura/62417",
+   "restaurantUrl": "https://bullagastrobar.com/",
+   "capturedAt": "2026-08-03",
+   "tiers": [
+    {
+     "meal": "brunch",
+     "price": 40,
+     "days": [
+      0,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/AVE_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ],
+        [
+         "TOSTADA DE AGUACATE",
+         11.5
+        ],
+        [
+         "GRILLED FLATBREAD",
+         14.5
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "MELÓN CON JAMÓN",
+         13.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "MONTADITOS DE SALMÓN AHUMADO",
+         14
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ],
+        [
+         "COCHINILLO HASH",
+         17.5
+        ],
+        [
+         "HUEVOS BRAVOS",
+         14.0
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "HUEVOS BENEDICTINOS",
+         16
+        ],
+        [
+         "STEAK & EGGS",
+         28.5
+        ],
+        [
+         "CHICKEN & WAFFLES",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "TORRIJA",
+         11.5
+        ],
+        [
+         "BLUEBERRY & RICOTTA PANCAKES",
+         12
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ],
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "HAZELNUT WAFFLES",
+         11.5
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        },
+        {
+         "name": "TOSTADA DE AGUACATE",
+         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
+        },
+        {
+         "name": "GRILLED FLATBREAD",
+         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "MELÓN CON JAMÓN",
+         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo, poached egg"
+        },
+        {
+         "name": "MONTADITOS DE SALMÓN AHUMADO",
+         "description": "Cream cheese, truffle honey"
+        }
+       ],
+       "instruction": "Choose one of the following; Includes: Mimosa - Traditional or passion fruit"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
+        },
+        {
+         "name": "COCHINILLO HASH",
+         "description": "Braised shredded pork, poached egg, breakfast potatoes"
+        },
+        {
+         "name": "HUEVOS BRAVOS",
+         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        },
+        {
+         "name": "HUEVOS BENEDICTINOS",
+         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
+        },
+        {
+         "name": "STEAK & EGGS",
+         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
+        },
+        {
+         "name": "CHICKEN & WAFFLES",
+         "description": "Rosemary maple syrup, buttermilk waffles"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "TORRIJA",
+         "description": "Brioche, mascarpone ice cream, honey"
+        },
+        {
+         "name": "BLUEBERRY & RICOTTA PANCAKES",
+         "description": "Blueberry compote, lemon gel"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Chocolate sauce, dulce de leche"
+        },
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "HAZELNUT WAFFLES",
+         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    },
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/AVE_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "CARPACCIO DE SALMÓN",
+         13.0
+        ],
+        [
+         "TOMATILLO HUMMUS",
+         10.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "CHICKEN BREAST CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "PAELLA MIXTA BOWL",
+         19.5
+        ],
+        [
+         "IBERIAN PORK BOWL",
+         17.0
+        ],
+        [
+         "SPICY TUNA BOWL",
+         18.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "KALE CAESAR",
+         13.5
+        ],
+        [
+         "SALMÓN",
+         27
+        ],
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "CARPACCIO DE SALMÓN",
+         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
+        },
+        {
+         "name": "TOMATILLO HUMMUS"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo"
+        },
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        }
+       ],
+       "instruction": "Choose one of the following; \nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "CHICKEN BREAST CON QUESO AZUL",
+         "description": "Blue cheese sauce, shishito peppers, piquillo confit,\nFrench fries"
+        },
+        {
+         "name": "PAELLA MIXTA BOWL",
+         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
+        },
+        {
+         "name": "IBERIAN PORK BOWL",
+         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
+        },
+        {
+         "name": "SPICY TUNA BOWL",
+         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
+        },
+        {
+         "name": "KALE CAESAR",
+         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7"
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        },
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
+       ],
+       "instruction": "Choose one of the following; \nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk"
+      }
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 50,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/AVE_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CHISTORRA CON PATATAS",
+         13.0
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "ENSALADA MEDITERRÁNEA",
+         13
+        ],
+        [
+         "TARTAR DE ATÚN",
+         17.0
+        ],
+        [
+         "GAMBAS AL AJILLO",
+         15.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "SOLOMILLO CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "BISTEC A LA PARRILLA",
+         17.5
+        ],
+        [
+         "POLLO AL CHILINDRÓN",
+         18.5
+        ],
+        [
+         "TRUFFLE CARBONARA",
+         23.0
+        ],
+        [
+         "SALMÓN",
+         27
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CHISTORRA CON PATATAS",
+         "description": "Basque style sausage, brava sauce, aioli"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "ENSALADA MEDITERRÁNEA",
+         "description": "Tomatoes, cucumber, chickpeas, olives,\ncroutons, lemon, EVOO"
+        },
+        {
+         "name": "TARTAR DE ATÚN",
+         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "GAMBAS AL AJILLO",
+         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        }
+       ],
+       "instruction": "Choose one of the following\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Mango Mule (non alcoholic), Bulla Mule, Lavender Margarita"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "SOLOMILLO CON QUESO AZUL",
+         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
+        },
+        {
+         "name": "BISTEC A LA PARRILLA",
+         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
+        },
+        {
+         "name": "POLLO AL CHILINDRÓN",
+         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
+        },
+        {
+         "name": "TRUFFLE CARBONARA",
+         "description": "Linguini, wild mushrooms, bacon,\ngarlic cream, green peas, poached egg"
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bulla Gastrobar The Falls",
+   "area": "Pinecrest",
+   "cuisine": "Spanish tapas",
+   "slug": "bulla-gastrobar-the-falls/23005",
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-the-falls/23005",
+   "restaurantUrl": "https://bullagastrobar.com/locations/the-falls/",
+   "capturedAt": "2026-08-03",
+   "tiers": [
+    {
+     "meal": "brunch",
+     "price": 40,
+     "days": [
+      0,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ],
+        [
+         "TOSTADA DE AGUACATE",
+         11.5
+        ],
+        [
+         "GRILLED FLATBREAD",
+         14.5
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "MELÓN CON JAMÓN",
+         13.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "MONTADITOS DE SALMÓN AHUMADO",
+         14
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ],
+        [
+         "COCHINILLO HASH",
+         17.5
+        ],
+        [
+         "HUEVOS BRAVOS",
+         14.0
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "HUEVOS BENEDICTINOS",
+         16
+        ],
+        [
+         "STEAK & EGGS",
+         28.5
+        ],
+        [
+         "CHICKEN & WAFFLES",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "TORRIJA",
+         11.5
+        ],
+        [
+         "BLUEBERRY & RICOTTA PANCAKES",
+         12
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ],
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "HAZELNUT WAFFLES",
+         11.5
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        },
+        {
+         "name": "TOSTADA DE AGUACATE",
+         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
+        },
+        {
+         "name": "GRILLED FLATBREAD",
+         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "MELÓN CON JAMÓN",
+         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo, poached egg"
+        },
+        {
+         "name": "MONTADITOS DE SALMÓN AHUMADO",
+         "description": "Cream cheese, truffle honey"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes: Mimosa - Traditional or passion fruit"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
+        },
+        {
+         "name": "COCHINILLO HASH",
+         "description": "Braised shredded pork, poached egg, breakfast potatoes"
+        },
+        {
+         "name": "HUEVOS BRAVOS",
+         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        },
+        {
+         "name": "HUEVOS BENEDICTINOS",
+         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
+        },
+        {
+         "name": "STEAK & EGGS",
+         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
+        },
+        {
+         "name": "CHICKEN & WAFFLES",
+         "description": "Rosemary maple syrup, buttermilk waffles"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "TORRIJA",
+         "description": "Brioche, mascarpone ice cream, honey"
+        },
+        {
+         "name": "BLUEBERRY & RICOTTA PANCAKES",
+         "description": "Blueberry compote, lemon gel"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Chocolate sauce, dulce de leche"
+        },
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "HAZELNUT WAFFLES",
+         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    },
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "CARPACCIO DE SALMÓN",
+         13.0
+        ],
+        [
+         "TOMATILLO HUMMUS",
+         10.0
+        ],
+        [
+         "PATATAS BRAVAS",
+         11.5
+        ],
+        [
+         "SOPA DE GARBANZO FRITO",
+         10.0
+        ],
+        [
+         "TORTILLA ESPAÑOLA",
+         11.5
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "CHICKEN BREAST CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "PAELLA MIXTA BOWL",
+         19.5
+        ],
+        [
+         "IBERIAN PORK BOWL",
+         17.0
+        ],
+        [
+         "SPICY TUNA BOWL",
+         18.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ],
+        [
+         "KALE CAESAR",
+         13.5
+        ],
+        [
+         "SALMÓN",
+         27
+        ],
+        [
+         "‘BULLA’ BURGER",
+         17.0
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "CARPACCIO DE SALMÓN",
+         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
+        },
+        {
+         "name": "TOMATILLO HUMMUS"
+        },
+        {
+         "name": "PATATAS BRAVAS",
+         "description": "Crispy potato cubes, spicy brava sauce, aioli"
+        },
+        {
+         "name": "SOPA DE GARBANZO FRITO",
+         "description": "Chickpea stew, chorizo"
+        },
+        {
+         "name": "TORTILLA ESPAÑOLA",
+         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "CHICKEN BREAST CON QUESO AZUL",
+         "description": "Blue cheese sauce, shishito peppers, piquillo confit,\nFrench fries"
+        },
+        {
+         "name": "PAELLA MIXTA BOWL",
+         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
+        },
+        {
+         "name": "IBERIAN PORK BOWL",
+         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
+        },
+        {
+         "name": "SPICY TUNA BOWL",
+         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
+        },
+        {
+         "name": "KALE CAESAR",
+         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7."
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        },
+        {
+         "name": "‘BULLA’ BURGER",
+         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk"
+      }
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 50,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "verified": true,
+     "valuationStatus": "reviewed",
+     "valuedAt": "2026-08-03",
+     "valuationSources": [
+      "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/CG_Lunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf",
+      "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
+     ],
+     "menu": [
+      {
+       "c": "Appetizers",
+       "d": [
+        [
+         "CHISTORRA CON PATATAS",
+         13.0
+        ],
+        [
+         "CROQUETAS DE JAMÓN",
+         11.5
+        ],
+        [
+         "ENSALADA MEDITERRÁNEA",
+         13
+        ],
+        [
+         "TARTAR DE ATÚN",
+         17.0
+        ],
+        [
+         "GAMBAS AL AJILLO",
+         15.5
+        ],
+        [
+         "HUEVOS ‘BULLA’",
+         16.0
+        ]
+       ]
+      },
+      {
+       "c": "Entrees",
+       "d": [
+        [
+         "SOLOMILLO CON QUESO AZUL",
+         18.5
+        ],
+        [
+         "BISTEC A LA PARRILLA",
+         17.5
+        ],
+        [
+         "POLLO AL CHILINDRÓN",
+         18.5
+        ],
+        [
+         "TRUFFLE CARBONARA",
+         23.0
+        ],
+        [
+         "SALMÓN",
+         27
+        ]
+       ]
+      },
+      {
+       "c": "Desserts",
+       "d": [
+        [
+         "FLAN DE COCO",
+         11.5
+        ],
+        [
+         "CHURROS CON CHOCOLATE",
+         10
+        ]
+       ]
+      }
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "CHISTORRA CON PATATAS",
+         "description": "Basque style sausage, brava sauce, aioli"
+        },
+        {
+         "name": "CROQUETAS DE JAMÓN",
+         "description": "Serrano ham croquettes, fig jelly"
+        },
+        {
+         "name": "ENSALADA MEDITERRÁNEA",
+         "description": "Tomatoes, cucumber, chickpeas, olives, croutons, lemon, EVOO"
+        },
+        {
+         "name": "TARTAR DE ATÚN",
+         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
+        },
+        {
+         "name": "GAMBAS AL AJILLO",
+         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
+        },
+        {
+         "name": "HUEVOS ‘BULLA’",
+         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
+        }
+       ],
+       "instruction": "Choose one of the following;\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Bulla Mule, Lavender Margarita, or Mango Mule (non alcoholic)"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "SOLOMILLO CON QUESO AZUL",
+         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
+        },
+        {
+         "name": "BISTEC A LA PARRILLA",
+         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
+        },
+        {
+         "name": "POLLO AL CHILINDRÓN",
+         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
+        },
+        {
+         "name": "TRUFFLE CARBONARA",
+         "description": "Linguini, wild mushrooms, bacon, garlic cream, green peas, poached egg"
+        },
+        {
+         "name": "SALMÓN",
+         "description": "Baby spinach, chickpeas, lemon cream"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "FLAN DE COCO",
+         "description": "Coconut flan, passion fruit sorbet"
+        },
+        {
+         "name": "CHURROS CON CHOCOLATE",
+         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
+        }
        ]
       }
      ]
@@ -7643,302 +11351,6 @@
    "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/il-pastaio-di-eataly/61161",
    "capturedAt": "2026-08-03",
    "restaurantUrl": "https://www.eataly.com/us_en"
-  },
-  {
-   "name": "Bulla Gastrobar Aventura",
-   "area": "Aventura",
-   "slug": "bulla-gastrobar-aventura/62417",
-   "tiers": [
-    {
-     "meal": "brunch",
-     "price": 40,
-     "days": [
-      0,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        },
-        {
-         "name": "TOSTADA DE AGUACATE",
-         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
-        },
-        {
-         "name": "GRILLED FLATBREAD",
-         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "MELÓN CON JAMÓN",
-         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo, poached egg"
-        },
-        {
-         "name": "MONTADITOS DE SALMÓN AHUMADO",
-         "description": "Cream cheese, truffle honey"
-        }
-       ],
-       "instruction": "Choose one of the following; Includes: Mimosa - Traditional or passion fruit"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
-        },
-        {
-         "name": "COCHINILLO HASH",
-         "description": "Braised shredded pork, poached egg, breakfast potatoes"
-        },
-        {
-         "name": "HUEVOS BRAVOS",
-         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        },
-        {
-         "name": "HUEVOS BENEDICTINOS",
-         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
-        },
-        {
-         "name": "STEAK & EGGS",
-         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
-        },
-        {
-         "name": "CHICKEN & WAFFLES",
-         "description": "Rosemary maple syrup, buttermilk waffles"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "TORRIJA",
-         "description": "Brioche, mascarpone ice cream, honey"
-        },
-        {
-         "name": "BLUEBERRY & RICOTTA PANCAKES",
-         "description": "Blueberry compote, lemon gel"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Chocolate sauce, dulce de leche"
-        },
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "HAZELNUT WAFFLES",
-         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      }
-     ]
-    },
-    {
-     "meal": "lunch",
-     "price": 40,
-     "days": [
-      1,
-      2,
-      3,
-      4,
-      5
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "CARPACCIO DE SALMÓN",
-         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
-        },
-        {
-         "name": "TOMATILLO HUMMUS"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo"
-        },
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        }
-       ],
-       "instruction": "Choose one of the following; \nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "CHICKEN BREAST CON QUESO AZUL",
-         "description": "Blue cheese sauce, shishito peppers, piquillo confit,\nFrench fries"
-        },
-        {
-         "name": "PAELLA MIXTA BOWL",
-         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
-        },
-        {
-         "name": "IBERIAN PORK BOWL",
-         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
-        },
-        {
-         "name": "SPICY TUNA BOWL",
-         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
-        },
-        {
-         "name": "KALE CAESAR",
-         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7"
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        },
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ],
-       "instruction": "Choose one of the following; \nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk"
-      }
-     ]
-    },
-    {
-     "meal": "dinner",
-     "price": 50,
-     "days": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CHISTORRA CON PATATAS",
-         "description": "Basque style sausage, brava sauce, aioli"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "ENSALADA MEDITERRÁNEA",
-         "description": "Tomatoes, cucumber, chickpeas, olives,\ncroutons, lemon, EVOO"
-        },
-        {
-         "name": "TARTAR DE ATÚN",
-         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "GAMBAS AL AJILLO",
-         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        }
-       ],
-       "instruction": "Choose one of the following\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Mango Mule (non alcoholic), Bulla Mule, Lavender Margarita"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "SOLOMILLO CON QUESO AZUL",
-         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
-        },
-        {
-         "name": "BISTEC A LA PARRILLA",
-         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
-        },
-        {
-         "name": "POLLO AL CHILINDRÓN",
-         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
-        },
-        {
-         "name": "TRUFFLE CARBONARA",
-         "description": "Linguini, wild mushrooms, bacon,\ngarlic cream, green peas, poached egg"
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ]
-      }
-     ]
-    }
-   ],
-   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-aventura/62417",
-   "capturedAt": "2026-08-03",
-   "restaurantUrl": "https://bullagastrobar.com/"
   },
   {
    "name": "Ossobuco Aventura",
@@ -17841,302 +21253,6 @@
    "restaurantUrl": "https://biltmorehotel.com/coral-gables-dining/fontana/"
   },
   {
-   "name": "Bulla Gastrobar Coral Gables",
-   "area": "Coral Gables",
-   "slug": "bulla-gastrobar-coral-gables/5263",
-   "tiers": [
-    {
-     "meal": "brunch",
-     "price": 40,
-     "days": [
-      0,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        },
-        {
-         "name": "TOSTADA DE AGUACATE",
-         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
-        },
-        {
-         "name": "GRILLED FLATBREAD",
-         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "MELÓN CON JAMÓN",
-         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo, poached egg"
-        },
-        {
-         "name": "MONTADITOS DE SALMÓN AHUMADO",
-         "description": "Cream cheese, truffle honey"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes: Mimosa - Traditional or passion fruit"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
-        },
-        {
-         "name": "COCHINILLO HASH",
-         "description": "Braised shredded pork, poached egg, breakfast potatoes"
-        },
-        {
-         "name": "HUEVOS BRAVOS",
-         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        },
-        {
-         "name": "HUEVOS BENEDICTINOS",
-         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
-        },
-        {
-         "name": "STEAK & EGGS",
-         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
-        },
-        {
-         "name": "CHICKEN & WAFFLES",
-         "description": "Rosemary maple syrup, buttermilk waffles"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "TORRIJA",
-         "description": "Brioche, mascarpone ice cream, honey"
-        },
-        {
-         "name": "BLUEBERRY & RICOTTA PANCAKES",
-         "description": "Blueberry compote, lemon gel"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Chocolate sauce, dulce de leche"
-        },
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "HAZELNUT WAFFLES",
-         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      }
-     ]
-    },
-    {
-     "meal": "lunch",
-     "price": 40,
-     "days": [
-      1,
-      2,
-      3,
-      4,
-      5
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "CARPACCIO DE SALMÓN",
-         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
-        },
-        {
-         "name": "TOMATILLO HUMMUS"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo"
-        },
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "CHICKEN BREAST CON QUESO AZUL",
-         "description": "Blue cheese sauce, shishito peppers, piquillo confit, French fries"
-        },
-        {
-         "name": "PAELLA MIXTA BOWL",
-         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
-        },
-        {
-         "name": "IBERIAN PORK BOWL",
-         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
-        },
-        {
-         "name": "SPICY TUNA BOWL",
-         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
-        },
-        {
-         "name": "KALE CAESAR",
-         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7."
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        },
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk"
-      }
-     ]
-    },
-    {
-     "meal": "dinner",
-     "price": 50,
-     "days": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CHISTORRA CON PATATAS",
-         "description": "Basque style sausage, brava sauce, aioli"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "ENSALADA MEDITERRÁNEA",
-         "description": "Tomatoes, cucumber, chickpeas, olives, croutons, lemon, EVOO"
-        },
-        {
-         "name": "TARTAR DE ATÚN",
-         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "GAMBAS AL AJILLO",
-         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Bulla Mule, Lavender Margarita, or Mango Mule (non alcoholic)"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "SOLOMILLO CON QUESO AZUL",
-         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
-        },
-        {
-         "name": "BISTEC A LA PARRILLA",
-         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
-        },
-        {
-         "name": "POLLO AL CHILINDRÓN",
-         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
-        },
-        {
-         "name": "TRUFFLE CARBONARA",
-         "description": "Linguini, wild mushrooms, bacon, garlic cream, green peas, poached egg"
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ]
-      }
-     ]
-    }
-   ],
-   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-coral-gables/5263",
-   "capturedAt": "2026-08-03",
-   "restaurantUrl": "https://bullagastrobar.com/locations/coral-gables/"
-  },
-  {
    "name": "Aromas Del Peru Coral Gables",
    "area": "Coral Gables",
    "slug": "aromas-del-peru-coral-gables/14579",
@@ -22274,302 +25390,6 @@
    "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/blue-matisse-restaurant-and-nau-lounge/6460",
    "capturedAt": "2026-08-03",
    "restaurantUrl": "https://www.bluematissedoral.com"
-  },
-  {
-   "name": "Bulla Gastrobar Doral",
-   "area": "Doral",
-   "slug": "bulla-gastrobar-doral/6482",
-   "tiers": [
-    {
-     "meal": "brunch",
-     "price": 40,
-     "days": [
-      0,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        },
-        {
-         "name": "TOSTADA DE AGUACATE",
-         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
-        },
-        {
-         "name": "GRILLED FLATBREAD",
-         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "MELÓN CON JAMÓN",
-         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo, poached egg"
-        },
-        {
-         "name": "MONTADITOS DE SALMÓN AHUMADO",
-         "description": "Cream cheese, truffle honey"
-        }
-       ],
-       "instruction": "Choose one of the following; Includes: Mimosa - Traditional or passion fruit"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
-        },
-        {
-         "name": "COCHINILLO HASH",
-         "description": "Braised shredded pork, poached egg, breakfast potatoes"
-        },
-        {
-         "name": "HUEVOS BRAVOS",
-         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        },
-        {
-         "name": "HUEVOS BENEDICTINOS",
-         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
-        },
-        {
-         "name": "STEAK & EGGS",
-         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
-        },
-        {
-         "name": "CHICKEN & WAFFLES",
-         "description": "Rosemary maple syrup, buttermilk waffles"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "TORRIJA",
-         "description": "Brioche, mascarpone ice cream, honey"
-        },
-        {
-         "name": "BLUEBERRY & RICOTTA PANCAKES",
-         "description": "Blueberry compote, lemon gel"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Chocolate sauce, dulce de leche"
-        },
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "HAZELNUT WAFFLES",
-         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      }
-     ]
-    },
-    {
-     "meal": "lunch",
-     "price": 40,
-     "days": [
-      1,
-      2,
-      3,
-      4,
-      5
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "CARPACCIO DE SALMÓN*",
-         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
-        },
-        {
-         "name": "TOMATILLO HUMMUS"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo"
-        },
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "CHICKEN BREAST CON QUESO AZUL",
-         "description": "Blue cheese sauce, shishito peppers, piquillo confit, French fries"
-        },
-        {
-         "name": "PAELLA MIXTA BOWL",
-         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
-        },
-        {
-         "name": "IBERIAN PORK BOWL",
-         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
-        },
-        {
-         "name": "SPICY TUNA BOWL",
-         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
-        },
-        {
-         "name": "KALE CAESAR",
-         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7."
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        },
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk\""
-      }
-     ]
-    },
-    {
-     "meal": "dinner",
-     "price": 50,
-     "days": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CHISTORRA CON PATATAS",
-         "description": "Basque style sausage, brava sauce, aioli"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "ENSALADA MEDITERRÁNEA",
-         "description": "Tomatoes, cucumber, chickpeas, olives, croutons, lemon, EVOO"
-        },
-        {
-         "name": "TARTAR DE ATÚN",
-         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "GAMBAS AL AJILLO",
-         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Bulla Mule, Lavender Margarita, or Mango Mule (non alcoholic)"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "SOLOMILLO CON QUESO AZUL",
-         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
-        },
-        {
-         "name": "BISTEC A LA PARRILLA",
-         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
-        },
-        {
-         "name": "POLLO AL CHILINDRÓN",
-         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
-        },
-        {
-         "name": "TRUFFLE CARBONARA",
-         "description": "Linguini, wild mushrooms, bacon, garlic cream, green peas, poached egg"
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ]
-      }
-     ]
-    }
-   ],
-   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-doral/6482",
-   "capturedAt": "2026-08-03",
-   "restaurantUrl": "https://bullagastrobar.com/locations/doral/"
   },
   {
    "name": "Pisco y Nazca Doral",
@@ -46218,302 +49038,6 @@
    "restaurantUrl": "https://samurairestaurant.com/"
   },
   {
-   "name": "Bulla Gastrobar The Falls",
-   "area": "Pinecrest",
-   "slug": "bulla-gastrobar-the-falls/23005",
-   "tiers": [
-    {
-     "meal": "brunch",
-     "price": 40,
-     "days": [
-      0,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        },
-        {
-         "name": "TOSTADA DE AGUACATE",
-         "description": "Tomatoes, Idiazábal, pan de cristal, EVOO"
-        },
-        {
-         "name": "GRILLED FLATBREAD",
-         "description": "Mozzarella, poached egg, caramelized onions, oyster mushrooms, bacon"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "MELÓN CON JAMÓN",
-         "description": "Watermelon, roma tomatoes, crispy serrano, truffle honey, goat cheese"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo, poached egg"
-        },
-        {
-         "name": "MONTADITOS DE SALMÓN AHUMADO",
-         "description": "Cream cheese, truffle honey"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes: Mimosa - Traditional or passion fruit"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla, smoked paprika fries"
-        },
-        {
-         "name": "COCHINILLO HASH",
-         "description": "Braised shredded pork, poached egg, breakfast potatoes"
-        },
-        {
-         "name": "HUEVOS BRAVOS",
-         "description": "Two fried eggs, shoestring potatoes, sautéed onions and peppers, brava sauce"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        },
-        {
-         "name": "HUEVOS BENEDICTINOS",
-         "description": "Poached eggs, hollandaise, crispy chorizo, asparagus"
-        },
-        {
-         "name": "STEAK & EGGS",
-         "description": "Fried eggs, shoestring potatoes, mojo verde, Sriracha aioli (+$10)"
-        },
-        {
-         "name": "CHICKEN & WAFFLES",
-         "description": "Rosemary maple syrup, buttermilk waffles"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "TORRIJA",
-         "description": "Brioche, mascarpone ice cream, honey"
-        },
-        {
-         "name": "BLUEBERRY & RICOTTA PANCAKES",
-         "description": "Blueberry compote, lemon gel"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Chocolate sauce, dulce de leche"
-        },
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "HAZELNUT WAFFLES",
-         "description": "Nutella, chocolate shavings, white chocolate Chantilly, toasted almonds"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      }
-     ]
-    },
-    {
-     "meal": "lunch",
-     "price": 40,
-     "days": [
-      1,
-      2,
-      3,
-      4,
-      5
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "CARPACCIO DE SALMÓN",
-         "description": "Crispy capers, cornichons, arugula, mini croutons, dill vinaigrette"
-        },
-        {
-         "name": "TOMATILLO HUMMUS"
-        },
-        {
-         "name": "PATATAS BRAVAS",
-         "description": "Crispy potato cubes, spicy brava sauce, aioli"
-        },
-        {
-         "name": "SOPA DE GARBANZO FRITO",
-         "description": "Chickpea stew, chorizo"
-        },
-        {
-         "name": "TORTILLA ESPAÑOLA",
-         "description": "Traditional Spanish omelet, caramelized onions, garlic aioli"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of: Lemonade, Iced Tea, Soft Drink, Sangría Roja, or Lemongrass Collins"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "CHICKEN BREAST CON QUESO AZUL",
-         "description": "Blue cheese sauce, shishito peppers, piquillo confit,\nFrench fries"
-        },
-        {
-         "name": "PAELLA MIXTA BOWL",
-         "description": "Valencia-style rice, chicken pintxo, sautéed shrimp, green peas, sofrito, piquillo pepper confit, saffron"
-        },
-        {
-         "name": "IBERIAN PORK BOWL",
-         "description": "Braised shredded pork, steamed rice, caramelized onions, crispy chorizo, piquillo pepper confit, roma tomatoes, arugula salad, pickled onions, EVOO"
-        },
-        {
-         "name": "SPICY TUNA BOWL",
-         "description": "Mango, avocado, steamed rice, edamame, cucumber, pickled onions, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano ham, potato foam, truffle oil"
-        },
-        {
-         "name": "KALE CAESAR",
-         "description": "Serrano ham-caesar dressing, Manchego, croutons \nADD: Crispy Serrano Ham 3. Salmon* 8. Chicken 6. Shrimp 7."
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        },
-        {
-         "name": "‘BULLA’ BURGER",
-         "description": "Piquillo peppers, caramelized onions, tetilla cheese, brioche bun, honey thyme glaze, patatas bravas (+$5)"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of Coffee: Coffee , Americano, Cortadito, Capuccino, Latte, Espresso, Espresso doble or Macchiato, or \nCafé Bombon - sweetened condensed milk, espresso, foamed milk"
-      }
-     ]
-    },
-    {
-     "meal": "dinner",
-     "price": 50,
-     "days": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-     ],
-     "spiceMenu": [
-      {
-       "course": "Appetizers",
-       "choices": [
-        {
-         "name": "CHISTORRA CON PATATAS",
-         "description": "Basque style sausage, brava sauce, aioli"
-        },
-        {
-         "name": "CROQUETAS DE JAMÓN",
-         "description": "Serrano ham croquettes, fig jelly"
-        },
-        {
-         "name": "ENSALADA MEDITERRÁNEA",
-         "description": "Tomatoes, cucumber, chickpeas, olives, croutons, lemon, EVOO"
-        },
-        {
-         "name": "TARTAR DE ATÚN",
-         "description": "Ahi tuna, mango, avocado, soy sesame vinaigrette, Sriracha aioli"
-        },
-        {
-         "name": "GAMBAS AL AJILLO",
-         "description": "Sautéed shrimp, garlic, brandy, pepper flakes"
-        },
-        {
-         "name": "HUEVOS ‘BULLA’",
-         "description": "Eggs, homemade potato chips, Serrano, potato foam, truffle oil"
-        }
-       ],
-       "instruction": "Choose one of the following;\nIncludes choice of: Sangría Roja, Sangría de Cerveza, Sangría Blanca, Bulla Mule, Lavender Margarita, or Mango Mule (non alcoholic)"
-      },
-      {
-       "course": "Entrees",
-       "choices": [
-        {
-         "name": "SOLOMILLO CON QUESO AZUL",
-         "description": "Pork tenderloin, blue cheese sauce, shishito peppers, piquillo confit, French fries"
-        },
-        {
-         "name": "BISTEC A LA PARRILLA",
-         "description": "Cumin marinated sirloin, truffled potato & mushroom foam, salsa criolla, arugula salad (+$8)"
-        },
-        {
-         "name": "POLLO AL CHILINDRÓN",
-         "description": "Pan-seared chicken, Serrano ham, red pepper stew, steamed rice"
-        },
-        {
-         "name": "TRUFFLE CARBONARA",
-         "description": "Linguini, wild mushrooms, bacon, garlic cream, green peas, poached egg"
-        },
-        {
-         "name": "SALMÓN",
-         "description": "Baby spinach, chickpeas, lemon cream"
-        }
-       ],
-       "instruction": "Choose one of the following"
-      },
-      {
-       "course": "Desserts",
-       "choices": [
-        {
-         "name": "FLAN DE COCO",
-         "description": "Coconut flan, passion fruit sorbet"
-        },
-        {
-         "name": "CHURROS CON CHOCOLATE",
-         "description": "Traditional fried dough, chocolate sauce, dulce de leche"
-        }
-       ]
-      }
-     ]
-    }
-   ],
-   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/bulla-gastrobar-the-falls/23005",
-   "capturedAt": "2026-08-03",
-   "restaurantUrl": "https://bullagastrobar.com/locations/the-falls/"
-  },
-  {
    "name": "Platea Miami",
    "area": "Pinecrest",
    "slug": "platea-miami/26416",
@@ -51747,6 +54271,156 @@
    "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/otto-and-pepe/56920",
    "capturedAt": "2026-08-03",
    "restaurantUrl": "https://www.ottoandpepe.com/"
+  },
+  {
+   "name": "Mayami",
+   "area": "Wynwood",
+   "slug": "mayami/24540",
+   "tiers": [
+    {
+     "meal": "dinner",
+     "price": 65,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "Bis Carpaccio",
+         "description": "Toro & Ora King Salmon Carpaccio. Citrus emulsion, celery leaves, chives, salsa verde."
+        },
+        {
+         "name": "Beef Gyozas",
+         "description": "Black truffle yuzu ponzu, scallions"
+        },
+        {
+         "name": "Tropical Ceviche",
+         "description": "Corvina, mango, maracuja–aji amarillo leche de tigre, coconut, cilantro."
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "Chengdu Spiced Milanese",
+         "description": "Crispy chicken, gochujang–honey glaze, yuzu ranch, Asian slaw, sesame, scallions, cilantro."
+        },
+        {
+         "name": "Achiote–Ancho Short Rib",
+         "description": "Slow braised short rib, turnip, mache, warm tortillas."
+        },
+        {
+         "name": "Pink Vodka Rigatoni",
+         "description": "Creamy pink sauce, peperoncini, burrata, light basil pesto"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "Valrhona 80% Brownie",
+         "description": "South American cacao fudge, mascarpone cream."
+        },
+        {
+         "name": "Quesillo",
+         "description": "Classic caramel flan."
+        },
+        {
+         "name": "Passion Fruit Panna Cotta",
+         "description": "Vanilla panna cotta, maracuya coulis, berries crumble."
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/mayami/24540",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://www.mayamiwynwood.com/"
+  },
+  {
+   "name": "Eating House",
+   "area": "Coral Gables",
+   "slug": "eating-house/19235",
+   "tiers": [
+    {
+     "meal": "dinner",
+     "price": 65,
+     "days": [
+      0,
+      3,
+      4,
+      5,
+      6
+     ],
+     "spiceMenu": [
+      {
+       "course": "Appetizers",
+       "choices": [
+        {
+         "name": "PULLED BURRATA",
+         "description": "ROASTED BUTTERNUT SQUASH, HAZELNUT, BASIL & AGED BALSAMIC"
+        },
+        {
+         "name": "CAULIFLOWER 'ELOTE'",
+         "description": "LIME CREMA, COTIJA CHEESE, CRISPY CORN & CILANTRO"
+        },
+        {
+         "name": "YELLOWFIN TUNA CRUDO",
+         "description": "PASSIONFRUIT, CORTO OLIVE OIL, CORN CRIOLLA & LIME"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Entrees",
+       "choices": [
+        {
+         "name": "PASTA CARBONARA",
+         "description": "APPLEWOOD SMOKED BACON, EGG YOLK, BLACK TRUFFLE & BREADCRUMBS"
+        },
+        {
+         "name": "CARAMELIZED SEABASS",
+         "description": "MANGO-MISO, JALAPENO CREAMED CORN & BLACK LIME TAJIN"
+        },
+        {
+         "name": "GRILLED BEEF SHORT RIBS",
+         "description": "BUTTERMILK-BRUSSELS SLAW, SMOKEY BORDELAISE SAUCE\n& BUTTERNUT SQUASH"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      },
+      {
+       "course": "Desserts",
+       "choices": [
+        {
+         "name": "DIRT CUP",
+         "description": "CHOCOLATE COOKIE CRUMB, HAZELNUT, SALTED CARAMEL\n& VANILLA ICE CREAM"
+        },
+        {
+         "name": "FUNFETTI TRES LECHES",
+         "description": "CAKE BATTER WHIPPED CREAM, CONDENSED MILK & RAINBOW SPRINKLES"
+        }
+       ],
+       "instruction": "Choose one of the following"
+      }
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/l/eat-and-drink/eating-house/19235",
+   "capturedAt": "2026-08-03",
+   "restaurantUrl": "https://eatinghousemiami.com/"
   }
  ],
  "roster": [

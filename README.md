@@ -55,7 +55,7 @@ Updating data later is just: edit or scrape, commit, push. Pages redeploys autom
 ## Collect more data
 
 ```powershell
-py -m pip install requests beautifulsoup4
+py -m pip install -r requirements.txt
 
 # See records and slugs already known from the official roster
 py scraper\fetch_spice.py --list
@@ -74,12 +74,32 @@ The collector reads the structured schedule and menu on each official GMCVB
 listing. Roster entries with published tiers move into `tiersOnly`, including
 their course choices, restaurant website, source URL and capture date. Downloads
 are cached in `scraper/.cache/` to make retries fast; that directory is ignored
-by Git and may contain HTML or PDFs.
+by Git and may contain HTML or PDFs. Existing decoded records are refreshed too:
+official days replace stale days, obsolete tiers are removed, and newly published
+tiers appear as value pending until they are priced.
 
 Promoting a restaurant to `decoded` remains an editorial step: use the captured
 restaurant website to find its current regular menu, add per-dish à la carte
 prices in the existing decoded `menu` shape, and set `verified: true` only when
 every price came from that restaurant's own current menu.
+
+The regular-menu collector builds a source-backed review queue without publishing
+uncertain matches:
+
+```powershell
+py scraper\fetch_regular_menus.py --domains northitalia.com bullagastrobar.com
+```
+
+This writes `data/valuation-review.json` with candidate prices, confidence,
+source text, URLs and supplement-adjusted values. Once every choice for a named
+restaurant has been reviewed, the guarded promoter requires complete coverage:
+
+```powershell
+py scraper\apply_valuation_review.py "Bulla Gastrobar Aventura" --minimum-confidence 0.8 --dry-run
+```
+
+Remove `--dry-run` only after the review passes. Any missing or weak tier remains
+value pending rather than receiving an estimated score.
 
 Run the focused parser tests with:
 

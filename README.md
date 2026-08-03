@@ -9,7 +9,7 @@ Live idea borrowed with admiration from dineout-lauderdale.
 
 ## What's in here
 
-```
+```text
 index.html              The whole app (vanilla HTML/CSS/JS, no build step)
 data/spice-data.json    All the data: decoded menus, verified tiers, full roster
 scraper/fetch_spice.py  Collector for official tier/day/menu data
@@ -30,14 +30,17 @@ The app loads its data with `fetch()`, so you need a local web server
 
 1. Install Python from python.org if you don't have it (check "Add to PATH").
 2. Open PowerShell in the repo folder and run:
+
    ```powershell
    py -m http.server 8000
    ```
-3. Open http://localhost:8000
+
+3. Open <http://localhost:8000>
 
 ## Deploy to GitHub Pages
 
 1. Create a new GitHub repo (e.g. `miami-spice-decoded`), then from the repo folder:
+
    ```powershell
    git init
    git add .
@@ -46,6 +49,7 @@ The app loads its data with `fetch()`, so you need a local web server
    git remote add origin https://github.com/YOURUSER/miami-spice-decoded.git
    git push -u origin main
    ```
+
    (Or drag the folder into GitHub Desktop and publish.)
 2. On GitHub: Settings > Pages > Source: "Deploy from a branch" > Branch: `main`, folder `/ (root)` > Save.
 3. Your site appears at `https://YOURUSER.github.io/miami-spice-decoded/` in a minute or two.
@@ -89,6 +93,10 @@ uncertain matches:
 ```powershell
 py scraper\fetch_regular_menus.py --domains northitalia.com bullagastrobar.com
 ```
+
+It reads regular menu HTML, PDFs and structured application JSON, ignores links
+clearly labeled as holiday or promotional menus, and records inaccessible menu
+endpoints as review errors instead of silently substituting stale evidence.
 
 This writes `data/valuation-review.json` with candidate prices, confidence,
 source text, URLs and supplement-adjusted values. Once every choice for a named

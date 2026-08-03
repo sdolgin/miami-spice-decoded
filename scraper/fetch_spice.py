@@ -125,6 +125,7 @@ def parse_menu_pane(pane):
         if not heading:
             continue
         instruction = group.select_one(".ys-partner-details__tabs__container__info__temptation__group__description")
+        instruction_text = instruction.get_text(" ", strip=True) if instruction else ""
         choices = []
         for item in group.select(".ys-partner-details__tabs__container__info__temptation__group__items__item"):
             name = item.select_one(".item-name")
@@ -139,10 +140,18 @@ def parse_menu_pane(pane):
                 amount = float(supplement.group(1))
                 choice["supplement"] = int(amount) if amount.is_integer() else amount
             choices.append(choice)
+        shifted_instruction = choices and choices[0]["name"].lower().startswith("choose one") and not instruction_text
+        if shifted_instruction:
+            recovered = []
+            for index, choice in enumerate(choices[:-1]):
+                if choice.get("description"):
+                    recovered.append({"name": choice["description"], "description": choices[index + 1]["name"]})
+            instruction_text = choices[0]["name"]
+            choices = recovered
         if choices:
             course = {"course": heading.get_text(" ", strip=True), "choices": choices}
-            if instruction and instruction.get_text(" ", strip=True):
-                course["instruction"] = instruction.get_text(" ", strip=True)
+            if instruction_text:
+                course["instruction"] = instruction_text
             courses.append(course)
     return courses
 

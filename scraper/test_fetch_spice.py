@@ -3,7 +3,7 @@ import unittest
 from bs4 import BeautifulSoup
 
 from fetch_spice import merge, parse_menu_pane, parse_schedule
-from fetch_regular_menus import normalized, parse_price, score_match
+from fetch_regular_menus import BULLA_BRUNCH_PDF, build_review, discover_menu_urls, html_candidates, normalized, parse_price, score_match
 
 
 class OfficialListingParserTests(unittest.TestCase):
@@ -59,6 +59,38 @@ class OfficialListingParserTests(unittest.TestCase):
             ],
         )
 
+    def test_menu_recovers_shifted_instruction_and_dessert_fields(self):
+        pane = BeautifulSoup(
+            """
+            <div><div class="ys-partner-details__tabs__container__info__temptation__group">
+              <p class="ys-partner-details__tabs__container__info__temptation__group__name">Desserts</p>
+                            <p class="ys-partner-details__tabs__container__info__temptation__group__description"></p>
+              <div class="ys-partner-details__tabs__container__info__temptation__group__items__item">
+                <p class="item-name">Choose one of the following</p><p class="item-description">BOMBOLINI</p>
+              </div>
+              <div class="ys-partner-details__tabs__container__info__temptation__group__items__item">
+                <p class="item-name">Italian donuts</p><p class="item-description">TIRAMISU</p>
+              </div>
+              <div class="ys-partner-details__tabs__container__info__temptation__group__items__item">
+                <p class="item-name">Espresso-soaked ladyfingers</p>
+              </div>
+            </div></div>
+            """,
+            "html.parser",
+        ).div
+
+        self.assertEqual(
+            parse_menu_pane(pane),
+            [{
+                "course": "Desserts",
+                "choices": [
+                    {"name": "BOMBOLINI", "description": "Italian donuts"},
+                    {"name": "TIRAMISU", "description": "Espresso-soaked ladyfingers"},
+                ],
+                "instruction": "Choose one of the following",
+            }],
+        )
+
     def test_merge_demotes_decoded_restaurant_when_official_tier_changed(self):
         data = {
             "meta": {},
@@ -81,6 +113,62 @@ class OfficialListingParserTests(unittest.TestCase):
         self.assertEqual(parse_price("17 .5"), 17.5)
         self.assertEqual(normalized("SALMÓN"), "salmon")
         self.assertGreater(score_match("HERILOOM TOMATO & BURRATA", "Heirloom Tomato & Burrata"), 0.8)
+
+    def test_bulla_reviewed_price_keeps_exact_menu_source(self):
+        entry = {
+            "name": "Bulla Gastrobar Test",
+            "slug": "bulla-test/1",
+            "restaurantUrl": "https://bullagastrobar.com/menus/test/",
+            "tiers": [{
+                "meal": "brunch",
+                "price": 40,
+                "spiceMenu": [{"course": "Entrees", "choices": [{"name": "Huevos Benedictinos"}]}],
+            }],
+        }
+
+        review = build_review(entry, [], [], [])
+
+        self.assertEqual(
+            review["tiers"][0]["courses"][0]["choices"][0]["matches"][0]["sourceUrl"],
+            BULLA_BRUNCH_PDF,
+        )
+
+    def test_baires_current_html_is_parsed_and_holiday_menu_is_excluded(self):
+        page_url = "https://www.bairesgrill.com/menu/brickell"
+        html = """
+            <div class="content-style-2">
+              <div class="nombre-del-plato">ENTRAÑA</div>
+              <div class="precio">$39.00</div>
+              <div class="descripcion-del-plato">Certified Angus skirt steak</div>
+            </div>
+            <a href="/regular-menu.pdf">Dinner menu</a>
+            <a href="/BG-BRK-HOLIDAY_MENU-13-NOV.pdf">Holiday menu</a>
+        """
+
+        self.assertEqual(html_candidates(page_url, html)[0]["name"], "ENTRAÑA")
+        self.assertEqual(html_candidates(page_url, html)[0]["price"], 39)
+        self.assertEqual(
+            discover_menu_urls(page_url, html),
+            ["https://www.bairesgrill.com/regular-menu.pdf"],
+        )
+
+    def test_application_json_menu_items_are_parsed(self):
+        source_url = "https://www.getsauce.com/order/example/menu"
+        html = """
+            <script type="application/json">
+              {"menu": [{"name": "Margherita", "description": "Tomato, mozzarella, basil", "price": 18}]}
+            </script>
+        """
+
+        self.assertEqual(
+            html_candidates(source_url, html),
+            [{
+                "name": "Margherita",
+                "price": 18,
+                "context": "Margherita Tomato, mozzarella, basil",
+                "sourceUrl": source_url,
+            }],
+        )
 
 
 if __name__ == "__main__":

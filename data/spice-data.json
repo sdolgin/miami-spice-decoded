@@ -9813,21 +9813,19 @@
        "course": "Desserts",
        "choices": [
         {
-         "name": "Choose one of the following",
-         "description": "BOMBOLINI PASTELITO DE GUAYABA"
+         "name": "BOMBOLINI PASTELITO DE GUAYABA",
+         "description": "(italian donuts) guava, cream cheese"
         },
         {
-         "name": "(italian donuts) guava, cream cheese",
-         "description": "SEASONAL BUTTER CAKE"
+         "name": "SEASONAL BUTTER CAKE",
+         "description": "sometimes sweet, maybe tart - for sure delicious!"
         },
         {
-         "name": "sometimes sweet, maybe tart - for sure delicious!",
-         "description": "TIRAMISU"
-        },
-        {
-         "name": "espresso-soaked ladyfingers, mascarpone mousse"
+         "name": "TIRAMISU",
+         "description": "espresso-soaked ladyfingers, mascarpone mousse"
         }
-       ]
+       ],
+       "instruction": "Choose one of the following"
       }
      ]
     }

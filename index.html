@@ -229,6 +229,10 @@ function chiles(score){
   const n=score>=1.6?4:score>=1.4?3:score>=1.2?2:score>=1.05?1:0;
   return "\u{1F336}".repeat(n)||"\u00B7";
 }
+function fmtDate(value){
+  const [year,month,day]=value.split("-").map(Number);
+  return new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",year:"numeric"}).format(new Date(year,month-1,day));
+}
 function fmtDays(t){
   if(!t.days) return `<div class="days unknown">${DOMIDX.map((d,i)=>`<span class="day">${DAYLETTERS[i]}</span>`).join("")}<span class="dayscap">days not published</span></div>`;
   return `<div class="days">${DOMIDX.map((d,i)=>`<span class="day ${t.days.includes(d)?"on":""}">${DAYLETTERS[i]}</span>`).join("")}</div>`;
@@ -274,7 +278,7 @@ function card(row){
     </div>
     <div class="menu" data-pane="picks">${picks}</div>
     <div class="menu" data-pane="full" hidden>${full}</div>
-    <div class="conf"><span class="cdot ${t.verified?"ver":"est"}"></span>${t.verified?"Prices verified from the restaurant\u2019s current menu":"Benchmarked estimate \u2014 \u00e0 la carte prices not yet verified"}<a class="rlink" href="${BASE}${r.slug}" target="_blank" rel="noopener">Official listing &#8599;</a></div>
+    <div class="conf"><span class="cdot ${t.verified?"ver":"est"}"></span>${t.verified?"Prices verified from the restaurant\u2019s current menu":"Benchmarked estimate \u2014 \u00e0 la carte prices not yet verified"}${t.verified&&t.valuedAt?` &middot; checked ${fmtDate(t.valuedAt)}`:""}<a class="rlink" href="${BASE}${r.slug}" target="_blank" rel="noopener">Official listing &#8599;</a></div>
   </article>`;
 }
 function cardTier(row){

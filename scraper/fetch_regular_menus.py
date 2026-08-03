@@ -32,17 +32,23 @@ CACHE = Path(__file__).resolve().parent / ".cache" / "menus"
 USER_AGENT = "Mozilla/5.0 (compatible; miami-spice-decoded/1.0; personal research project)"
 PRICE_AT_END = re.compile(r"(?:\$\s*)?(\d{1,3}(?:\s*\.\s*\d{0,2})?)\s*$")
 PRICE_WITH_DOLLAR = re.compile(r"\$\s*(\d{1,3}(?:\.\d{1,2})?)")
-EXCLUDED_LINK_WORDS = ("miami spice", "restaurant week", "happy hour", "beverage", "cocktail", "wine", "kids", "nutrition", "catering")
+EXCLUDED_LINK_WORDS = ("miami spice", "restaurant week", "holiday", "happy hour", "beverage", "cocktail", "wine", "kids", "nutrition", "catering")
+BULLA_BRUNCH_PDF = "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Brunch.pdf"
 BULLA_PDF = "https://bullagastrobar.com/wp-content/pdf/MIABULL_ALL_Dinner.pdf"
 BULLA_DESSERT_PDF = "https://bullagastrobar.com/wp-content/pdf/CG_Dessert.pdf"
+PICCOLA_MENU_URLS = {
+    "Piccola Pizzeria Coral Gables": "https://www.getsauce.com/order/piccola-pizzeria-coral-gables/menu",
+    "Piccola Pizzeria Doral": "https://order.toasttab.com/online/piccola-2-2600-nw-87th-ave",
+    "Piccola Pizzeria South Miami": "https://www.toasttab.com/local/order/piccola-pizzeria-pinecrest-11421-dixie-hwy",
+}
 BULLA_REVIEWED_PRICES = {
-    "montaditos de salmon ahumado": (14, "MONTADITOS DE SALMÓN AHUMADO 14"),
-    "huevos benedictinos": (16, "HUEVOS BENEDICTINOS - Smoked salmon 16"),
-    "blueberry ricotta pancakes": (12, "BLUEBERRY & RICOTTA PANCAKES 12"),
-    "churros con chocolate": (10, "CHURROS CON CHOCOLATE - 6 for 10"),
-    "chicken breast con queso azul": (18.5, "Chicken breast 18.5"),
-    "salmon": (27, "SALMÓN - Large 27"),
-    "ensalada mediterranea": (13, "MEDITERRÁNEA 13"),
+    "montaditos de salmon ahumado": (14, "MONTADITOS DE SALMÓN AHUMADO 14", BULLA_BRUNCH_PDF),
+    "huevos benedictinos": (16, "HUEVOS BENEDICTINOS - Smoked salmon 16", BULLA_BRUNCH_PDF),
+    "blueberry ricotta pancakes": (12, "BLUEBERRY & RICOTTA PANCAKES 12", BULLA_BRUNCH_PDF),
+    "churros con chocolate": (10, "CHURROS CON CHOCOLATE - 6 for 10", BULLA_DESSERT_PDF),
+    "chicken breast con queso azul": (18.5, "Chicken breast 18.5", BULLA_PDF),
+    "salmon": (27, "SALMÓN - Large 27", BULLA_PDF),
+    "ensalada mediterranea": (13, "MEDITERRÁNEA 13", BULLA_PDF),
 }
 
 
@@ -119,6 +125,13 @@ def html_candidates(source_url, html):
     soup = BeautifulSoup(html, "html.parser")
     values = []
     seen = set()
+
+    def add_value(value):
+        key = (normalized(value["name"]), value["price"]) if value else None
+        if value and key not in seen:
+            seen.add(key)
+            values.append(value)
+
     for item in soup.select(".menu-item"):
         name_node = item.select_one(".menu-item-name")
         if not name_node:
@@ -127,9 +140,34 @@ def html_candidates(source_url, html):
         match = PRICE_AT_END.search(header.get_text(" ", strip=True))
         if match:
             value = candidate(name_node.get_text(" ", strip=True), parse_price(match.group(1)), source_url, item.get_text(" ", strip=True))
-            if value and (normalized(value["name"]), value["price"]) not in seen:
-                seen.add((normalized(value["name"]), value["price"]))
-                values.append(value)
+            add_value(value)
+    for item in soup.select(".content-style-2"):
+        name_node = item.select_one(".nombre-del-plato")
+        price_node = item.select_one(".precio")
+        if not name_node or not price_node:
+            continue
+        match = PRICE_WITH_DOLLAR.search(price_node.get_text(" ", strip=True))
+        if not match:
+            continue
+        value = candidate(name_node.get_text(" ", strip=True), parse_price(match.group(1)), source_url, item.get_text(" ", strip=True))
+        add_value(value)
+    for script in soup.select('script[type="application/json"]'):
+        try:
+            payload = json.loads(script.string or "")
+        except (TypeError, json.JSONDecodeError):
+            continue
+        pending = [payload]
+        while pending:
+            node = pending.pop()
+            if isinstance(node, dict):
+                name = node.get("name")
+                price = node.get("price")
+                if isinstance(name, str) and isinstance(price, (int, float)):
+                    context = " ".join(value for value in (name, node.get("description")) if isinstance(value, str))
+                    add_value(candidate(name, price, source_url, context))
+                pending.extend(node.values())
+            elif isinstance(node, list):
+                pending.extend(node)
     for text_node in soup.find_all(string=PRICE_WITH_DOLLAR):
         text = " ".join(text_node.parent.get_text(" ", strip=True).split())
         if len(text) > 180:
@@ -140,10 +178,8 @@ def html_candidates(source_url, html):
         match = matches[0]
         name = text[: match.start()].strip(" -–—|:")
         value = candidate(name, parse_price(match.group(1)), source_url, text)
-        key = (normalized(value["name"]), value["price"]) if value else None
-        if value and len(normalized(name)) >= 3 and key not in seen:
-            seen.add(key)
-            values.append(value)
+        if value and len(normalized(name)) >= 3:
+            add_value(value)
     return values
 
 
@@ -213,7 +249,7 @@ def select_entries(data, names, domains):
 
 
 def collect_sources(entry, client):
-    page_url = entry["restaurantUrl"]
+    page_url = PICCOLA_MENU_URLS.get(entry["name"], entry["restaurantUrl"])
     if "northitalia.com" in urlparse(page_url).netloc and urlparse(page_url).path in {"", "/"}:
         location = "miami-fl-dadeland" if "dadeland" in entry["name"].lower() else "miami-fl"
         page_url = f"https://www.northitalia.com/locations/{location}/"
@@ -263,7 +299,7 @@ def build_review(entry, candidates, sources, failures):
                 matches = match_choice(choice, candidates)
                 reviewed = BULLA_REVIEWED_PRICES.get(normalized(choice["name"])) if "bullagastrobar.com" in entry["restaurantUrl"] else None
                 if reviewed:
-                    price, source_text = reviewed
+                    price, source_text, source_url = reviewed
                     supplement = choice.get("supplement", 0)
                     matches.insert(0, {
                         "regularName": choice["name"],
@@ -271,7 +307,7 @@ def build_review(entry, candidates, sources, failures):
                         "supplement": supplement,
                         "effectiveValue": price - supplement,
                         "confidence": 1,
-                        "sourceUrl": BULLA_DESSERT_PDF if "churros" in normalized(choice["name"]) else BULLA_PDF,
+                        "sourceUrl": source_url,
                         "sourceText": source_text,
                         "reviewed": True,
                     })

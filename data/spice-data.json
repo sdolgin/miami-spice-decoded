@@ -1412,7 +1412,9 @@
       5
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "quinto/6400"
   },
   {
    "name": "Nusr-Et Steakhouse Miami",
@@ -1440,7 +1442,9 @@
      "price": 110,
      "days": null
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "nusr-et-steakhouse-miami/56753"
   },
   {
    "name": "Delilah Miami",
@@ -1456,7 +1460,9 @@
       6
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "delilah-miami/53695"
   },
   {
    "name": "Claudie Restaurant",
@@ -1483,7 +1489,9 @@
       4
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "claudie-restaurant/56722"
   },
   {
    "name": "Rosa Sky Rooftop",
@@ -1499,7 +1507,9 @@
       6
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "rosa-sky-rooftop/45702"
   },
   {
    "name": "Casa Zeru",
@@ -1536,7 +1546,9 @@
       6
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "casa-zeru/48078"
   },
   {
    "name": "Sugar",
@@ -1552,7 +1564,9 @@
       4
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "sugar/19528"
   },
   {
    "name": "Tea Room",
@@ -1568,7 +1582,9 @@
       6
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "tea-room/48305"
   },
   {
    "name": "Hutong",
@@ -1597,7 +1613,9 @@
       6
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "hutong/22495"
   },
   {
    "name": "American Social Bar & Kitchen",
@@ -1628,7 +1646,9 @@
       6
      ]
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "american-social-bar-and-kitchen/16664"
   },
   {
    "name": "Felice Brickell",
@@ -1643,7 +1663,214 @@
      "price": 65,
      "days": null
     }
-   ]
+   ],
+   "area": "Brickell",
+   "slug": "felice-brickell/54612"
+  },
+  {
+   "name": "107 Taste Asian Restaurant",
+   "tiers": [
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/restaurants/miami-spice-south-miami",
+   "area": "South Miami",
+   "slug": "107-taste-asian-restaurant/56554"
+  },
+  {
+   "name": "La Boulangerie Boul'Mich Sunset",
+   "tiers": [
+    {
+     "meal": "brunch",
+     "price": 40,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 50,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 65,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/restaurants/miami-spice-south-miami",
+   "area": "South Miami",
+   "slug": "la-boulangerie-boulmich-sunset/61033"
+  },
+  {
+   "name": "CalaMillor Gourmet Experience",
+   "tiers": [
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 65,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/restaurants/miami-spice-south-miami",
+   "area": "South Miami",
+   "slug": "calamillor-gourmet-experience/48159"
+  },
+  {
+   "name": "Kitchen 57",
+   "tiers": [
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 50,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/restaurants/miami-spice-south-miami",
+   "area": "South Miami",
+   "slug": "kitchen-57/57861"
+  },
+  {
+   "name": "Old Lisbon Sunset Drive",
+   "tiers": [
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 65,
+     "days": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/restaurants/miami-spice-south-miami",
+   "area": "South Miami",
+   "slug": "old-lisbon-sunset-drive/4483"
+  },
+  {
+   "name": "Corteza",
+   "tiers": [
+    {
+     "meal": "lunch",
+     "price": 40,
+     "days": [
+      0,
+      3,
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "meal": "dinner",
+     "price": 65,
+     "days": [
+      0,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ],
+   "srcUrl": "https://www.miamiandbeaches.com/restaurants/miami-spice-south-miami",
+   "area": "South Miami",
+   "slug": "corteza/61188"
   }
  ],
  "roster": [
@@ -1828,11 +2055,6 @@
    "slug": "komodo/6324"
   },
   {
-   "name": "Quinto",
-   "area": "Brickell",
-   "slug": "quinto/6400"
-  },
-  {
    "name": "Fleming's Prime Steakhouse & Wine Bar - Brickell",
    "area": "Brickell",
    "slug": "flemings-prime-steakhouse-and-wine-bar-brickell/13139"
@@ -1863,19 +2085,9 @@
    "slug": "mosaico-kitchen-bar/26999"
   },
   {
-   "name": "Rosa Sky Rooftop",
-   "area": "Brickell",
-   "slug": "rosa-sky-rooftop/45702"
-  },
-  {
    "name": "Gekko",
    "area": "Brickell",
    "slug": "gekko/47877"
-  },
-  {
-   "name": "Tea Room",
-   "area": "Brickell",
-   "slug": "tea-room/48305"
   },
   {
    "name": "Cafe Americano Brickell",
@@ -1913,11 +2125,6 @@
    "slug": "tulum/5502"
   },
   {
-   "name": "American Social Bar & Kitchen",
-   "area": "Brickell",
-   "slug": "american-social-bar-and-kitchen/16664"
-  },
-  {
    "name": "Lafayette Miami",
    "area": "Brickell",
    "slug": "lafayette-miami/53904"
@@ -1948,16 +2155,6 @@
    "slug": "osaka-nikkei-miami/22377"
   },
   {
-   "name": "Claudie Restaurant",
-   "area": "Brickell",
-   "slug": "claudie-restaurant/56722"
-  },
-  {
-   "name": "Nusr-Et Steakhouse Miami",
-   "area": "Brickell",
-   "slug": "nusr-et-steakhouse-miami/56753"
-  },
-  {
    "name": "Baires Grill Brickell",
    "area": "Brickell",
    "slug": "baires-grill-brickell/57902"
@@ -1983,11 +2180,6 @@
    "slug": "casa-nane/58918"
   },
   {
-   "name": "Hutong",
-   "area": "Brickell",
-   "slug": "hutong/22495"
-  },
-  {
    "name": "NUNA",
    "area": "Brickell",
    "slug": "nuna/59046"
@@ -2011,26 +2203,6 @@
    "name": "Novecento Brickell",
    "area": "Brickell",
    "slug": "novecento-brickell/572"
-  },
-  {
-   "name": "Felice Brickell",
-   "area": "Brickell",
-   "slug": "felice-brickell/54612"
-  },
-  {
-   "name": "Casa Zeru",
-   "area": "Brickell",
-   "slug": "casa-zeru/48078"
-  },
-  {
-   "name": "Delilah Miami",
-   "area": "Brickell",
-   "slug": "delilah-miami/53695"
-  },
-  {
-   "name": "Sugar",
-   "area": "Brickell",
-   "slug": "sugar/19528"
   },
   {
    "name": "Ockap Caviar & Cuisine",
@@ -3243,26 +3415,6 @@
    "slug": "beauty-and-the-butcher/47528"
   },
   {
-   "name": "CalaMillor Gourmet Experience",
-   "area": "South Miami",
-   "slug": "calamillor-gourmet-experience/48159"
-  },
-  {
-   "name": "107 Taste Asian Restaurant",
-   "area": "South Miami",
-   "slug": "107-taste-asian-restaurant/56554"
-  },
-  {
-   "name": "Old Lisbon Sunset Drive",
-   "area": "South Miami",
-   "slug": "old-lisbon-sunset-drive/4483"
-  },
-  {
-   "name": "Kitchen 57",
-   "area": "South Miami",
-   "slug": "kitchen-57/57861"
-  },
-  {
    "name": "Two Chefs Restaurant",
    "area": "South Miami",
    "slug": "two-chefs-restaurant/437"
@@ -3271,16 +3423,6 @@
    "name": "NOE SUSHI BAR",
    "area": "South Miami",
    "slug": "noe-sushi-bar/58652"
-  },
-  {
-   "name": "La Boulangerie Boul'Mich Sunset",
-   "area": "South Miami",
-   "slug": "la-boulangerie-boulmich-sunset/61033"
-  },
-  {
-   "name": "Corteza",
-   "area": "South Miami",
-   "slug": "corteza/61188"
   },
   {
    "name": "Piccola Pizzeria South Miami",

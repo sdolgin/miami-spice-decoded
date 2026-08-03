@@ -196,12 +196,10 @@ const BASE="https://www.miamiandbeaches.com/l/eat-and-drink/";
 const DAYLETTERS=["M","T","W","T","F","S","S"];
 const DOMIDX=[1,2,3,4,5,6,0];
 
-// tier-known rows: pulled out of roster
+// tier-known rows: each TIERS_ONLY entry carries its own area/slug in the data file
 const tierRows=[];
 TIERS_ONLY.forEach(x=>{
-  const i=roster.findIndex(e=>e.name===x.name);
-  if(i<0){console.warn("tier-only name not in roster:",x.name);return;}
-  const e=roster.splice(i,1)[0];
+  const e={name:x.name,area:x.area,slug:x.slug};
   x.tiers.forEach(t=>tierRows.push({e,t}));
 });
 

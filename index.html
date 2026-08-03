@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miami Spice 2026 — decoded</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF6EE; --card:#FFFFFF; --ink:#221B15; --muted:#8B7C6C;
+  --chile:#C4331B; --mango:#E89A3C; --palm:#10564B; --sand:#EFE2CC;
+  --line:#E4D6C2; --good:#10564B; --shadow:0 2px 10px rgba(60,40,20,.08);
+}
+[data-theme="night"]{
+  --paper:#171310; --card:#211B16; --ink:#F3EAE0; --muted:#A8988A;
+  --chile:#E85B3F; --mango:#E89A3C; --palm:#4FB39A; --sand:#2B231C;
+  --line:#3A2F26; --good:#4FB39A; --shadow:0 2px 12px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;line-height:1.5;transition:background .25s,color .25s}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.strip{background:var(--chile);color:#FFF3E6;font-family:"Space Grotesk",monospace;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:7px 0}
+.strip .wrap{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.strip b{font-weight:700}
+#themeBtn{background:transparent;border:1px solid rgba(255,243,230,.5);color:#FFF3E6;border-radius:20px;padding:2px 12px;font:inherit;cursor:pointer}
+#themeBtn:hover{background:rgba(255,255,255,.12)}
+header.hero{padding:44px 0 26px;position:relative;overflow:hidden}
+.deco{display:flex;flex-direction:column;gap:5px;margin-bottom:22px}
+.deco span{height:6px;background:var(--mango);border-radius:3px}
+.deco span:nth-child(1){width:190px}
+.deco span:nth-child(2){width:120px;background:var(--chile)}
+.deco span:nth-child(3){width:64px;background:var(--palm)}
+h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(34px,6vw,62px);line-height:1.02;letter-spacing:-.01em}
+h1 .chi{color:var(--chile)}
+.sub{margin-top:14px;max-width:660px;color:var(--muted);font-size:16.5px}
+.pepper{position:absolute;right:-10px;top:8px;font-size:clamp(70px,12vw,150px);opacity:.14;transform:rotate(18deg);pointer-events:none;user-select:none}
+.filters{position:sticky;top:0;z-index:30;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;transition:background .25s}
+.frow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+select,.tog{font-family:"Space Grotesk",monospace;font-size:13px;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:20px;padding:7px 12px;cursor:pointer}
+select:focus-visible,.tog:focus-visible,#themeBtn:focus-visible,.rlink:focus-visible{outline:2px solid var(--chile);outline-offset:2px}
+.tog{display:inline-flex;align-items:center;gap:6px;user-select:none}
+.tog input{accent-color:var(--chile);width:14px;height:14px;cursor:pointer}
+.tog.on{border-color:var(--chile);color:var(--chile)}
+.count{margin-left:auto;font-family:"Space Grotesk",monospace;font-size:13px;color:var(--muted)}
+details.howto{margin:22px 0 6px;border:1.5px dashed var(--line);border-radius:12px;padding:14px 18px;font-size:14.5px}
+details.howto summary{cursor:pointer;font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:15.5px}
+details.howto p{margin-top:10px;max-width:840px;color:var(--muted)}
+details.howto b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px;padding:22px 0 16px}
+.cardR{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.chead{padding:16px 18px 12px;border-bottom:1px solid var(--line)}
+.tierline{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.rname{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:21px;line-height:1.1}
+.price{font-family:"Space Grotesk",monospace;font-weight:700;font-size:20px;color:var(--chile);white-space:nowrap}
+.price small{font-size:12px;color:var(--muted);font-weight:400}
+.meta{margin-top:4px;font-size:13px;color:var(--muted)}
+.meta .dot{color:var(--mango)}
+.badges{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+.badge{font-family:"Space Grotesk",monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;border-radius:12px;padding:2px 9px;border:1px solid var(--line);color:var(--muted)}
+.badge.tier{border-color:var(--mango);color:var(--mango)}
+.badge.res{border-color:var(--chile);color:var(--chile)}
+.badge.safe{border-color:var(--palm);color:var(--palm)}
+.badge.lim{border-color:var(--muted);color:var(--muted);border-style:dashed}
+.gauge{padding:13px 18px;border-bottom:1px solid var(--line)}
+.gline{display:flex;justify-content:space-between;align-items:center;font-family:"Space Grotesk",monospace;font-size:13px}
+.worth{font-weight:700}
+.worth .plus{color:var(--palm)}
+.chiles{font-size:15px;letter-spacing:2px}
+.bar{margin-top:8px;height:8px;border-radius:4px;background:var(--sand);overflow:hidden;display:flex}
+.bar .paid{background:var(--mango);height:100%}
+.bar .surplus{background:var(--palm);height:100%}
+.bar.neg .paid{background:var(--muted)}
+.gcap{margin-top:5px;font-size:11.5px;color:var(--muted)}
+.days{display:flex;gap:5px;padding:11px 18px;border-bottom:1px solid var(--line)}
+.day{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-family:"Space Grotesk",monospace;font-size:11px;border:1px solid var(--line);color:var(--muted)}
+.day.on{background:var(--chile);border-color:var(--chile);color:#FFF3E6;font-weight:700}
+.days.unknown .day{border-style:dashed}
+.dayscap{font-size:11px;color:var(--muted);align-self:center;margin-left:4px}
+.tabs{display:flex;border-bottom:1px solid var(--line)}
+.tab{flex:1;background:none;border:none;border-bottom:2.5px solid transparent;padding:9px 0;font-family:"Space Grotesk",monospace;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);cursor:pointer}
+.tab.active{color:var(--chile);border-bottom-color:var(--chile);font-weight:700}
+.menu{padding:12px 18px 16px;flex:1}
+.course{margin-bottom:11px}
+.course:last-child{margin-bottom:0}
+.cname{font-family:"Space Grotesk",monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--mango);margin-bottom:3px}
+.dish{display:flex;justify-content:space-between;gap:10px;font-size:14px;padding:2.5px 0}
+.dish .w{font-family:"Space Grotesk",monospace;color:var(--muted);white-space:nowrap}
+.dish.pick .n::before{content:"\2605  ";color:var(--chile)}
+.dish.pick{font-weight:600}
+.conf{padding:10px 18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.cdot{width:9px;height:9px;border-radius:50%;flex:none}
+.cdot.est{background:var(--muted)}
+.cdot.ver{background:var(--good)}
+.rlink{margin-left:auto;color:var(--palm);text-decoration:none;font-family:"Space Grotesk",monospace}
+.rlink:hover{text-decoration:underline}
+.cardL{background:var(--card);border:1px dashed var(--line);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.cardL .rname{font-size:17px}
+.cardL .note{font-size:12.5px;color:var(--muted)}
+.rosterHead{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:17px;margin:26px 0 4px;color:var(--muted)}
+.rosterHead b{color:var(--ink)}
+.gridL{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;padding:12px 0 60px}
+.empty{padding:60px 0;text-align:center;color:var(--muted);font-size:15px;display:none}
+footer{border-top:1px solid var(--line);padding:26px 0 44px;font-size:13px;color:var(--muted)}
+footer .wrap{max-width:840px}
+footer a{color:var(--palm)}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.gridL{grid-template-columns:1fr 1fr}.count{width:100%;margin-left:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="strip"><div class="wrap">
+  <div><b>MIAMI SPICE</b> 2026 · Aug 1 – Sep 30 · unofficial value guide</div>
+  <button id="themeBtn" aria-label="Toggle theme">&#9680; Theme</button>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <div class="pepper">&#127798;</div>
+  <div class="deco" aria-hidden="true"><span></span><span></span><span></span></div>
+  <h1>Miami Spice 2026 —<br><span class="chi">decoded.</span></h1>
+  <p class="sub">All 378 participating restaurants from the official GMCVB list — decoded value scores where menus are captured, verified tiers &amp; days where published, and honest Limited tags everywhere else. Brunch &amp; lunch $40 · Dinner $50–65 · Reserve $95+.</p>
+</div></header>
+
+<div class="filters"><div class="wrap frow">
+  <select id="fArea" aria-label="Filter by area"><option value="">All areas</option></select>
+  <select id="fMeal" aria-label="Filter by meal">
+    <option value="">Lunch, brunch &amp; dinner</option>
+    <option value="brunch">Brunch</option>
+    <option value="lunch">Lunch</option>
+    <option value="dinner">Dinner</option>
+    <option value="reserve">Reserve</option>
+  </select>
+  <select id="fDay" aria-label="Filter by day">
+    <option value="">Any day</option>
+    <option value="we">Weekend (Sat or Sun)</option>
+    <option value="6">Saturday</option><option value="0">Sunday</option>
+    <option value="1">Monday</option><option value="2">Tuesday</option>
+    <option value="3">Wednesday</option><option value="4">Thursday</option>
+    <option value="5">Friday</option>
+  </select>
+  <select id="fPrice" aria-label="Filter by price">
+    <option value="">Any price</option>
+    <option value="40">$40</option><option value="50">$50</option>
+    <option value="65">$62–65</option><option value="95">$95+</option>
+  </select>
+  <select id="fSort" aria-label="Sort">
+    <option value="value">Best value first</option>
+    <option value="cheap">Cheapest first</option>
+    <option value="food">Most food for the money</option>
+    <option value="az">A&ndash;Z</option>
+  </select>
+  <label class="tog"><input type="checkbox" id="tSafe"> Can't go wrong</label>
+  <label class="tog"><input type="checkbox" id="tDuds"> Hide the duds</label>
+  <label class="tog"><input type="checkbox" id="tDecoded"> Decoded only</label>
+  <div class="count" id="count"></div>
+</div></div>
+
+<main class="wrap">
+  <details class="howto">
+    <summary>How to read this</summary>
+    <p><b>Decoded cards</b> have a value score. <b>"Worth"</b> is what the same three courses would cost à la carte at that restaurant, per person, before tax, tip and drinks. <b>&#9733; Order this</b> marks the highest-value pick in each course. The <b>Full menu</b> tab shows every tracked option with its everyday price.</p>
+    <p><b>Confidence &amp; the Limited tag.</b> A green dot means prices came off the restaurant's own current menu. Grey means benchmarked estimates — real enough for ranking, not for arguing with your server. A dashed <b>Limited</b> badge means part of the listing (tier price, days, or menu) hasn't been captured or confirmed yet; a <b>~</b> before a price marks the tier price itself as an estimate. Cards marked <b>Limited &middot; menu pending</b> have a confirmed tier price and day schedule (from the GMCVB's own 2026 coverage) but no captured menu, so no value score yet. Restaurants in the "not yet decoded" section come straight from the official participant list with no menu data at all — the link on each goes to their official listing.</p>
+    <p><b>The day strip</b> (M–S) shows which days each tier is served. Dashed circles mean days weren't published — filtering by day keeps those in and counts them separately, since we can't rule them in or out. Always call ahead for weekends. <b>"Can't go wrong"</b> means even the cheapest combo of courses still beats the sticker price. Menus change without notice; the source of truth is miamiandbeaches.com.</p>
+  </details>
+
+  <div class="grid" id="grid"></div>
+  <div class="rosterHead" id="rosterHead" hidden>Not yet decoded — <b id="rosterCount"></b> more participants <span style="font-size:13px">(official list · no menu data captured yet)</span></div>
+  <div class="gridL" id="gridL"></div>
+  <div class="empty" id="empty">Nothing matches those filters. Loosen one — meal and price filters hide the not-yet-decoded roster entirely, since their tiers are unknown.</div>
+</main>
+
+<footer><div class="wrap">
+  Unofficial and unaffiliated with the GMCVB or any restaurant. The participant roster, neighborhoods and listing links come from the <a href="https://www.miamiandbeaches.com/deals/spice-restaurant-months/participating-restaurants-at-a-glance">official Miami Spice directory</a> (captured August 2026). Tier prices and days on decoded cards come from the 2026 program and press coverage; à la carte "worth" figures are per-person benchmarked estimates unless marked verified with a green dot. Everything excludes drinks, tax and gratuity. Data lives in <code>data/spice-data.json</code> — PRs and menu captures welcome. Built for planning, not for disputes at the table. &#127798;
+</div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+let DATA=[],TIERS_ONLY=[],roster=[];
+async function boot(){
+  try{
+    const res=await fetch("data/spice-data.json");
+    if(!res.ok)throw new Error(res.status);
+    const j=await res.json();
+    DATA=j.decoded;TIERS_ONLY=j.tiersOnly;roster=j.roster;
+    init();
+  }catch(err){
+    document.getElementById("empty").style.display="block";
+    document.getElementById("empty").textContent="Couldn\u2019t load data/spice-data.json ("+err.message+"). If you opened index.html directly from disk, serve it instead: run \u201cpython -m http.server\u201d in the repo folder and open http://localhost:8000";
+  }
+}
+function init(){
+
+const BASE="https://www.miamiandbeaches.com/l/eat-and-drink/";
+const DAYLETTERS=["M","T","W","T","F","S","S"];
+const DOMIDX=[1,2,3,4,5,6,0];
+
+// tier-known rows: pulled out of roster
+const tierRows=[];
+TIERS_ONLY.forEach(x=>{
+  const i=roster.findIndex(e=>e.name===x.name);
+  if(i<0){console.warn("tier-only name not in roster:",x.name);return;}
+  const e=roster.splice(i,1)[0];
+  x.tiers.forEach(t=>tierRows.push({e,t}));
+});
+
+// decoded rows: one per restaurant-tier
+const rows=[];
+DATA.forEach(r=>r.tiers.forEach(t=>{
+  const best=t.menu.reduce((s,c)=>s+Math.max(...c.d.map(x=>x[1])),0);
+  const worst=t.menu.reduce((s,c)=>s+Math.min(...c.d.map(x=>x[1])),0);
+  rows.push({r,t,best,worst,score:best/t.price,surplus:best-t.price,
+    safe:worst>=t.price, dud:best<t.price*1.05});
+}));
+
+// areas: union of official areas, sorted
+[...new Set([...roster.map(x=>x.area),...DATA.map(r=>r.area)])].sort().forEach(a=>{
+  const o=document.createElement("option");o.value=a;o.textContent=a;$("fArea").appendChild(o);
+});
+
+function chiles(score){
+  const n=score>=1.6?4:score>=1.4?3:score>=1.2?2:score>=1.05?1:0;
+  return "\u{1F336}".repeat(n)||"\u00B7";
+}
+function fmtDays(t){
+  if(!t.days) return `<div class="days unknown">${DOMIDX.map((d,i)=>`<span class="day">${DAYLETTERS[i]}</span>`).join("")}<span class="dayscap">days not published</span></div>`;
+  return `<div class="days">${DOMIDX.map((d,i)=>`<span class="day ${t.days.includes(d)?"on":""}">${DAYLETTERS[i]}</span>`).join("")}</div>`;
+}
+function card(row){
+  const{r,t,best,surplus,score}=row;
+  const paidPct=Math.min(100,(t.price/best)*100);
+  const picks=t.menu.map(c=>{
+    const top=c.d.reduce((a,b)=>b[1]>a[1]?b:a);
+    return `<div class="course"><div class="cname">${c.c}</div>
+      <div class="dish pick"><span class="n">${top[0]}</span><span class="w">$${top[1]}</span></div></div>`;
+  }).join("");
+  const full=t.menu.map(c=>{
+    const top=Math.max(...c.d.map(x=>x[1]));
+    return `<div class="course"><div class="cname">${c.c}</div>${
+      c.d.map(x=>`<div class="dish ${x[1]===top?"pick":""}"><span class="n">${x[0]}</span><span class="w">$${x[1]}</span></div>`).join("")
+    }</div>`;
+  }).join("");
+  const mealLabel=t.meal==="reserve"?"Reserve dinner":t.meal[0].toUpperCase()+t.meal.slice(1);
+  const lim=t.tierEst||!t.days;
+  return `<article class="cardR">
+    <div class="chead">
+      <div class="tierline"><div class="rname">${r.name}</div><div class="price">${t.tierEst?"<small>~</small>":""}$${t.price}</div></div>
+      <div class="meta">${r.cuisine} <span class="dot">&middot;</span> ${r.area} <span class="dot">&middot;</span> ${mealLabel}</div>
+      <div class="badges">
+        ${t.meal==="reserve"?'<span class="badge res">Reserve</span>':''}
+        <span class="badge tier">${mealLabel} ${t.tierEst?"~":""}$${t.price}</span>
+        ${row.safe?'<span class="badge safe">Can\u2019t go wrong</span>':''}
+        ${row.dud?'<span class="badge">Thin value</span>':''}
+        ${lim?'<span class="badge lim" title="Tier price, days, or menu details not yet confirmed">Limited</span>':''}
+      </div>
+    </div>
+    <div class="gauge">
+      <div class="gline"><span class="worth">Worth ~$${best} <span class="plus">${surplus>=0?`(+$${surplus})`:`(&minus;$${-surplus})`}</span></span>
+      <span class="chiles" title="Value heat">${chiles(score)}</span></div>
+      <div class="bar ${surplus<0?"neg":""}"><span class="paid" style="width:${paidPct}%"></span><span class="surplus" style="width:${100-paidPct}%"></span></div>
+      <div class="gcap">You pay the mango, you keep the green &middot; ${(score*100-100).toFixed(0)}% over sticker</div>
+    </div>
+    ${fmtDays(t)}
+    <div class="tabs">
+      <button class="tab active" data-tab="picks">Order this</button>
+      <button class="tab" data-tab="full">Full menu</button>
+    </div>
+    <div class="menu" data-pane="picks">${picks}</div>
+    <div class="menu" data-pane="full" hidden>${full}</div>
+    <div class="conf"><span class="cdot ${t.verified?"ver":"est"}"></span>${t.verified?"Prices verified from the restaurant\u2019s current menu":"Benchmarked estimate \u2014 \u00e0 la carte prices not yet verified"}<a class="rlink" href="${BASE}${r.slug}" target="_blank" rel="noopener">Official listing &#8599;</a></div>
+  </article>`;
+}
+function cardTier(row){
+  const{e,t}=row;
+  const mealLabel=t.meal==="reserve"?"Reserve dinner":t.meal[0].toUpperCase()+t.meal.slice(1);
+  return `<article class="cardR">
+    <div class="chead">
+      <div class="tierline"><div class="rname">${e.name}</div><div class="price">$${t.price}</div></div>
+      <div class="meta">${e.area} <span class="dot">&middot;</span> ${mealLabel}</div>
+      <div class="badges">
+        ${t.meal==="reserve"?'<span class="badge res">Reserve</span>':''}
+        <span class="badge tier">${mealLabel} $${t.price}</span>
+        <span class="badge lim" title="Tier and days confirmed; menu and worth not yet decoded">Limited &middot; menu pending</span>
+      </div>
+    </div>
+    ${fmtDays(t)}
+    <div class="conf"><span class="cdot est"></span>Tier &amp; days confirmed &mdash; menu not decoded yet, no value score<a class="rlink" href="${BASE}${e.slug}" target="_blank" rel="noopener">Official listing &#8599;</a></div>
+  </article>`;
+}
+function cardLim(e){
+  return `<div class="cardL">
+    <div class="tierline"><div class="rname">${e.name}</div><span class="badge lim">Limited data</span></div>
+    <div class="meta">${e.area}</div>
+    <div class="note">On the official 2026 participant list. Tier, days and menu not captured yet.</div>
+    <a class="rlink" style="margin-left:0" href="${BASE}${e.slug}" target="_blank" rel="noopener">Official listing &#8599;</a>
+  </div>`;
+}
+
+function apply(){
+  const area=$("fArea").value, meal=$("fMeal").value, day=$("fDay").value,
+        price=$("fPrice").value, sort=$("fSort").value,
+        safe=$("tSafe").checked, hideDuds=$("tDuds").checked, decodedOnly=$("tDecoded").checked;
+  let out=rows.filter(x=>{
+    if(area&&x.r.area!==area)return false;
+    if(meal&&x.t.meal!==meal)return false;
+    if(price){
+      if(price==="95"&&x.t.price<95)return false;
+      if(price==="65"&&(x.t.price<60||x.t.price>=95))return false;
+      if((price==="40"||price==="50")&&x.t.price!==+price)return false;
+    }
+    if(day&&x.t.days){
+      if(day==="we"){if(!x.t.days.includes(0)&&!x.t.days.includes(6))return false;}
+      else if(!x.t.days.includes(+day))return false;
+    }
+    if(safe&&!x.safe)return false;
+    if(hideDuds&&x.dud)return false;
+    return true;
+  });
+  out.sort((a,b)=>{
+    if(sort==="cheap")return a.t.price-b.t.price||b.score-a.score;
+    if(sort==="food")return b.best-a.best;
+    if(sort==="az")return a.r.name.localeCompare(b.r.name);
+    return b.score-a.score;
+  });
+  // tier-known rows: filter on area/meal/day/price; excluded by safe (no worth data)
+  let tk=[];
+  if(!safe&&!decodedOnly){
+    tk=tierRows.filter(x=>{
+      if(area&&x.e.area!==area)return false;
+      if(meal&&x.t.meal!==meal)return false;
+      if(price){
+        if(price==="95"&&x.t.price<95)return false;
+        if(price==="65"&&(x.t.price<60||x.t.price>=95))return false;
+        if((price==="40"||price==="50")&&x.t.price!==+price)return false;
+      }
+      if(day&&x.t.days){
+        if(day==="we"){if(!x.t.days.includes(0)&&!x.t.days.includes(6))return false;}
+        else if(!x.t.days.includes(+day))return false;
+      }
+      return true;
+    });
+    tk.sort((a,b)=>sort==="cheap"?a.t.price-b.t.price:a.e.name.localeCompare(b.e.name));
+  }
+  // roster: only when no meal/price filter and no can't-go-wrong (their tiers are unknown)
+  let lim=[];
+  if(!decodedOnly&&!meal&&!price&&!safe){
+    lim=roster.filter(e=>!area||e.area===area).sort((a,b)=>a.name.localeCompare(b.name));
+  }
+  const unknownKept=day?(out.filter(x=>!x.t.days).length+tk.filter(x=>!x.t.days).length):0;
+  $("grid").innerHTML=out.map(card).join("")+tk.map(cardTier).join("");
+  $("gridL").innerHTML=lim.map(cardLim).join("");
+  $("rosterHead").hidden=!lim.length;
+  $("rosterCount").textContent=lim.length;
+  $("empty").style.display=(out.length||tk.length||lim.length)?"none":"block";
+  $("count").textContent=`${out.length} decoded · ${tk.length} tier-only · ${lim.length} roster-only`+(unknownKept?` · ${unknownKept} unpublished days kept`:``);
+  document.querySelectorAll(".cardR").forEach(c=>{
+    c.querySelectorAll(".tab").forEach(tb=>tb.addEventListener("click",()=>{
+      c.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===tb));
+      c.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==tb.dataset.tab);
+    }));
+  });
+}
+
+["fArea","fMeal","fDay","fPrice","fSort"].forEach(id=>$(id).addEventListener("change",apply));
+["tSafe","tDuds","tDecoded"].forEach(id=>$(id).addEventListener("change",e=>{
+  e.target.closest(".tog").classList.toggle("on",e.target.checked);apply();
+}));
+$("themeBtn").addEventListener("click",()=>{
+  document.body.dataset.theme=document.body.dataset.theme==="night"?"":"night";
+});
+apply();
+}
+boot();
+</script>
+</body>
+</html>

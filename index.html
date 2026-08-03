@@ -156,7 +156,6 @@ footer a{color:var(--palm)}
     <option value="az">A&ndash;Z</option>
   </select>
   <label class="tog"><input type="checkbox" id="tSafe"> Can't go wrong</label>
-  <label class="tog"><input type="checkbox" id="tDuds"> Hide the duds</label>
   <label class="tog"><input type="checkbox" id="tDecoded"> Decoded only</label>
   <div class="count" id="count"></div>
 </div></div>
@@ -314,7 +313,7 @@ function cardLim(e){
 function apply(){
   const area=$("fArea").value, meal=$("fMeal").value, day=$("fDay").value,
         price=$("fPrice").value, sort=$("fSort").value,
-        safe=$("tSafe").checked, hideDuds=$("tDuds").checked, decodedOnly=$("tDecoded").checked;
+  safe=$("tSafe").checked, decodedOnly=$("tDecoded").checked;
   let out=rows.filter(x=>{
     if(area&&x.r.area!==area)return false;
     if(meal&&x.t.meal!==meal)return false;
@@ -328,7 +327,6 @@ function apply(){
       else if(!x.t.days.includes(+day))return false;
     }
     if(safe&&!x.safe)return false;
-    if(hideDuds&&x.dud)return false;
     return true;
   });
   out.sort((a,b)=>{
@@ -377,7 +375,7 @@ function apply(){
 }
 
 ["fArea","fMeal","fDay","fPrice","fSort"].forEach(id=>$(id).addEventListener("change",apply));
-["tSafe","tDuds","tDecoded"].forEach(id=>$(id).addEventListener("change",e=>{
+["tSafe","tDecoded"].forEach(id=>$(id).addEventListener("change",e=>{
   e.target.closest(".tog").classList.toggle("on",e.target.checked);apply();
 }));
 $("themeBtn").addEventListener("click",()=>{

@@ -2,11 +2,33 @@ import unittest
 
 from bs4 import BeautifulSoup
 
+from apply_valuation_review import resolved_match
 from fetch_spice import merge, parse_menu_pane, parse_schedule
-from fetch_regular_menus import BULLA_BRUNCH_PDF, build_review, discover_menu_urls, html_candidates, normalized, parse_price, score_match
+from fetch_regular_menus import BULLA_BRUNCH_PDF, build_review, discover_menu_urls, html_candidates, normalized, parse_price, restore_decisions, saved_decisions, score_match
 
 
 class OfficialListingParserTests(unittest.TestCase):
+    def test_review_decision_overrides_confidence_gate(self):
+        weak_match = {"confidence": 0.5, "effectiveValue": 18, "sourceUrl": "https://example.test/menu"}
+        choice = {"matches": [weak_match], "decision": {"type": "accept", "match": weak_match}}
+
+        self.assertEqual(resolved_match(choice, 0.8), weak_match)
+        self.assertIsNone(resolved_match({"matches": [weak_match], "decision": None}, 0.8))
+        self.assertIsNone(resolved_match({"matches": [weak_match], "decision": {"type": "unavailable"}}, 0.8))
+
+    def test_review_decisions_survive_candidate_regeneration(self):
+        decision = {"type": "manual", "match": {"effectiveValue": 21, "sourceUrl": "https://example.test/menu"}}
+        old_review = {"restaurants": [{"name": "Example", "tiers": [{"meal": "dinner", "price": 50, "courses": [
+            {"course": "Entrees", "choices": [{"spiceName": "Dish", "decision": decision}]}
+        ]}]}]}
+        regenerated = {"name": "Example", "tiers": [{"meal": "dinner", "price": 50, "courses": [
+            {"course": "Entrees", "choices": [{"spiceName": "Dish", "matches": [], "decision": None}]}
+        ]}]}
+
+        restore_decisions(regenerated, saved_decisions(old_review))
+
+        self.assertEqual(regenerated["tiers"][0]["courses"][0]["choices"][0]["decision"], decision)
+
     def test_schedule_maps_days_and_uses_none_when_no_days_are_active(self):
         spice = BeautifulSoup(
             """

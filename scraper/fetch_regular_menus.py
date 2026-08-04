@@ -324,6 +324,27 @@ def build_review(entry, candidates, sources, failures):
     }
 
 
+def saved_decisions(review):
+    decisions = {}
+    for restaurant in review.get("restaurants", []):
+        for tier in restaurant.get("tiers", []):
+            for course in tier.get("courses", []):
+                for choice in course.get("choices", []):
+                    if choice.get("decision") is not None:
+                        key = (restaurant["name"], tier["meal"], tier["price"], course["course"], choice["spiceName"])
+                        decisions[key] = choice["decision"]
+    return decisions
+
+
+def restore_decisions(restaurant, decisions):
+    for tier in restaurant.get("tiers", []):
+        for course in tier.get("courses", []):
+            for choice in course.get("choices", []):
+                key = (restaurant["name"], tier["meal"], tier["price"], course["course"], choice["spiceName"])
+                if key in decisions:
+                    choice["decision"] = decisions[key]
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("names", nargs="*", help="exact restaurant names")
@@ -335,6 +356,7 @@ def main():
         parser.error("provide restaurant names or --domains")
 
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    decisions = saved_decisions(json.loads(OUTPUT.read_text(encoding="utf-8"))) if OUTPUT.exists() else {}
     entries = select_entries(data, args.names, args.domains)
     client = MenuClient(refresh=args.refresh, delay=max(0, args.delay))
     reviews = []
@@ -343,6 +365,7 @@ def main():
         try:
             sources, candidates, failures = collect_sources(entry, client)
             review = build_review(entry, candidates, sources, failures)
+            restore_decisions(review, decisions)
             matched = sum(bool(choice["matches"]) for tier in review["tiers"] for course in tier["courses"] for choice in course["choices"])
             total = sum(1 for tier in review["tiers"] for course in tier["courses"] for _ in course["choices"])
             print(f"  {len(sources)} priced source(s), {len(candidates)} candidates, {matched}/{total} choices matched")

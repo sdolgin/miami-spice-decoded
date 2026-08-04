@@ -97,7 +97,18 @@
            "sourceText": "Seasonal Butter Cake 13 sometimes sweet, maybe tart - for sure delicious!"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Banana Coffee Cake",
+           "regularPrice": 13.0,
+           "supplement": 0,
+           "effectiveValue": 13.0,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Banana Coffee Cake 13 Perfect to share! Dark rum butterscotch, caramelized banana, crème fraîche"
+          }
+         }
         },
         {
          "spiceName": "CHOPPED CAESAR SALAD",
@@ -145,7 +156,18 @@
            "sourceText": "Hazelnut Torta 13 housemade nutella, candied hazelnut, salted caramel gelato"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Heirloom Tomato & Burrata",
+           "regularPrice": 17.5,
+           "supplement": 0,
+           "effectiveValue": 17.5,
+           "confidence": 0.861,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Heirloom Tomato & Burrata 17.5 grilled ciabatta, arugula, shaved red onion, calabrian vinaigrette"
+          }
+         }
         },
         {
          "spiceName": "SMOKED SALMON AVOCADO TOAST*",
@@ -178,7 +200,18 @@
            "sourceText": "Roasted Salmon* 26 caramelized romanesco, broccolini, fregola, basil pesto, lemon gremolata, affinato"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Smoked Salmon Avocado Toast*",
+           "regularPrice": 18.0,
+           "supplement": 0,
+           "effectiveValue": 18.0,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Smoked Salmon Avocado Toast* 18 caper relish, watermelon radish, toasted pine nut, pickled red onion"
+          }
+         }
         },
         {
          "spiceName": "WILD SHRIMP SCAMPI",
@@ -193,7 +226,18 @@
            "sourceText": "Wild Shrimp Scampi 19.5 blistered tomato, grana padano, garlic confit, herb butter, grilled bread"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Wild Shrimp Scampi",
+           "regularPrice": 19.5,
+           "supplement": 0,
+           "effectiveValue": 19.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Wild Shrimp Scampi 19.5 blistered tomato, grana padano, garlic confit, herb butter, grilled bread"
+          }
+         }
         },
         {
          "spiceName": "JALEA-STYLE CALAMARI FRITTI (MIAMI EXCLUSIVE)",
@@ -1653,7 +1697,18 @@
            "sourceText": "MILANESAS $19.00 Beef or Chicken, Lettuce, Tomato & Mayo"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "EMPANADAS",
+           "regularPrice": 6.0,
+           "supplement": 0,
+           "effectiveValue": 6.0,
+           "confidence": 1,
+           "sourceUrl": "https://www.bairesgrill.com/menu/brickell",
+           "sourceText": "EMPANADAS $6.00 (FRIED OR GRILLED) Beef - Chicken - Ham & Cheese - Spinach - Onion & Cheese - Corn"
+          }
+         }
         },
         {
          "spiceName": "Side Caesar",
@@ -1701,7 +1756,18 @@
            "sourceText": "SOUP OF THE DAY $9.00 Gluten Free"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "SOUP OF THE DAY",
+           "regularPrice": 9.0,
+           "supplement": 0,
+           "effectiveValue": 9.0,
+           "confidence": 1,
+           "sourceUrl": "https://www.bairesgrill.com/menu/brickell",
+           "sourceText": "SOUP OF THE DAY $9.00 Gluten Free"
+          }
+         }
         }
        ]
       },
@@ -1863,7 +1929,18 @@
            "sourceText": "STEAK & EGGS* Petit Skirt Steak, Organic Eggs, Roasted Potatoes, Mixed Lettuce Gluten Free $28.00"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "MOLTEN CAKE",
+           "regularPrice": 13.0,
+           "supplement": 0,
+           "effectiveValue": 13.0,
+           "confidence": 1,
+           "sourceUrl": "https://www.bairesgrill.com/menu/brickell",
+           "sourceText": "MOLTEN CAKE $13.00 Valrhona Chocolate Lava Cake, Vanilla Ice Cream, Berry Coulis."
+          }
+         }
         }
        ]
       }
@@ -1922,7 +1999,18 @@
            "sourceText": "MILANESAS $19.00 Beef or Chicken, Lettuce, Tomato & Mayo"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "EMPANADAS",
+           "regularPrice": 6.0,
+           "supplement": 0,
+           "effectiveValue": 6.0,
+           "confidence": 1,
+           "sourceUrl": "https://www.bairesgrill.com/menu/coral-gables",
+           "sourceText": "EMPANADAS $6.00 (FRIED OR GRILLED) Beef - Chicken - Ham & Cheese - Spinach - Onion & Cheese - Corn"
+          }
+         }
         },
         {
          "spiceName": "Side Caesar Salad",
@@ -1988,7 +2076,18 @@
            "sourceText": "ASSORTED HOT TEAS $3.95"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "SOUP OF THE DAY",
+           "regularPrice": 9.0,
+           "supplement": 0,
+           "effectiveValue": 9.0,
+           "confidence": 1,
+           "sourceUrl": "https://www.bairesgrill.com/menu/coral-gables",
+           "sourceText": "SOUP OF THE DAY Gluten Free $9.00"
+          }
+         }
         }
        ]
       },

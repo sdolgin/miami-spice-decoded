@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valuation Review Queue</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f1f0eb;--panel:#fff;--ink:#20231f;--muted:#697067;--line:#d8d8ce;
+  --green:#1e6650;--green-soft:#e1eee8;--amber:#9b5b09;--amber-soft:#fff0cf;
+  --red:#a43a32;--red-soft:#f8e4df;--blue:#285c80;--blue-soft:#e2edf5;
+  --shadow:0 2px 12px rgba(30,35,31,.08);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,sans-serif;line-height:1.45}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.top{position:sticky;top:0;z-index:20;background:#20231f;color:#fff;border-bottom:4px solid #e4a72d}
+.topin{max-width:1500px;margin:auto;padding:15px 22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{margin-right:auto}.brand h1{font-size:20px;line-height:1.1;margin:0;font-weight:800}.brand h1::before{content:"REVIEW MODE";display:inline-block;margin-right:10px;padding:4px 7px;background:#e4a72d;color:#20231f;font:700 10px "DM Mono",monospace;vertical-align:3px}.brand p{margin:3px 0 0;color:#b8bdb6;font:12px "DM Mono",monospace}
+.metrics{display:flex;gap:5px}.metric{min-width:82px;padding:7px 10px;background:#30342f;border:1px solid #4c524b;border-radius:4px}.metric:first-child{background:#e4a72d;border-color:#e4a72d;color:#20231f}.metric b{display:block;font:500 17px "DM Mono",monospace}.metric span{font-size:10px;color:#bdc3bc;text-transform:uppercase}.metric:first-child span{color:#55421b}
+.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:285px minmax(0,1fr);min-height:calc(100vh - 82px)}
+.side{border-right:1px solid var(--line);padding:18px 14px;position:sticky;top:86px;height:calc(100vh - 86px);overflow:auto;background:#e8e7e1}
+.search{width:100%;border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:9px 11px;color:var(--ink)}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin:9px 0 15px}.filter{border:1px solid var(--line);border-radius:5px;background:var(--panel);padding:6px 8px;font-size:12px;color:var(--muted)}.filter.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.restaurants{display:flex;flex-direction:column;gap:4px}.restaurant{width:100%;text-align:left;border:1px solid transparent;border-radius:6px;background:transparent;padding:9px}.restaurant:hover{background:rgba(255,255,255,.6)}.restaurant.on{background:var(--panel);border-color:var(--line);box-shadow:var(--shadow)}
+.restaurant b{display:block;font-size:13px}.restaurant span{color:var(--muted);font:11px "DM Mono",monospace}.restaurant .warn{color:var(--red)}.restaurant .countNeeds{color:var(--amber);font-weight:500}
+.main{padding:24px 28px 80px;min-width:0}.mainhead{display:flex;gap:14px;align-items:start;margin-bottom:20px}.mainhead h2{font-size:28px;line-height:1.1;margin:0}.mainhead p{color:var(--muted);font-size:13px;margin:6px 0 0}.source{margin-left:auto;color:var(--blue);font:12px "DM Mono",monospace;text-decoration:none}.source:hover{text-decoration:underline}
+.worknote{display:flex;gap:12px;align-items:flex-start;margin:0 0 20px;padding:13px 15px;border:1px solid #dca93f;border-left:6px solid #d18a0b;background:var(--amber-soft)}.worknote b{display:block;font-size:13px}.worknote p{margin:2px 0 0;color:#79501b;font-size:12px}.workicon{font:700 18px "DM Mono",monospace;color:var(--amber)}
+.tier{margin-bottom:28px}.tierhead{display:flex;align-items:center;gap:10px;padding-bottom:8px;border-bottom:2px solid var(--ink);margin-bottom:10px}.tierhead h3{margin:0;font-size:16px;text-transform:capitalize}.pill{font:10px "DM Mono",monospace;text-transform:uppercase;border-radius:20px;padding:3px 8px;background:var(--blue-soft);color:var(--blue)}
+.course{margin:18px 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.choice{background:var(--panel);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);margin-bottom:10px;overflow:hidden}.choice.needs{border:2px solid #dca93f;border-left:8px solid #d18a0b}.choicehead{padding:13px 15px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--line)}.choice.needs .choicehead{background:#fff8e8}.choicehead h4{font-size:15px;margin:0}.status{margin-left:auto;font:10px "DM Mono",monospace;text-transform:uppercase;border-radius:3px;padding:4px 8px}.status.needs{color:#fff;background:var(--amber)}.status.auto{color:var(--blue);background:var(--blue-soft)}.status.accepted{color:var(--green);background:var(--green-soft)}.status.blocked{color:var(--red);background:var(--red-soft)}
+.why{padding:8px 15px;background:var(--amber-soft);color:#79501b;font-size:11px;border-bottom:1px solid #ead29b}.why b{font-family:"DM Mono",monospace;text-transform:uppercase}
+.selected{padding:10px 15px;background:var(--green-soft);font-size:12px;color:var(--green);display:flex;align-items:center;gap:8px}.selected.block{background:var(--red-soft);color:var(--red)}
+.matches{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:8px;padding:12px}.match{border:1px solid var(--line);border-radius:6px;padding:11px;display:flex;flex-direction:column;min-width:0}.matchtop{display:flex;gap:8px;align-items:start}.match h5{font-size:13px;margin:0;flex:1}.money{font:500 13px "DM Mono",monospace;color:var(--green);white-space:nowrap}.confidence{font:10px "DM Mono",monospace;color:var(--muted);margin:5px 0}.evidence{font-size:11px;color:var(--muted);margin:0 0 10px;overflow-wrap:anywhere;flex:1}.actions{display:flex;align-items:center;gap:7px}.accept,.save{border:0;border-radius:5px;background:var(--green);color:#fff;padding:6px 10px;font-size:11px;font-weight:700}.open{color:var(--blue);font:11px "DM Mono",monospace;text-decoration:none}.open:hover{text-decoration:underline}
+.reviewactions{padding:0 12px 12px;display:flex;gap:7px;flex-wrap:wrap}.secondary,.danger{border:1px solid var(--line);border-radius:5px;background:var(--panel);padding:6px 10px;font-size:11px}.danger{color:var(--red);border-color:#e3bcb6}.manual{width:100%;border-top:1px solid var(--line);padding:10px 14px}.manual summary{font-size:11px;color:var(--muted);cursor:pointer}.manualgrid{display:grid;grid-template-columns:2fr 1fr 1fr 3fr;gap:7px;margin-top:9px}.manual input{width:100%;border:1px solid var(--line);border-radius:5px;padding:7px 8px;font-size:11px}.manual .wide{grid-column:1/-1}.empty,.error{border:1px dashed var(--line);border-radius:8px;padding:35px;text-align:center;color:var(--muted)}.error{border-color:#dfafa9;background:var(--red-soft);color:var(--red);text-align:left}.toast{position:fixed;right:20px;bottom:20px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:6px;font-size:12px;box-shadow:var(--shadow);opacity:0;transform:translateY(8px);pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:none}.toast.bad{background:var(--red)}
+@media(max-width:850px){.layout{display:block}.side{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}.restaurants{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-height:260px;overflow:auto}.main{padding:20px 14px 60px}.metrics{width:100%;overflow:auto}.manualgrid{grid-template-columns:1fr 1fr}.manualgrid .sourcefield{grid-column:1/-1}.mainhead h2{font-size:23px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin">
+  <div class="brand"><h1>Valuation review</h1><p id="generated">Loading queue...</p></div>
+  <div class="metrics"><div class="metric"><b id="mNeeds">0</b><span>Needs review</span></div><div class="metric"><b id="mReady">0</b><span>Publishable</span></div><div class="metric"><b id="mBlocked">0</b><span>Blocked</span></div></div>
+</div></header>
+<div class="layout">
+  <aside class="side">
+    <input class="search" id="search" type="search" placeholder="Search queue" aria-label="Search queue">
+    <div class="filters" id="filters">
+      <button class="filter on" data-filter="needs">Needs review</button><button class="filter" data-filter="all">All</button>
+      <button class="filter" data-filter="accepted">Accepted</button><button class="filter" data-filter="auto">Auto-ready</button>
+      <button class="filter" data-filter="blocked">Blocked</button>
+    </div>
+    <nav class="restaurants" id="restaurants" aria-label="Restaurants"></nav>
+  </aside>
+  <main class="main" id="main"><div class="empty">Loading review data...</div></main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const $=id=>document.getElementById(id);
+const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[char]);
+let review=null,rows=[],activeRestaurant="",filter="needs",query="";
+
+function statusOf(choice){
+  const type=choice.decision?.type;
+  if(type==="accept"||type==="manual")return "accepted";
+  if(type==="unavailable")return "blocked";
+  return choice.matches?.[0]?.confidence>=.8?"auto":"needs";
+}
+function statusLabel(status){return {accepted:"Accepted",blocked:"No equivalent",auto:"Auto-ready",needs:"Needs review"}[status]}
+function reviewReason(choice){
+  if(!choice.matches?.length)return "No regular-menu candidate was found. Enter evidence manually or mark no verified equivalent.";
+  const confidence=Math.round(choice.matches[0].confidence*100);
+  return `Best candidate is only a ${confidence}% name match. Compare the dish and source excerpt, then accept or enter better evidence.`;
+}
+function buildRows(){
+  rows=[];
+  review.restaurants.forEach(restaurant=>(restaurant.tiers||[]).forEach(tier=>tier.courses.forEach(course=>course.choices.forEach(choice=>rows.push({restaurant,tier,course,choice})))));
+}
+function matchesView(row){
+  if(filter!=="all"&&statusOf(row.choice)!==filter)return false;
+  if(!query)return true;
+  const haystack=[row.restaurant.name,row.tier.meal,row.course.course,row.choice.spiceName,...(row.choice.matches||[]).map(match=>match.regularName)].join(" ").toLowerCase();
+  return haystack.includes(query);
+}
+function keyFor(row){return {restaurant:row.restaurant.name,meal:row.tier.meal,price:row.tier.price,course:row.course.course,spiceName:row.choice.spiceName}}
+function updateMetrics(){
+  const counts={needs:0,accepted:0,auto:0,blocked:0};rows.forEach(row=>counts[statusOf(row.choice)]++);
+  $("mNeeds").textContent=counts.needs;$("mReady").textContent=counts.accepted+counts.auto;$("mBlocked").textContent=counts.blocked;
+}
+function renderRestaurants(){
+  const visible=review.restaurants.filter(restaurant=>restaurant.error||rows.some(row=>row.restaurant===restaurant&&matchesView(row)));
+  if(!visible.some(item=>item.name===activeRestaurant))activeRestaurant=visible[0]?.name||"";
+  $("restaurants").innerHTML=visible.map(restaurant=>{
+    const related=rows.filter(row=>row.restaurant===restaurant&&matchesView(row));
+    const needs=rows.filter(row=>row.restaurant===restaurant&&statusOf(row.choice)==="needs").length;
+    const detail=restaurant.error?'<span class="warn">Blocked: source unavailable</span>':filter==="needs"?`<span class="countNeeds">${needs} unresolved</span>`:`<span>${related.length} choice${related.length===1?"":"s"} · ${needs} unresolved</span>`;
+    return `<button class="restaurant ${restaurant.name===activeRestaurant?"on":""}" data-restaurant="${esc(restaurant.name)}"><b>${esc(restaurant.name)}</b>${detail}</button>`;
+  }).join("")||'<div class="empty">No matches</div>';
+}
+function selectedText(choice){
+  const decision=choice.decision;if(!decision)return "";
+  if(decision.type==="unavailable")return '<div class="selected block">Marked as having no verified regular-menu equivalent.</div>';
+  const match=decision.match;
+  return `<div class="selected">Selected: <b>${esc(match.regularName)}</b> · $${match.regularPrice} regular · $${match.effectiveValue} effective</div>`;
+}
+function matchCard(match,index,id){
+  const percent=Math.round(match.confidence*100);
+  return `<div class="match"><div class="matchtop"><h5>${esc(match.regularName)}</h5><span class="money">$${match.effectiveValue}</span></div><div class="confidence">${percent}% match · $${match.regularPrice}${match.supplement?` − $${match.supplement} supplement`:""}</div><p class="evidence">${esc(match.sourceText||"No source excerpt")}</p><div class="actions"><button class="accept" data-accept="${id}" data-match="${index}">Accept</button><a class="open" href="${esc(match.sourceUrl)}" target="_blank" rel="noopener">Open source</a></div></div>`;
+}
+function choiceCard(row,id){
+  const status=statusOf(row.choice),decision=row.choice.decision;
+  const why=status==="needs"?`<div class="why"><b>Human decision required:</b> ${esc(reviewReason(row.choice))}</div>`:"";
+  return `<article class="choice ${status}"><div class="choicehead"><h4>${esc(row.choice.spiceName)}</h4><span class="status ${status}">${statusLabel(status)}</span></div>${why}${selectedText(row.choice)}
+    <div class="matches">${row.choice.matches?.length?row.choice.matches.map((match,index)=>matchCard(match,index,id)).join(""):'<div class="empty">No candidates found</div>'}</div>
+    <div class="reviewactions">${decision?`<button class="secondary" data-clear="${id}">Clear decision</button>`:""}<button class="danger" data-unavailable="${id}">No verified equivalent</button></div>
+    <details class="manual"><summary>Enter manual evidence</summary><form class="manualgrid" data-manual="${id}"><input name="regularName" required placeholder="Regular menu dish"><input name="regularPrice" required type="number" min="0.01" step="0.01" placeholder="Price"><input name="supplement" type="number" min="0" step="0.01" value="0" placeholder="Supplement"><input class="sourcefield" name="sourceUrl" required type="url" placeholder="Source URL"><input class="wide" name="sourceText" placeholder="Source excerpt"><button class="save" type="submit">Save evidence</button></form></details>
+  </article>`;
+}
+function renderMain(){
+  const restaurant=review.restaurants.find(item=>item.name===activeRestaurant);
+  if(!restaurant){$("main").innerHTML='<div class="empty">No choices match this view.</div>';return}
+  if(restaurant.error){$("main").innerHTML=`<div class="mainhead"><div><h2>${esc(restaurant.name)}</h2></div></div><div class="error"><b>Menu source unavailable</b><br>${esc(restaurant.error)}</div>`;return}
+  const restaurantRows=rows.filter(row=>row.restaurant===restaurant&&matchesView(row));
+  const groups=[];
+  restaurantRows.forEach(row=>{
+    let tier=groups.find(group=>group.tier===row.tier);if(!tier){tier={tier:row.tier,courses:[]};groups.push(tier)}
+    let course=tier.courses.find(group=>group.course===row.course);if(!course){course={course:row.course,rows:[]};tier.courses.push(course)}course.rows.push(row);
+  });
+  const header=`<div class="mainhead"><div><h2>${esc(restaurant.name)}</h2><p>${restaurantRows.length} shown · ${(restaurant.sources||[]).length} priced source${restaurant.sources?.length===1?"":"s"}</p></div><a class="source" href="${esc(restaurant.restaurantUrl)}" target="_blank" rel="noopener">Restaurant menu</a></div>`;
+  const note=filter==="needs"?'<div class="worknote"><span class="workicon">!</span><div><b>These are the only dishes that need your attention.</b><p>Each item below is missing a strong automatic match. Accept the correct candidate, enter manual evidence, or mark that no verified equivalent exists.</p></div></div>':"";
+  $("main").innerHTML=header+note+(groups.map(group=>`<section class="tier"><div class="tierhead"><h3>${esc(group.tier.meal)} $${group.tier.price}</h3><span class="pill">${group.courses.reduce((sum,course)=>sum+course.rows.length,0)} choices</span></div>${group.courses.map(course=>`<h4 class="course">${esc(course.course.course)}</h4>${course.rows.map(row=>choiceCard(row,rows.indexOf(row))).join("")}`).join("")}</section>`).join("")||'<div class="empty">No choices match this view.</div>');
+}
+function render(){updateMetrics();renderRestaurants();renderMain();localStorage.setItem("reviewRestaurant",activeRestaurant)}
+function notify(message,bad=false){const toast=$("toast");toast.textContent=message;toast.className=`toast show${bad?" bad":""}`;clearTimeout(notify.timer);notify.timer=setTimeout(()=>toast.className="toast",2400)}
+async function save(row,decision){
+  const response=await fetch("/api/decision",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({key:keyFor(row),decision})});
+  const result=await response.json();if(!response.ok)throw new Error(result.error||"Save failed");row.choice.decision=result.decision;render();notify("Decision saved");
+}
+
+$("filters").addEventListener("click",event=>{const button=event.target.closest("[data-filter]");if(!button)return;filter=button.dataset.filter;document.querySelectorAll(".filter").forEach(item=>item.classList.toggle("on",item===button));render()});
+$("search").addEventListener("input",event=>{query=event.target.value.trim().toLowerCase();render()});
+$("restaurants").addEventListener("click",event=>{const button=event.target.closest("[data-restaurant]");if(button){activeRestaurant=button.dataset.restaurant;render()}});
+$("main").addEventListener("click",async event=>{
+  const accept=event.target.closest("[data-accept]"),clear=event.target.closest("[data-clear]"),unavailable=event.target.closest("[data-unavailable]");
+  try{if(accept)await save(rows[+accept.dataset.accept],{type:"accept",matchIndex:+accept.dataset.match});else if(clear)await save(rows[+clear.dataset.clear],null);else if(unavailable)await save(rows[+unavailable.dataset.unavailable],{type:"unavailable"})}catch(error){notify(error.message,true)}
+});
+$("main").addEventListener("submit",async event=>{
+  const form=event.target.closest("[data-manual]");if(!form)return;event.preventDefault();const values=Object.fromEntries(new FormData(form));
+  try{await save(rows[+form.dataset.manual],{type:"manual",regularName:values.regularName,regularPrice:+values.regularPrice,supplement:+values.supplement||0,sourceUrl:values.sourceUrl,sourceText:values.sourceText})}catch(error){notify(error.message,true)}
+});
+
+fetch("/api/review").then(response=>response.json()).then(data=>{if(data.error)throw new Error(data.error);review=data;buildRows();activeRestaurant=localStorage.getItem("reviewRestaurant")||"";$("generated").textContent=`Generated ${review.generatedAt} · ${review.restaurants.length} restaurants · ${rows.length} choices`;render()}).catch(error=>{$("main").innerHTML=`<div class="error"><b>Could not load queue</b><br>${esc(error.message)}<br>Run python scraper/review_queue.py and open its URL.</div>`});
+</script>
+</body>
+</html>

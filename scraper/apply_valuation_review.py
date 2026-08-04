@@ -18,15 +18,24 @@ def normalized(value):
     return re.sub(r"[^a-z0-9]", "", value.lower())
 
 
+def resolved_match(choice, minimum_confidence):
+    decision = choice.get("decision")
+    if decision:
+        return decision.get("match") if decision.get("type") in {"accept", "manual"} else None
+    if choice["matches"] and choice["matches"][0]["confidence"] >= minimum_confidence:
+        return choice["matches"][0]
+    return None
+
+
 def tier_from_review(source_tier, review_tier, minimum_confidence):
     courses = []
     sources = set()
     for course in review_tier["courses"]:
         dishes = []
         for choice in course["choices"]:
-            if not choice["matches"] or choice["matches"][0]["confidence"] < minimum_confidence:
+            match = resolved_match(choice, minimum_confidence)
+            if not match:
                 return None
-            match = choice["matches"][0]
             dishes.append([choice["spiceName"], match["effectiveValue"]])
             sources.add(match["sourceUrl"])
         courses.append({"c": course["course"], "d": dishes})

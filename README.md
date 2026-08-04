@@ -103,6 +103,16 @@ source text, URLs and supplement-adjusted values. Once every choice for a named
 restaurant has been reviewed, the guarded promoter requires complete coverage:
 
 ```powershell
+py scraper\review_queue.py --open
+```
+
+The local reviewer opens at `http://127.0.0.1:8765/review.html`. It starts with
+only ambiguous choices, shows candidate prices beside their source excerpts,
+and saves accepted candidates, manual evidence, or explicit "no equivalent"
+decisions directly to the review queue. Decisions survive later candidate
+refreshes. The server binds only to the local machine.
+
+```powershell
 py scraper\apply_valuation_review.py "Bulla Gastrobar Aventura" --minimum-confidence 0.8 --dry-run
 ```
 

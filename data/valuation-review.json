@@ -123,7 +123,19 @@
            "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Little Gem Caesar",
+           "regularPrice": 16.5,
+           "supplement": 0,
+           "effectiveValue": 16.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Little Gem Caesar 16.5 grated grana padano, torn crouton, cracked pepper",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "HERILOOM TOMATO & BURRATA",
@@ -261,7 +273,10 @@
            "sourceText": "Calamari Fritti 19 house giardiniera, sugo, calabrian aioli, grilled lemon"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Miami Spice-exclusive preparation adds tempura shrimp, crispy plantains and salsa criolla; not on the regular menu at this price."
+         }
         },
         {
          "spiceName": "SICILIAN MEATBALLS",
@@ -437,7 +452,19 @@
            "sourceText": "Braised Short Rib Marsala 36 beech mushroom, snap pea, heirloom carrot, black truffle risotto, affinato"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Tuscan Hash*",
+           "regularPrice": 19,
+           "supplement": 0,
+           "effectiveValue": 19,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Tuscan Hash* 19 choice of braised short rib or pulled chicken, fried egg, sweet onion, piquillo pepper, bomba sauce",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "BREAKFAST CARBONARA PASTA",
@@ -536,7 +563,18 @@
            "sourceText": "Spicy Broccolini 9.5"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Spicy Rigatoni Vodka",
+           "regularPrice": 25.5,
+           "supplement": 0,
+           "effectiveValue": 25.5,
+           "confidence": 0.783,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Spicy Rigatoni Vodka 25.5 italian sausage, crispy pancetta, shaved garlic, torn basil, grana padano"
+          }
+         }
         },
         {
          "spiceName": "BOLOGNESE HOUSE SPECIALTY",
@@ -584,7 +622,18 @@
            "sourceText": "Breakfast Sandwich* 18.5 bacon, sausage, calabrese, egg, roasted pepper, scamorza, calabrian aioli, hash potato"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Breakfast Rosa*",
+           "regularPrice": 22.0,
+           "supplement": 0,
+           "effectiveValue": 22.0,
+           "confidence": 0.741,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Breakfast Rosa* 22 sweet italian sausage, crispy pancetta, smoked mozzarella, two eggs, torn basil, spicy vodka sauce"
+          }
+         }
         }
        ]
       },
@@ -594,7 +643,10 @@
         {
          "spiceName": "BOMBOLINI PASTELITO DE GUAYABA",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Guava/cream cheese filling is a Miami Spice-exclusive flavor of Bombolini; no independently priced regular-menu listing found for this flavor."
+         }
         },
         {
          "spiceName": "TIRAMISU",
@@ -635,7 +687,19 @@
            "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Little Gem Caesar",
+           "regularPrice": 16.5,
+           "supplement": 0,
+           "effectiveValue": 16.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Little Gem Caesar 16.5 grated grana padano, torn crouton, cracked pepper",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "HERILOOM TOMATO & BURRATA",
@@ -731,7 +795,10 @@
            "sourceText": "Calamari Fritti 19 house giardiniera, sugo, calabrian aioli, grilled lemon"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Miami Spice-exclusive preparation adds tempura shrimp, crispy plantains and salsa criolla; not on the regular menu at this price."
+         }
         },
         {
          "spiceName": "CHARCUTERIE PLATE",
@@ -764,7 +831,19 @@
            "sourceText": "Hash Potatoes 6.5"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Chef's Board",
+           "regularPrice": 22.5,
+           "supplement": 0,
+           "effectiveValue": 22.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Chef's Board 22.5 prosciutto di parma, speck, stracciatella & black truffle honey, pecorino stagionato, campari glazed nuts, marinated olive, giardiniera, fig jam",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "SICILIAN MEATBALLS",
@@ -835,7 +914,18 @@
            "sourceText": "heirloom tomato, stracciatella, arugula, basil pesto 810 cal | PARMESAN CHICKEN SANDWICH 1 7.5 | prosciutto, rustic marinara, mozzarella, aged provolone, calabrian aioli 1290 cal"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Chopped Chicken",
+           "regularPrice": 18.5,
+           "supplement": 0,
+           "effectiveValue": 18.5,
+           "confidence": 0.75,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
+          }
+         }
         },
         {
          "spiceName": "HEIRLOOM BEET & CHICKEN SALAD",
@@ -868,7 +958,18 @@
            "sourceText": "heirloom tomato, stracciatella, arugula, basil pesto 810 cal | PARMESAN CHICKEN SANDWICH 1 7.5 | prosciutto, rustic marinara, mozzarella, aged provolone, calabrian aioli 1290 cal"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Heirloom Beet & Chicken",
+           "regularPrice": 18.0,
+           "supplement": 0,
+           "effectiveValue": 18.0,
+           "confidence": 0.787,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Heirloom Beet & Chicken 18 avocado, cucumber, goat cheese, fregola, red wine vinaigrette"
+          }
+         }
         },
         {
          "spiceName": "GRILLED STEAK PANZANELLA",
@@ -982,7 +1083,18 @@
            "sourceText": "Spicy Broccolini 9.5"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Spicy Rigatoni Vodka",
+           "regularPrice": 25.5,
+           "supplement": 0,
+           "effectiveValue": 25.5,
+           "confidence": 0.783,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Spicy Rigatoni Vodka 25.5 italian sausage, crispy pancetta, shaved garlic, torn basil, grana padano"
+          }
+         }
         },
         {
          "spiceName": "BOLOGNESE HOUSE SPECIALTY",
@@ -1021,7 +1133,10 @@
            "sourceText": "Spicy Broccolini 9.5"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "No pappardelle/bucatini shrimp scampi pasta on the current regular menu; closest candidate (Wild Shrimp Scampi) is a plain appetizer without pasta."
+         }
         },
         {
          "spiceName": "SQUID INK TONNARELLI",
@@ -1078,7 +1193,18 @@
            "sourceText": "Wild Shrimp Scampi 19.5 blistered tomato, grana padano, garlic confit, herb butter, grilled bread"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Ricotta Cavatelli",
+           "regularPrice": 26.0,
+           "supplement": 0,
+           "effectiveValue": 26.0,
+           "confidence": 0.502,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Ricotta Cavatelli 26 lump crab, tiger shrimp, peperoncino, mint, lemon olive oil"
+          }
+         }
         }
        ]
       },
@@ -1088,7 +1214,10 @@
         {
          "spiceName": "BOMBOLINI PASTELITO DE GUAYABA",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Guava/cream cheese filling is a Miami Spice-exclusive flavor of Bombolini; no independently priced regular-menu listing found for this flavor."
+         }
         },
         {
          "spiceName": "TIRAMISU",
@@ -1129,7 +1258,19 @@
            "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Little Gem Caesar",
+           "regularPrice": 16.5,
+           "supplement": 0,
+           "effectiveValue": 16.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Little Gem Caesar 16.5 grated grana padano, torn crouton, cracked pepper",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "HERILOOM TOMATO & BURRATA",
@@ -1186,7 +1327,10 @@
            "sourceText": "Calamari Fritti 19 house giardiniera, sugo, calabrian aioli, grilled lemon"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Miami Spice-exclusive preparation adds tempura shrimp, crispy plantains and salsa criolla; not on the regular menu at this price."
+         }
         },
         {
          "spiceName": "YELLOWTAIL CRUDO",
@@ -1320,12 +1464,26 @@
            "sourceText": "Spicy Broccolini 9.5"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Spicy Rigatoni Vodka",
+           "regularPrice": 25.5,
+           "supplement": 0,
+           "effectiveValue": 25.5,
+           "confidence": 0.783,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Spicy Rigatoni Vodka 25.5 italian sausage, crispy pancetta, shaved garlic, torn basil, grana padano"
+          }
+         }
         },
         {
          "spiceName": "PAPPARDELLE BOLOGNESE AL TARTUFO",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Adds house-made black truffle ricotta versus the regular Bolognese (House Specialty); no truffle supplement price published."
+         }
         },
         {
          "spiceName": "SUNDAY NIGHT LASAGNA",
@@ -1415,7 +1573,18 @@
            "sourceText": "Wild Shrimp Scampi 19.5 blistered tomato, grana padano, garlic confit, herb butter, grilled bread"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Ricotta Cavatelli",
+           "regularPrice": 26.0,
+           "supplement": 0,
+           "effectiveValue": 26.0,
+           "confidence": 0.502,
+           "sourceUrl": "https://www.northitalia.com/locations/aventura-fl/menus/dinner-menu/",
+           "sourceText": "Ricotta Cavatelli 26 lump crab, tiger shrimp, peperoncino, mint, lemon olive oil"
+          }
+         }
         },
         {
          "spiceName": "BRAISED SHORT RIB LUMACHE",
@@ -1514,7 +1683,10 @@
            "sourceText": "Trottole Chicken Pesto 24.5 sweet basil, shaved garlic, toasted pine nut, crispy caper"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "No regular-menu dish combines smoked prosciutto and chicken; closest candidates are a prosciutto pizza or plain chicken entrees."
+         }
         },
         {
          "spiceName": "GRILLED BRANZINO",
@@ -1590,7 +1762,10 @@
         {
          "spiceName": "BOMBOLINI PASTELITO DE GUAYABA",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Guava/cream cheese filling is a Miami Spice-exclusive flavor of Bombolini; no independently priced regular-menu listing found for this flavor."
+         }
         },
         {
          "spiceName": "SEASONAL BUTTER CAKE",
@@ -1741,7 +1916,10 @@
            "sourceText": "JASMINE RICE $6.00"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": ""
+         }
         },
         {
          "spiceName": "Soup of the day",
@@ -1787,7 +1965,19 @@
            "sourceText": "FLAP STEAK* $28.00 Gluten Free 8oz Certified Black Angus Flap Steak with Mashed Potatoes and Demi Glace"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "PRIME FLAP STEAK 12oz",
+           "regularPrice": 36,
+           "supplement": 0,
+           "effectiveValue": 36,
+           "confidence": 1,
+           "sourceUrl": "https://www.bairesgrill.com/menu/brickell",
+           "sourceText": "Vacío Prime - Gluten Free",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "Mila Baires",
@@ -1820,7 +2010,18 @@
            "sourceText": "MILANESAS $19.00 Beef or Chicken, Lettuce, Tomato & Mayo"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "BAIRES",
+           "regularPrice": 27.0,
+           "supplement": 0,
+           "effectiveValue": 27.0,
+           "confidence": 0.635,
+           "sourceUrl": "https://www.bairesgrill.com/menu/brickell",
+           "sourceText": "BAIRES $27.00 Baby Arugula, Campari Tomato, Honey Lemon Vinaigrette"
+          }
+         }
         },
         {
          "spiceName": "Grilled Salmon",
@@ -1853,7 +2054,19 @@
            "sourceText": "8oz GRILLED PICANHA $25.00 Gluten Free Grilled Potatoes, Charred Tomato and Corn Salad"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "SALMON",
+           "regularPrice": 34,
+           "supplement": 0,
+           "effectiveValue": 34,
+           "confidence": 1,
+           "sourceUrl": "https://www.bairesgrill.com/menu/brickell",
+           "sourceText": "Fresh Salmon Filet, Char-grilled. Choice of Mixed Salad, Jasmine Rice, French Fries, Baked Potatoes, Mashed Potatoes - Gluten Free",
+           "reviewed": true
+          }
+         }
         }
        ]
       },
@@ -1863,7 +2076,10 @@
         {
          "spiceName": "Choose one of the following",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": ""
+         }
         },
         {
          "spiceName": "Classic Argentinian Flan",
@@ -1896,7 +2112,18 @@
            "sourceText": "CLASSIC OLD FASHIONED $19.00 WOODFORD RESERVE BOURBON, Raw Sugar, Orange Peel, Angostura Bitters."
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "CLASSIC FLAN",
+           "regularPrice": 12.0,
+           "supplement": 0,
+           "effectiveValue": 12.0,
+           "confidence": 0.667,
+           "sourceUrl": "https://www.bairesgrill.com/menu/brickell",
+           "sourceText": "CLASSIC FLAN $12.00 Dulce de Leche and Homemade Whipped Cream."
+          }
+         }
         },
         {
          "spiceName": "Molten Cake",
@@ -3585,7 +3812,19 @@
            "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Little Gem Caesar",
+           "regularPrice": 16.5,
+           "supplement": 0,
+           "effectiveValue": 16.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/",
+           "sourceText": "Little Gem Caesar 16.5 grated grana padano, torn crouton, cracked pepper",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "HERILOOM TOMATO & BURRATA",
@@ -3690,7 +3929,10 @@
            "sourceText": "Calamari Fritti 19 house giardiniera, sugo, calabrian aioli, grilled lemon"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Miami Spice-exclusive preparation adds tempura shrimp, crispy plantains and salsa criolla; not on the regular menu at this price."
+         }
         },
         {
          "spiceName": "SICILIAN MEATBALLS",
@@ -3866,7 +4108,19 @@
            "sourceText": "Braised Short Rib Marsala 36 beech mushroom, snap pea, heirloom carrot, black truffle risotto, affinato"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Tuscan Hash*",
+           "regularPrice": 19,
+           "supplement": 0,
+           "effectiveValue": 19,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/",
+           "sourceText": "Tuscan Hash* 19 choice of braised short rib or pulled chicken, fried egg, sweet onion, piquillo pepper, bomba sauce",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "BREAKFAST CARBONARA PASTA",
@@ -3965,7 +4219,18 @@
            "sourceText": "Crispy Eggplant Parmesan 16.5 fresh mozzarella, spicy vodka sauce, torn basil"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Spicy Rigatoni Vodka",
+           "regularPrice": 25.5,
+           "supplement": 0,
+           "effectiveValue": 25.5,
+           "confidence": 0.783,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Spicy Rigatoni Vodka 25.5 italian sausage, crispy pancetta, shaved garlic, torn basil, grana padano"
+          }
+         }
         },
         {
          "spiceName": "BOLOGNESE HOUSE SPECIALTY",
@@ -4013,7 +4278,18 @@
            "sourceText": "Breakfast Sandwich* 18.5 bacon, sausage, calabrese, egg, roasted pepper, scamorza, calabrian aioli, hash potato"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Breakfast Rosa*",
+           "regularPrice": 22.0,
+           "supplement": 0,
+           "effectiveValue": 22.0,
+           "confidence": 0.741,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Breakfast Rosa* 22 sweet italian sausage, crispy pancetta, smoked mozzarella, two eggs, torn basil, spicy vodka sauce"
+          }
+         }
         }
        ]
       },
@@ -4023,7 +4299,10 @@
         {
          "spiceName": "BOMBOLINI PASTELITO DE GUAYABA",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Guava/cream cheese filling is a Miami Spice-exclusive flavor of Bombolini; no independently priced regular-menu listing found for this flavor."
+         }
         },
         {
          "spiceName": "TIRAMISU",
@@ -4073,7 +4352,19 @@
            "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Little Gem Caesar",
+           "regularPrice": 16.5,
+           "supplement": 0,
+           "effectiveValue": 16.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/",
+           "sourceText": "Little Gem Caesar 16.5 grated grana padano, torn crouton, cracked pepper",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "HERILOOM TOMATO & BURRATA",
@@ -4169,7 +4460,10 @@
            "sourceText": "Calamari Fritti 19 house giardiniera, sugo, calabrian aioli, grilled lemon"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Miami Spice-exclusive preparation adds tempura shrimp, crispy plantains and salsa criolla; not on the regular menu at this price."
+         }
         },
         {
          "spiceName": "CHARCUTERIE PLATE",
@@ -4202,7 +4496,19 @@
            "sourceText": "Hash Potatoes 6.5"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Chef's Board",
+           "regularPrice": 22.5,
+           "supplement": 0,
+           "effectiveValue": 22.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/",
+           "sourceText": "Chef's Board 22.5 prosciutto di parma, speck, stracciatella & black truffle honey, pecorino stagionato, campari glazed nuts, marinated olive, giardiniera, fig jam",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "SICILIAN MEATBALLS",
@@ -4273,7 +4579,18 @@
            "sourceText": "heirloom tomato, stracciatella, arugula, basil pesto 810 cal | PARMESAN CHICKEN SANDWICH 1 7.5 | prosciutto, rustic marinara, mozzarella, aged provolone, calabrian aioli 1290 cal"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Chopped Chicken",
+           "regularPrice": 18.5,
+           "supplement": 0,
+           "effectiveValue": 18.5,
+           "confidence": 0.75,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
+          }
+         }
         },
         {
          "spiceName": "HEIRLOOM BEET & CHICKEN SALAD",
@@ -4306,7 +4623,18 @@
            "sourceText": "heirloom tomato, stracciatella, arugula, basil pesto 810 cal | PARMESAN CHICKEN SANDWICH 1 7.5 | prosciutto, rustic marinara, mozzarella, aged provolone, calabrian aioli 1290 cal"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Heirloom Beet & Chicken",
+           "regularPrice": 18.0,
+           "supplement": 0,
+           "effectiveValue": 18.0,
+           "confidence": 0.787,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Heirloom Beet & Chicken 18 avocado, cucumber, goat cheese, fregola, red wine vinaigrette"
+          }
+         }
         },
         {
          "spiceName": "GRILLED STEAK PANZANELLA",
@@ -4420,7 +4748,18 @@
            "sourceText": "Crispy Eggplant Parmesan 16.5 fresh mozzarella, spicy vodka sauce, torn basil"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Spicy Rigatoni Vodka",
+           "regularPrice": 25.5,
+           "supplement": 0,
+           "effectiveValue": 25.5,
+           "confidence": 0.783,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Spicy Rigatoni Vodka 25.5 italian sausage, crispy pancetta, shaved garlic, torn basil, grana padano"
+          }
+         }
         },
         {
          "spiceName": "BOLOGNESE HOUSE SPECIALTY",
@@ -4459,7 +4798,10 @@
            "sourceText": "Spicy Broccolini 9.5"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "No pappardelle/bucatini shrimp scampi pasta on the current regular menu; closest candidate (Wild Shrimp Scampi) is a plain appetizer without pasta."
+         }
         },
         {
          "spiceName": "SQUID INK TONNARELLI",
@@ -4516,7 +4858,18 @@
            "sourceText": "Wild Shrimp Scampi 19.5 blistered tomato, grana padano, garlic confit, herb butter, grilled bread"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Ricotta Cavatelli",
+           "regularPrice": 26.0,
+           "supplement": 0,
+           "effectiveValue": 26.0,
+           "confidence": 0.502,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Ricotta Cavatelli 26 lump crab, tiger shrimp, peperoncino, mint, lemon olive oil"
+          }
+         }
         }
        ]
       },
@@ -4526,7 +4879,10 @@
         {
          "spiceName": "BOMBOLINI PASTELITO DE GUAYABA",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Guava/cream cheese filling is a Miami Spice-exclusive flavor of Bombolini; no independently priced regular-menu listing found for this flavor."
+         }
         },
         {
          "spiceName": "TIRAMISU",
@@ -4576,7 +4932,19 @@
            "sourceText": "Chopped Chicken 18.5 heirloom tomato, candied bacon, pickled red onion, gorgonzola, pine nut, garden herb"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "manual",
+          "match": {
+           "regularName": "Little Gem Caesar",
+           "regularPrice": 16.5,
+           "supplement": 0,
+           "effectiveValue": 16.5,
+           "confidence": 1,
+           "sourceUrl": "https://www.northitalia.com/",
+           "sourceText": "Little Gem Caesar 16.5 grated grana padano, torn crouton, cracked pepper",
+           "reviewed": true
+          }
+         }
         },
         {
          "spiceName": "HERILOOM TOMATO & BURRATA",
@@ -4633,7 +5001,10 @@
            "sourceText": "Calamari Fritti 19 house giardiniera, sugo, calabrian aioli, grilled lemon"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Miami Spice-exclusive preparation adds tempura shrimp, crispy plantains and salsa criolla; not on the regular menu at this price."
+         }
         },
         {
          "spiceName": "YELLOWTAIL CRUDO",
@@ -4767,12 +5138,26 @@
            "sourceText": "Crispy Eggplant Parmesan 16.5 fresh mozzarella, spicy vodka sauce, torn basil"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Spicy Rigatoni Vodka",
+           "regularPrice": 25.0,
+           "supplement": 0,
+           "effectiveValue": 25.0,
+           "confidence": 0.783,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Spicy Rigatoni Vodka 25 italian sausage, crispy pancetta, shaved garlic, torn basil, grana padano"
+          }
+         }
         },
         {
          "spiceName": "PAPPARDELLE BOLOGNESE AL TARTUFO",
          "matches": [],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "Adds house-made black truffle ricotta versus the regular Bolognese (House Specialty); no truffle supplement price published."
+         }
         },
         {
          "spiceName": "SUNDAY NIGHT LASAGNA",
@@ -4862,7 +5247,18 @@
            "sourceText": "Wild Shrimp Scampi 19.5 blistered tomato, grana padano, garlic confit, herb butter, grilled bread"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "accept",
+          "match": {
+           "regularName": "Ricotta Cavatelli",
+           "regularPrice": 26.0,
+           "supplement": 0,
+           "effectiveValue": 26.0,
+           "confidence": 0.502,
+           "sourceUrl": "https://www.northitalia.com/locations/miami-fl-dadeland/",
+           "sourceText": "Ricotta Cavatelli 26 lump crab, tiger shrimp, peperoncino, mint, lemon olive oil"
+          }
+         }
         },
         {
          "spiceName": "BRAISED SHORT RIB LUMACHE",
@@ -4961,7 +5357,10 @@
            "sourceText": "Trottole Chicken Pesto 24.5 sweet basil, shaved garlic, toasted pine nut, crispy caper"
           }
          ],
-         "decision": null
+         "decision": {
+          "type": "unavailable",
+          "note": "No regular-menu dish combines smoked prosciutto and chicken; closest candidates are a prosciutto pizza or plain chicken entrees."
+         }
         },
         {
          "spiceName": "GRILLED BRANZINO",
